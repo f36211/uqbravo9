@@ -1,12 +1,13 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import mtkData from "@/data/mtk.json";
 import bindoData from "@/data/bindo.json";
 
 // ═══════════════════════════════════════
 //  MathJax Hook — re-typeset on changes
+//  FIX #3: Use a counter ref instead of dynamic deps array
 // ═══════════════════════════════════════
-function useMathJax(deps = []) {
+function useMathJax(trigger) {
   useEffect(() => {
     const id = setTimeout(() => {
       if (window.MathJax?.typesetPromise) {
@@ -14,7 +15,7 @@ function useMathJax(deps = []) {
       }
     }, 100);
     return () => clearTimeout(id);
-  }, deps);
+  }, [trigger]);
 }
 
 // ═══════════════════════════════════════
@@ -54,7 +55,7 @@ const sidebarItemVariants = {
 };
 
 // ═══════════════════════════════════════
-//  Icons (inline SVG for zero-dependency)
+//  Icons
 // ═══════════════════════════════════════
 const ArrowLeft = ({ size = 20 }) => (
   <svg
@@ -161,22 +162,12 @@ const Check = ({ size = 14 }) => (
 );
 
 // ═══════════════════════════════════════
-//  LANDING VIEW — Subject Selection
+//  LANDING VIEW
 // ═══════════════════════════════════════
 function LandingView({ onSelect }) {
   const subjects = [
-    {
-      key: "mtk",
-      data: mtkData,
-      gradient: "from-gray-900 to-gray-700",
-      accent: "bg-gray-900",
-    },
-    {
-      key: "bindo",
-      data: bindoData,
-      gradient: "from-gray-800 to-gray-600",
-      accent: "bg-gray-800",
-    },
+    { key: "mtk", data: mtkData, gradient: "from-gray-900 to-gray-700" },
+    { key: "bindo", data: bindoData, gradient: "from-gray-800 to-gray-600" },
   ];
 
   const totalTopics = (d) =>
@@ -192,7 +183,6 @@ function LandingView({ onSelect }) {
       className="min-h-screen flex flex-col items-center justify-center px-4 py-10 sm:py-16"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      {/* Header */}
       <motion.div
         className="text-center mb-8 sm:mb-14"
         initial={{ opacity: 0, y: -20 }}
@@ -211,7 +201,6 @@ function LandingView({ onSelect }) {
         </p>
       </motion.div>
 
-      {/* Subject Cards */}
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl"
         variants={staggerContainer}
@@ -232,10 +221,8 @@ function LandingView({ onSelect }) {
               className={`w-full text-left rounded-2xl bg-gradient-to-br ${gradient} p-5 sm:p-8 text-white cursor-pointer
                 shadow-lg hover:shadow-2xl transition-shadow duration-300 group relative overflow-hidden`}
             >
-              {/* Decorative circle */}
               <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-500" />
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 rounded-full bg-white/5 group-hover:bg-white/8 transition-colors duration-500" />
-
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 rounded-full bg-white/5 transition-colors duration-500" />
               <span className="text-4xl mb-4 block relative z-10">
                 {data.icon}
               </span>
@@ -245,7 +232,6 @@ function LandingView({ onSelect }) {
               <p className="text-white/60 text-sm mb-6 relative z-10">
                 {data.description}
               </p>
-
               <div className="flex items-center gap-4 text-xs font-medium text-white/50 relative z-10">
                 <span className="bg-white/10 px-3 py-1 rounded-full">
                   {data.chapters.length} Bab
@@ -254,8 +240,6 @@ function LandingView({ onSelect }) {
                   {totalTopics(data)} Topik
                 </span>
               </div>
-
-              {/* Arrow */}
               <div
                 className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
                 group-hover:bg-white/20 transition-all duration-300 group-hover:translate-x-1"
@@ -267,7 +251,6 @@ function LandingView({ onSelect }) {
         ))}
       </motion.div>
 
-      {/* Footer hint */}
       <motion.p
         className="mt-8 sm:mt-12 text-gray-300 text-sm"
         initial={{ opacity: 0 }}
@@ -281,7 +264,7 @@ function LandingView({ onSelect }) {
 }
 
 // ═══════════════════════════════════════
-//  SIDEBAR — Chapter & Topic Navigation
+//  SIDEBAR
 // ═══════════════════════════════════════
 function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
   const [expandedChapters, setExpandedChapters] = useState(
@@ -301,6 +284,14 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
     setExpandedChapters((prev) => new Set([...prev, chapterIdx]));
   }, [chapterIdx]);
 
+  const totalTopicsBeforeChapter = useCallback(
+    (cIdx) =>
+      data.chapters.slice(0, cIdx).reduce((s, c) => s + c.topics.length, 0),
+    [data],
+  );
+  const totalTopics = data.chapters.reduce((s, c) => s + c.topics.length, 0);
+  const currentGlobalIdx = totalTopicsBeforeChapter(chapterIdx) + topicIdx + 1;
+
   const sidebarContent = (
     <motion.nav
       className="h-full flex flex-col"
@@ -308,7 +299,6 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
       initial="initial"
       animate="animate"
     >
-      {/* Sidebar Header */}
       <div className="p-5 border-b border-gray-100 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <span className="text-xl">{data.icon}</span>
@@ -324,11 +314,9 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
         </button>
       </div>
 
-      {/* Chapter List */}
       <div className="flex-1 overflow-y-auto p-3 space-y-1">
         {data.chapters.map((chapter, cIdx) => (
           <motion.div key={cIdx} variants={sidebarItemVariants}>
-            {/* Chapter Header */}
             <button
               onClick={() => toggleChapter(cIdx)}
               className={`w-full flex items-center gap-2 px-3 py-2.5 rounded-lg text-left text-sm font-medium transition-colors
@@ -344,13 +332,12 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
               <span className="truncate">{chapter.title}</span>
               <span
                 className={`ml-auto text-xs px-1.5 py-0.5 rounded-md
-                  ${cIdx === chapterIdx ? "bg-white/20" : "bg-gray-100 text-gray-400"}`}
+                ${cIdx === chapterIdx ? "bg-white/20" : "bg-gray-100 text-gray-400"}`}
               >
                 {chapter.topics.length}
               </span>
             </button>
 
-            {/* Topics under chapter */}
             <AnimatePresence>
               {expandedChapters.has(cIdx) && (
                 <motion.div
@@ -388,22 +375,14 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
 
       {/* Progress Footer */}
       <div className="p-4 border-t border-gray-100">
-        <div className="text-xs text-gray-400 mb-1.5">Progress</div>
+        <div className="text-xs text-gray-400 mb-1.5">
+          Topik {currentGlobalIdx} dari {totalTopics}
+        </div>
         <div className="w-full bg-gray-100 rounded-full h-1.5">
           <motion.div
             className="bg-gray-900 h-1.5 rounded-full"
             initial={{ width: 0 }}
-            animate={{
-              width: `${
-                ((data.chapters
-                  .slice(0, chapterIdx)
-                  .reduce((s, c) => s + c.topics.length, 0) +
-                  topicIdx +
-                  1) /
-                  data.chapters.reduce((s, c) => s + c.topics.length, 0)) *
-                100
-              }%`,
-            }}
+            animate={{ width: `${(currentGlobalIdx / totalTopics) * 100}%` }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           />
         </div>
@@ -413,12 +392,10 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
 
   return (
     <>
-      {/* Desktop sidebar */}
       <aside className="hidden md:flex md:w-72 lg:w-80 border-r border-gray-100 bg-white flex-shrink-0 flex-col h-full overflow-hidden">
         {sidebarContent}
       </aside>
 
-      {/* Mobile overlay */}
       <AnimatePresence>
         {isOpen && (
           <>
@@ -446,7 +423,7 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
 }
 
 // ═══════════════════════════════════════
-//  FORMULA CARD — Renders LaTeX formulas
+//  FORMULA CARD
 // ═══════════════════════════════════════
 function FormulaCard({ formula, index }) {
   return (
@@ -462,12 +439,10 @@ function FormulaCard({ formula, index }) {
           #{index + 1}
         </span>
       </div>
-
-      {/* LaTeX Display */}
+      {/* LaTeX rendered by MathJax after mount */}
       <div className="text-center py-3 sm:py-4 text-base sm:text-lg overflow-x-auto">
         {`$$${formula.latex}$$`}
       </div>
-
       {formula.note && (
         <p className="text-xs text-gray-400 mt-2 pt-3 border-t border-gray-100 leading-relaxed">
           💡 {formula.note}
@@ -478,7 +453,8 @@ function FormulaCard({ formula, index }) {
 }
 
 // ═══════════════════════════════════════
-//  EXAMPLE CARD — Expandable solution
+//  EXAMPLE CARD
+//  FIX #5: open state reset via key prop (applied by parent)
 // ═══════════════════════════════════════
 function ExampleCard({ example, index, isMath }) {
   const [open, setOpen] = useState(false);
@@ -488,7 +464,6 @@ function ExampleCard({ example, index, isMath }) {
       variants={staggerItem}
       className="border border-gray-100 rounded-xl overflow-hidden hover:border-gray-200 transition-colors"
     >
-      {/* Question */}
       <div className="p-3 sm:p-5">
         <div className="flex items-start gap-3">
           <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gray-900 text-white text-xs font-bold flex items-center justify-center">
@@ -508,7 +483,6 @@ function ExampleCard({ example, index, isMath }) {
         </div>
       </div>
 
-      {/* Toggle */}
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between px-3 sm:px-5 py-3 bg-gray-50 hover:bg-gray-100 transition-colors text-xs font-medium text-gray-500"
@@ -524,7 +498,6 @@ function ExampleCard({ example, index, isMath }) {
         </motion.span>
       </button>
 
-      {/* Solution */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -572,9 +545,14 @@ function ExampleCard({ example, index, isMath }) {
 }
 
 // ═══════════════════════════════════════
-//  QUIZ SECTION — Interactive quiz
+//  QUIZ SECTION
+//  FIX #4: Reset via key prop (applied by parent)
+//  FIX #6: checkAll only reveals answered questions; unanswered shown as skipped
+//  FIX #7: "Cek Semua" appears after any answer, not only when all answered
+//  FIX #8: score memoized
+//  FIX #12: removed unused isMath prop
 // ═══════════════════════════════════════
-function QuizSection({ quiz, isMath }) {
+function QuizSection({ quiz }) {
   const [answers, setAnswers] = useState({});
   const [revealed, setRevealed] = useState({});
   const [showResults, setShowResults] = useState(false);
@@ -589,12 +567,13 @@ function QuizSection({ quiz, isMath }) {
     setRevealed((p) => ({ ...p, [qIdx]: true }));
   };
 
+  // FIX #6 & #7: Only reveal questions that have been answered
   const checkAll = () => {
-    const allRevealed = {};
+    const onlyAnswered = {};
     quiz.forEach((_, i) => {
-      allRevealed[i] = true;
+      if (answers[i] !== undefined) onlyAnswered[i] = true;
     });
-    setRevealed(allRevealed);
+    setRevealed(onlyAnswered);
     setShowResults(true);
   };
 
@@ -604,10 +583,13 @@ function QuizSection({ quiz, isMath }) {
     setShowResults(false);
   };
 
-  const score = quiz.reduce(
-    (s, q, i) => s + (answers[i] === q.correctAnswer ? 1 : 0),
-    0,
+  // FIX #8: memoize score
+  const score = useMemo(
+    () =>
+      quiz.reduce((s, q, i) => s + (answers[i] === q.correctAnswer ? 1 : 0), 0),
+    [answers, quiz],
   );
+
   const answeredCount = Object.keys(answers).length;
   const optionLabels = ["A", "B", "C", "D"];
 
@@ -634,7 +616,6 @@ function QuizSection({ quiz, isMath }) {
               variants={staggerItem}
               className="border border-gray-100 rounded-xl overflow-hidden"
             >
-              {/* Question */}
               <div className="p-3 sm:p-5">
                 <div className="flex items-start gap-3 mb-4">
                   <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gray-900 text-white text-xs font-bold flex items-center justify-center">
@@ -645,7 +626,6 @@ function QuizSection({ quiz, isMath }) {
                   </p>
                 </div>
 
-                {/* Options */}
                 <div className="space-y-2 ml-0 sm:ml-10">
                   {q.options.map((opt, oIdx) => {
                     const selected = answers[qIdx] === oIdx;
@@ -697,7 +677,6 @@ function QuizSection({ quiz, isMath }) {
                   })}
                 </div>
 
-                {/* Check button per question */}
                 {answers[qIdx] !== undefined && !isRevealed && (
                   <div className="mt-3 ml-0 sm:ml-10">
                     <button
@@ -709,7 +688,6 @@ function QuizSection({ quiz, isMath }) {
                   </div>
                 )}
 
-                {/* Explanation */}
                 <AnimatePresence>
                   {isRevealed && (
                     <motion.div
@@ -736,22 +714,41 @@ function QuizSection({ quiz, isMath }) {
         })}
       </div>
 
-      {/* Score / Actions */}
+      {/* FIX #7: Show "Cek Semua" as soon as at least one answer is given */}
       <div className="mt-4 flex items-center justify-between">
-        {answeredCount === quiz.length && !showResults && (
-          <button
-            onClick={checkAll}
-            className="px-4 py-2 bg-gray-900 text-white text-xs font-medium rounded-lg hover:bg-gray-800 transition-colors"
-          >
-            Cek Semua Jawaban
-          </button>
+        {answeredCount > 0 && !showResults && (
+          <div className="flex items-center gap-3">
+            <button
+              onClick={checkAll}
+              className="px-4 py-2 bg-gray-900 text-white text-xs font-medium rounded-lg hover:bg-gray-800 transition-colors"
+            >
+              Cek Semua Jawaban
+            </button>
+            {answeredCount < quiz.length && (
+              <span className="text-xs text-gray-400">
+                {answeredCount}/{quiz.length} dijawab
+              </span>
+            )}
+          </div>
         )}
         {showResults && (
           <div className="flex items-center gap-4">
             <div
-              className={`text-sm font-semibold px-3 py-1.5 rounded-lg ${score === quiz.length ? "bg-green-100 text-green-800" : score >= quiz.length / 2 ? "bg-yellow-100 text-yellow-800" : "bg-red-100 text-red-800"}`}
+              className={`text-sm font-semibold px-3 py-1.5 rounded-lg
+              ${
+                score === answeredCount && answeredCount === quiz.length
+                  ? "bg-green-100 text-green-800"
+                  : score >= answeredCount / 2
+                    ? "bg-yellow-100 text-yellow-800"
+                    : "bg-red-100 text-red-800"
+              }`}
             >
-              Skor: {score}/{quiz.length}
+              Skor: {score}/{answeredCount}
+              {answeredCount < quiz.length && (
+                <span className="text-xs font-normal ml-1 opacity-70">
+                  ({quiz.length - answeredCount} dilewati)
+                </span>
+              )}
             </div>
             <button
               onClick={retry}
@@ -767,7 +764,9 @@ function QuizSection({ quiz, isMath }) {
 }
 
 // ═══════════════════════════════════════
-//  CONTENT AREA — Renders topic content
+//  CONTENT AREA
+//  FIX #4 & #5: key props on QuizSection and ExampleCard reset their state
+//  FIX #3: passes stable trigger string to useMathJax
 // ═══════════════════════════════════════
 function ContentArea({
   topic,
@@ -782,9 +781,10 @@ function ContentArea({
   prevLabel,
 }) {
   const contentRef = useRef(null);
-  useMathJax([chapterIdx, topicIdx, topic]);
+  // FIX #3: stable string trigger instead of dynamic array
+  const mathTrigger = `${chapterIdx}-${topicIdx}`;
+  useMathJax(mathTrigger);
 
-  // Scroll to top when topic changes
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0, behavior: "smooth" });
   }, [chapterIdx, topicIdx]);
@@ -799,7 +799,6 @@ function ContentArea({
           animate="animate"
           exit="exit"
         >
-          {/* Topic Title */}
           <motion.h1
             className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tight"
             initial={{ opacity: 0, y: 10 }}
@@ -809,7 +808,6 @@ function ContentArea({
             {topic.title}
           </motion.h1>
 
-          {/* Breadcrumb */}
           <motion.div
             className="flex items-center gap-1.5 text-xs text-gray-300 mb-8"
             initial={{ opacity: 0 }}
@@ -821,7 +819,6 @@ function ContentArea({
             <span>Topik {topicIdx + 1}</span>
           </motion.div>
 
-          {/* Content text */}
           {topic.content && (
             <motion.div
               className="text-sm md:text-base text-gray-600 leading-relaxed mb-10"
@@ -833,7 +830,7 @@ function ContentArea({
             </motion.div>
           )}
 
-          {/* ─── FORMULAS (Math only) ─── */}
+          {/* FORMULAS */}
           {isMath && topic.formulas?.length > 0 && (
             <motion.section
               className="mb-10"
@@ -853,7 +850,7 @@ function ContentArea({
             </motion.section>
           )}
 
-          {/* ─── KEY POINTS ─── */}
+          {/* KEY POINTS */}
           {topic.keyPoints?.length > 0 && (
             <motion.section
               className="mb-10"
@@ -884,7 +881,7 @@ function ContentArea({
             </motion.section>
           )}
 
-          {/* ─── EXAMPLES ─── */}
+          {/* EXAMPLES — FIX #5: key resets open state per topic */}
           {topic.examples?.length > 0 && (
             <motion.section
               className="mb-10"
@@ -898,13 +895,18 @@ function ContentArea({
               </h2>
               <div className="space-y-3">
                 {topic.examples.map((ex, i) => (
-                  <ExampleCard key={i} example={ex} index={i} isMath={isMath} />
+                  <ExampleCard
+                    key={`${chapterIdx}-${topicIdx}-ex-${i}`}
+                    example={ex}
+                    index={i}
+                    isMath={isMath}
+                  />
                 ))}
               </div>
             </motion.section>
           )}
 
-          {/* ─── TIPS ─── */}
+          {/* TIPS */}
           {topic.tips?.length > 0 && (
             <motion.section
               className="mb-10"
@@ -931,12 +933,15 @@ function ContentArea({
             </motion.section>
           )}
 
-          {/* ─── QUIZ ─── */}
+          {/* QUIZ — FIX #4: key resets all quiz state per topic */}
           {topic.quiz?.length > 0 && (
-            <QuizSection quiz={topic.quiz} isMath={isMath} />
+            <QuizSection
+              key={`${chapterIdx}-${topicIdx}-quiz`}
+              quiz={topic.quiz}
+            />
           )}
 
-          {/* ─── Bottom Navigation ─── */}
+          {/* Bottom Navigation */}
           <div className="flex items-center justify-between pt-8 mt-4 border-t border-gray-100">
             {canGoPrev ? (
               <button
@@ -986,7 +991,10 @@ function ContentArea({
 }
 
 // ═══════════════════════════════════════
-//  STUDY VIEW — Full study interface
+//  STUDY VIEW
+//  FIX #1: keyboard navigation with stable useCallback + proper deps
+//  FIX #9: removed duplicate bottom nav prev/next — mobile bar now shows
+//          topic title only (not duplicate controls)
 // ═══════════════════════════════════════
 function StudyView({
   data,
@@ -1000,13 +1008,46 @@ function StudyView({
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const isMath = subject === "mtk";
   const topic = data.chapters[chapterIdx]?.topics[topicIdx];
-  const totalTopics = data.chapters.reduce((s, c) => s + c.topics.length, 0);
-  const currentTopicNum =
-    data.chapters
-      .slice(0, chapterIdx)
-      .reduce((s, c) => s + c.topics.length, 0) +
-    topicIdx +
-    1;
+
+  const totalTopics = useMemo(
+    () => data.chapters.reduce((s, c) => s + c.topics.length, 0),
+    [data],
+  );
+  const currentTopicNum = useMemo(
+    () =>
+      data.chapters
+        .slice(0, chapterIdx)
+        .reduce((s, c) => s + c.topics.length, 0) +
+      topicIdx +
+      1,
+    [data, chapterIdx, topicIdx],
+  );
+
+  const isFirst = chapterIdx === 0 && topicIdx === 0;
+  const isLast =
+    chapterIdx === data.chapters.length - 1 &&
+    topicIdx === data.chapters[chapterIdx].topics.length - 1;
+
+  // FIX #1: stable callbacks with correct deps
+  const goNext = useCallback(() => {
+    const chapter = data.chapters[chapterIdx];
+    if (topicIdx < chapter.topics.length - 1) {
+      onTopicChange(topicIdx + 1);
+    } else if (chapterIdx < data.chapters.length - 1) {
+      onChapterChange(chapterIdx + 1);
+      onTopicChange(0);
+    }
+  }, [data, chapterIdx, topicIdx, onChapterChange, onTopicChange]);
+
+  const goPrev = useCallback(() => {
+    if (topicIdx > 0) {
+      onTopicChange(topicIdx - 1);
+    } else if (chapterIdx > 0) {
+      const prevChapter = data.chapters[chapterIdx - 1];
+      onChapterChange(chapterIdx - 1);
+      onTopicChange(prevChapter.topics.length - 1);
+    }
+  }, [data, chapterIdx, topicIdx, onChapterChange, onTopicChange]);
 
   const handleNavigate = useCallback(
     (cIdx, tIdx) => {
@@ -1016,7 +1057,7 @@ function StudyView({
     [onChapterChange, onTopicChange],
   );
 
-  // Keyboard navigation
+  // FIX #1: effect now has stable deps (goNext, goPrev are memoized)
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "ArrowRight" || e.key === "ArrowDown") {
@@ -1029,45 +1070,29 @@ function StudyView({
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  });
+  }, [goNext, goPrev]);
 
-  const goNext = () => {
-    const chapter = data.chapters[chapterIdx];
-    if (topicIdx < chapter.topics.length - 1) {
-      onTopicChange(topicIdx + 1);
-    } else if (chapterIdx < data.chapters.length - 1) {
-      onChapterChange(chapterIdx + 1);
-      onTopicChange(0);
-    }
-  };
-
-  const goPrev = () => {
-    if (topicIdx > 0) {
-      onTopicChange(topicIdx - 1);
-    } else if (chapterIdx > 0) {
-      const prevChapter = data.chapters[chapterIdx - 1];
-      onChapterChange(chapterIdx - 1);
-      onTopicChange(prevChapter.topics.length - 1);
-    }
-  };
-
-  const getAdjacentLabel = (data, cIdx, tIdx, dir) => {
-    if (dir === "next") {
-      const chapter = data.chapters[cIdx];
-      if (tIdx < chapter.topics.length - 1)
-        return chapter.topics[tIdx + 1].title;
-      if (cIdx < data.chapters.length - 1)
-        return data.chapters[cIdx + 1].topics[0].title;
-      return "";
-    } else {
-      if (tIdx > 0) return data.chapters[cIdx].topics[tIdx - 1].title;
-      if (cIdx > 0) {
-        const prev = data.chapters[cIdx - 1];
-        return prev.topics[prev.topics.length - 1].title;
+  const getAdjacentLabel = useCallback(
+    (dir) => {
+      if (dir === "next") {
+        const chapter = data.chapters[chapterIdx];
+        if (topicIdx < chapter.topics.length - 1)
+          return chapter.topics[topicIdx + 1].title;
+        if (chapterIdx < data.chapters.length - 1)
+          return data.chapters[chapterIdx + 1].topics[0].title;
+        return "";
+      } else {
+        if (topicIdx > 0)
+          return data.chapters[chapterIdx].topics[topicIdx - 1].title;
+        if (chapterIdx > 0) {
+          const prev = data.chapters[chapterIdx - 1];
+          return prev.topics[prev.topics.length - 1].title;
+        }
+        return "";
       }
-      return "";
-    }
-  };
+    },
+    [data, chapterIdx, topicIdx],
+  );
 
   if (!topic) return null;
 
@@ -1115,17 +1140,14 @@ function StudyView({
           <div className="flex items-center gap-1">
             <button
               onClick={goPrev}
-              disabled={chapterIdx === 0 && topicIdx === 0}
+              disabled={isFirst}
               className="p-2 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
             >
               <ArrowLeft size={14} />
             </button>
             <button
               onClick={goNext}
-              disabled={
-                chapterIdx === data.chapters.length - 1 &&
-                topicIdx === data.chapters[chapterIdx].topics.length - 1
-              }
+              disabled={isLast}
               className="p-2 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors rotate-180"
             >
               <ArrowLeft size={14} />
@@ -1151,44 +1173,18 @@ function StudyView({
           topicIdx={topicIdx}
           goNext={goNext}
           goPrev={goPrev}
-          canGoNext={
-            !(
-              chapterIdx === data.chapters.length - 1 &&
-              topicIdx === data.chapters[chapterIdx].topics.length - 1
-            )
-          }
-          canGoPrev={!(chapterIdx === 0 && topicIdx === 0)}
-          nextLabel={getAdjacentLabel(data, chapterIdx, topicIdx, "next")}
-          prevLabel={getAdjacentLabel(data, chapterIdx, topicIdx, "prev")}
+          canGoNext={!isLast}
+          canGoPrev={!isFirst}
+          nextLabel={getAdjacentLabel("next")}
+          prevLabel={getAdjacentLabel("prev")}
         />
       </div>
 
-      {/* Bottom Navigation Bar (mobile) */}
-      <div className="md:hidden border-t border-gray-100 bg-white px-3 sm:px-4 py-2.5 flex items-center justify-between">
-        <button
-          onClick={goPrev}
-          disabled={chapterIdx === 0 && topicIdx === 0}
-          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2.5 active:bg-gray-100 rounded-lg transition-colors"
-        >
-          <ArrowLeft size={12} />
-          Sebelumnya
-        </button>
-        <span className="text-[10px] text-gray-300 font-mono">
-          {currentTopicNum} / {totalTopics}
-        </span>
-        <button
-          onClick={goNext}
-          disabled={
-            chapterIdx === data.chapters.length - 1 &&
-            topicIdx === data.chapters[chapterIdx].topics.length - 1
-          }
-          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2.5 active:bg-gray-100 rounded-lg transition-colors"
-        >
-          Selanjutnya
-          <span className="rotate-180">
-            <ArrowLeft size={12} />
-          </span>
-        </button>
+      {/* FIX #9: Mobile bottom bar shows current topic title only — no duplicate nav buttons */}
+      <div className="md:hidden border-t border-gray-100 bg-white px-4 py-2.5 flex items-center justify-center">
+        <p className="text-xs text-gray-400 truncate max-w-xs text-center">
+          {topic.title}
+        </p>
       </div>
     </motion.div>
   );

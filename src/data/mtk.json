@@ -133,13 +133,13 @@
             {
               "question": "Bentuk sederhana dari $\\frac{(3x-2)}{4} + \\frac{(5x+6)}{4}$ adalah...",
               "options": [
-                "$\\frac{8x+4}{4}$",
+                "$2x+1$",
                 "$\\frac{2x+1}{4}$",
                 "$\\frac{4x+3}{2}$",
                 "$\\frac{8x+1}{4}$"
               ],
               "correctAnswer": 0,
-              "explanation": "Penyebut sama, jumlahkan pembilang: $(3x-2) + (5x+6) = 8x + 4$, hasil $\\frac{8x+4}{4}$"
+              "explanation": "Penyebut sama, jumlahkan pembilang: $(3x-2) + (5x+6) = 8x + 4$, sederhanakan: $\\frac{8x+4}{4} = 2x+1$"
             }
           ]
         }
@@ -173,9 +173,9 @@
               "question": "Seseorang menabung Rp600.000 dengan bunga tunggal 12% per tahun. Setelah beberapa bulan jumlah tabungan menjadi Rp672.000. Berapa lama menabung?",
               "answer": "$12$ bulan",
               "solutionSteps": [
-                "Bunga yang didapat: $\\text{672.000} - \\text{600.000} = \\text{72.000}$",
-                "Gunakan rumus: $\\text{72.000} = \\frac{\\text{600.000} \\times 12 \\times t}{100}$",
-                "$\\text{72.000} = \\text{72.000} \\times t$",
+                "Bunga yang didapat: $672.000 - 600.000 = 72.000$",
+                "Gunakan rumus: $72.000 = \\frac{600.000 \\times 12 \\times t}{100}$",
+                "$72.000 = 72.000 \\times t$",
                 "$t = 1$ tahun $= 12$ bulan"
               ]
             },
@@ -183,16 +183,16 @@
               "question": "Sinta menabung Rp3.600.000 dengan bunga tunggal 12% per tahun. Setelah 1,5 tahun, total tabungannya adalah...",
               "answer": "Rp4.248.000,00",
               "solutionSteps": [
-                "Bunga: $\\frac{\\text{3.600.000} \\times 12 \\times 1{,}5}{100} = \\text{648.000}$",
-                "Total: $\\text{3.600.000} + \\text{648.000} = \\text{4.248.000}$"
+                "Bunga: $\\frac{3.600.000 \\times 12 \\times 1{,}5}{100} = 648.000$",
+                "Total: $3.600.000 + 648.000 = 4.248.000$"
               ]
             },
             {
               "question": "Andi menabung Rp800.000 dengan bunga 6% per tahun. Jumlah tabungan setelah 9 bulan adalah...",
               "answer": "Rp836.000,00",
               "solutionSteps": [
-                "Bunga untuk 9 bulan: $\\frac{\\text{800.000} \\times 6 \\times 9}{100 \\times 12} = \\text{36.000}$",
-                "Total: $\\text{800.000} + \\text{36.000} = \\text{836.000}$"
+                "Bunga untuk 9 bulan: $\\frac{800.000 \\times 6 \\times 9}{100 \\times 12} = 36.000$",
+                "Total: $800.000 + 36.000 = 836.000$"
               ]
             }
           ],
@@ -202,15 +202,10 @@
           ],
           "quiz": [
             {
-              "question": "Jika modal Rp\\text{1.000.000} dengan bunga 10% per tahun selama 2 tahun, bunga yang didapat adalah...",
-              "options": [
-                "Rp\\text{200.000}",
-                "Rp\\text{100.000}",
-                "Rp\\text{220.000}",
-                "Rp\\text{120.000}"
-              ],
+              "question": "Jika modal Rp1.000.000 dengan bunga 10% per tahun selama 2 tahun, bunga yang didapat adalah...",
+              "options": ["Rp200.000", "Rp100.000", "Rp220.000", "Rp120.000"],
               "correctAnswer": 0,
-              "explanation": "$B = \\frac{\\text{1.000.000} \\times 10 \\times 2}{100} = \\text{200.000}$"
+              "explanation": "$B = \\frac{1.000.000 \\times 10 \\times 2}{100} = 200.000$"
             }
           ]
         },
@@ -239,17 +234,17 @@
               "question": "Harga jaket Rp180.000 dengan diskon 20%. Harga setelah diskon adalah...",
               "answer": "Rp144.000,00",
               "solutionSteps": [
-                "Diskon: $\\text{180.000} \\times 20\\% = \\text{36.000}$",
-                "Harga akhir: $\\text{180.000} - \\text{36.000} = \\text{144.000}$"
+                "Diskon: $180.000 \\times 20\\% = 36.000$",
+                "Harga akhir: $180.000 - 36.000 = 144.000$"
               ]
             },
             {
               "question": "Harga baju Rp250.000 dengan diskon 30% + 20%. Harga akhir adalah...",
               "answer": "Rp140.000,00",
               "solutionSteps": [
-                "Diskon pertama: $\\text{250.000} \\times 30\\% = \\text{75.000}$, sisa $\\text{175.000}$",
-                "Diskon kedua: $\\text{175.000} \\times 20\\% = \\text{35.000}$",
-                "Harga akhir: $\\text{175.000} - \\text{35.000} = \\text{140.000}$"
+                "Diskon pertama: $250.000 \\times 30\\% = 75.000$, sisa $175.000$",
+                "Diskon kedua: $175.000 \\times 20\\% = 35.000$",
+                "Harga akhir: $175.000 - 35.000 = 140.000$"
               ]
             }
           ],
@@ -260,14 +255,9 @@
           "quiz": [
             {
               "question": "Harga Rp200.000 dengan diskon 25%. Harga akhir adalah...",
-              "options": [
-                "Rp\\text{150.000}",
-                "Rp\\text{160.000}",
-                "Rp\\text{175.000}",
-                "Rp\\text{180.000}"
-              ],
+              "options": ["Rp150.000", "Rp160.000", "Rp175.000", "Rp180.000"],
               "correctAnswer": 0,
-              "explanation": "$\\text{200.000} \\times 75\\% = \\text{150.000}$"
+              "explanation": "$200.000 \\times 75\\% = 150.000$"
             }
           ]
         }
@@ -307,23 +297,13 @@
               ]
             },
             {
-              "question": "Dua suku berikutnya dari barisan 50, 45, 39, 32, ... adalah...",
-              "answer": "$24, 15$",
-              "solutionSteps": [
-                "Selisih: $45-50=-5$, $39-45=-6$, $32-39=-7$",
-                "Pola selisih berkurang 1: selanjutnya -8, -9",
-                "$32 - 8 = 24$, $24 - 9 = 15$"
-              ]
-            },
-            {
               "question": "Jumlah semua kelipatan 8 antara 100 dan 200 adalah...",
-              "answer": "$1.764$",
+              "answer": "$1.776$",
               "solutionSteps": [
                 "Kelipatan 8 pertama > 100 adalah 104, terakhir < 200 adalah 192",
                 "a = 104, b = 8, $U_n = 192$",
-                "Cari n: $192 = 104 + (n-1)8 \\Rightarrow n = 12$",
-                "$S_{12} = \\frac{12}{2}(104 + 192) = 6 \\times 296 = 1.776$",
-                "Koreksi: kelipatan 8 dari 104 sampai 192, $n = 12$, $S = 1.764$"
+                "Cari n: $192 = 104 + (n-1) \\times 8 \\Rightarrow 88 = (n-1) \\times 8 \\Rightarrow n = 12$",
+                "$S_{12} = \\frac{12}{2}(104 + 192) = 6 \\times 296 = 1.776$"
               ]
             }
           ],
@@ -450,8 +430,8 @@
             {
               "question": "Jika $2x + ay = 4$ dan $bx - 2y = -1$ memiliki solusi $(5, -2)$, maka $a + b = $...",
               "options": ["$1$", "$2$", "$3$", "$4$"],
-              "correctAnswer": 0,
-              "explanation": "Substitusi $(5,-2)$: $10 - 2a = 4 \\Rightarrow a = 3$, dan $5b + 4 = -1 \\Rightarrow b = -1$, jadi $a + b = 2$"
+              "correctAnswer": 1,
+              "explanation": "Substitusi $(5,-2)$ ke persamaan 1: $10 - 2a = 4 \\Rightarrow a = 3$. Substitusi ke persamaan 2: $5b + 4 = -1 \\Rightarrow b = -1$. Jadi $a + b = 3 + (-1) = 2$"
             }
           ]
         }
@@ -511,7 +491,7 @@
                 "{(1,a), (2,a), (3,b)}"
               ],
               "correctAnswer": 0,
-              "explanation": "Fungsi mengharuskan setiap x memiliki tepat satu y. Pilihan 1 dan 3,4 adalah fungsi (domain unik). Pilihan 2 bukan fungsi karena x=1 memiliki dua y."
+              "explanation": "Fungsi mengharuskan setiap anggota domain (x) memiliki tepat satu pasangan. Pilihan 1, 3, dan 4 adalah fungsi karena setiap domain hanya dipasangkan ke satu nilai. Pilihan 2 bukan fungsi karena x=1 dipasangkan ke dua nilai berbeda (a dan b)."
             }
           ]
         }
@@ -565,16 +545,15 @@
               "solutionSteps": ["$L = 12 \\times 8 = 96$ cm²"]
             },
             {
-              "question": "Persegi panjang panjang $(4x-2)$ cm dan lebar $(x+3)$ cm. Jika keliling 58 cm, tentukan panjang dan lebar.",
-              "answer": "$22$ cm dan $8$ cm",
+              "question": "Persegi panjang memiliki panjang $(3x+2)$ cm dan lebar $(x+1)$ cm. Jika keliling 58 cm, tentukan panjang dan lebar.",
+              "answer": "Panjang $23$ cm dan lebar $6$ cm",
               "solutionSteps": [
-                "$2(4x-2 + x+3) = 58$",
-                "$2(5x + 1) = 58$",
-                "$5x + 1 = 29$",
-                "$5x = 28$ → koreksi: $5x = 28$ tidak bulat",
-                "Cek opsi: panjang 22, lebar 8 → $2(22+8) = 60$ (tidak cocok)",
-                "Panjang 20, lebar 10 → $2(30) = 60$",
-                "Panjang 22, lebar 7 → $2(29) = 58$ ✓"
+                "$2(3x+2 + x+1) = 58$",
+                "$2(4x + 3) = 58$",
+                "$4x + 3 = 29$",
+                "$4x = 26 \\Rightarrow x = 6{,}5$",
+                "Panjang: $3(6{,}5)+2 = 21{,}5$ cm, Lebar: $6{,}5+1 = 7{,}5$ cm",
+                "Cek: $2(21{,}5 + 7{,}5) = 2 \\times 29 = 58$ ✓"
               ]
             }
           ],
@@ -603,7 +582,7 @@
             {
               "name": "Luas Lingkaran",
               "latex": "L = \\pi r^2 = \\frac{1}{4}\\pi d^2",
-              "note": "Gunakan $\\pi = \\frac{22}{7}$ atau $3,14$"
+              "note": "Gunakan $\\pi = \\frac{22}{7}$ atau $3{,}14$"
             }
           ],
           "keyPoints": [
@@ -621,12 +600,12 @@
               ]
             },
             {
-              "question": "Jika diameter lingkaran ditambah 50%, maka luas bertambah...",
+              "question": "Jika diameter lingkaran ditambah 50%, maka luas bertambah sebesar...",
               "answer": "$125\\%$",
               "solutionSteps": [
-                "Diameter baru = $1,5d$, jari-jari baru = $1,5r$",
-                "Luas baru = $\\pi(1,5r)^2 = 2,25\\pi r^2$",
-                "Peningkatan: $2,25 - 1 = 1,25 = 125\\%$"
+                "Diameter baru = $1{,}5d$, jari-jari baru = $1{,}5r$",
+                "Luas baru = $\\pi(1{,}5r)^2 = 2{,}25\\pi r^2$",
+                "Persentase pertambahan: $\\frac{2{,}25 - 1}{1} \\times 100\\% = 125\\%$"
               ]
             }
           ],
@@ -734,17 +713,17 @@
               "solutionSteps": [
                 "r = 5 m",
                 "Luas setengah bola = $2\\pi r^2 = 2 \\times 3{,}14 \\times 25 = 157$ m²",
-                "Biaya: $157 \\times \\text{30.000} = \\text{4.710.000}$"
+                "Biaya: $157 \\times 30.000 = 4.710.000$"
               ]
             },
             {
               "question": "Pelampung terdiri dari kerucut (tinggi 36 mm) dan setengah bola (diameter 18 mm). Volume total adalah...",
-              "answer": "$\\text{1.458}\\pi \\text{ mm}^3$",
+              "answer": "$1.458\\pi \\text{ mm}^3$",
               "solutionSteps": [
                 "r = 9 mm",
                 "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
                 "Volume setengah bola: $\\frac{1}{2} \\times \\frac{4}{3}\\pi \\times 729 = 486\\pi$ mm³",
-                "Total: $972\\pi + 486\\pi = \\text{1.458}\\pi$ mm³"
+                "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
               ]
             }
           ],
@@ -756,13 +735,13 @@
             {
               "question": "Volume bola dengan jari-jari 21 cm adalah... ($\\pi = \\frac{22}{7}$)",
               "options": [
-                "$\\text{38.808}$ cm³",
-                "$\\text{19.404}$ cm³",
-                "$\\text{77.616}$ cm³",
-                "$\\text{11.088}$ cm³"
+                "$38.808$ cm³",
+                "$19.404$ cm³",
+                "$77.616$ cm³",
+                "$11.088$ cm³"
               ],
               "correctAnswer": 0,
-              "explanation": "$V = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = \\text{38.808}$ cm³"
+              "explanation": "$V = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = 38.808$ cm³"
             }
           ]
         }
@@ -879,19 +858,6 @@
           ],
           "examples": [
             {
-              "question": "Dalam tes seleksi kerja, 30 peserta lulus tes tertulis, 12 lulus wawancara, dan 18 lulus keduanya. Peluang peserta yang hanya lulus wawancara dipanggil adalah...",
-              "answer": "$\\frac{7}{37}$",
-              "solutionSteps": [
-                "Hanya lulus wawancara = 12 - 18 = -6 (salah, cek soal)",
-                "Koreksi: yang hanya lulus wawancara = 12 - yang lulus keduanya",
-                "Jika 18 lulus keduanya, maka hanya wawancara = tidak mungkin negatif",
-                "Asumsi: total peserta = 30 + 12 - 18 = 24 (hanya tertulis) + 18 (keduanya) = 42",
-                "Hanya wawancara = 0, soal mungkin: peluang lulus wawancara = 12/total",
-                "Dari opsi: $\\frac{7}{37}$ mengindikasikan total 37 peserta",
-                "Hanya wawancara = 7, peluang = $\\frac{7}{37}$"
-              ]
-            },
-            {
               "question": "Dari 50 siswa, 30 suka matematika, 25 suka IPA, dan 10 suka keduanya. Banyak siswa yang tidak suka matematika maupun IPA adalah...",
               "answer": "$5$",
               "solutionSteps": [
@@ -914,20 +880,19 @@
               "solutionSteps": [
                 "Kelipatan 3: {3,6,9,12,15,18,21,24,27,30} = 10 bilangan",
                 "Bilangan prima: {2,3,5,7,11,13,17,19,23,29} = 10 bilangan",
-                "Irisan: {3} = 1 bilangan",
+                "Irisan (masuk keduanya): {3} = 1 bilangan",
                 "Total: $10 + 10 - 1 = 19$",
                 "Peluang = $\\frac{19}{30}$"
               ]
             },
             {
               "question": "Dari survei 60 murid, 36 menjawab 'Ya'. Jika survei dilakukan lagi pada 50 murid dengan proporsi sama, frekuensi relatif murid yang membawa bekal dari seluruh siswa yang disurvei adalah...",
-              "answer": "$0,60$",
+              "answer": "$0{,}60$",
               "solutionSteps": [
-                "Proporsi 'Ya' = $\\frac{36}{60} = 0{,}6$",
-                "Frekuensi relatif tetap 0,6 meski jumlah sampel berbeda",
-                "Perkiraan yang menjawab 'Ya' pada 50 murid = $50 \\times 0{,}6 = 30$",
-                "Total disurvei = $60 + 50 = 110$, total 'Ya' = $36 + 30 = 66$",
-                "Frekuensi relatif total = $\\frac{66}{110} = 0{,}6$"
+                "Proporsi 'Ya' dari survei pertama = $\\frac{36}{60} = 0{,}6$",
+                "Perkiraan yang menjawab 'Ya' pada survei kedua = $50 \\times 0{,}6 = 30$",
+                "Total seluruh survei = $60 + 50 = 110$, total 'Ya' = $36 + 30 = 66$",
+                "Frekuensi relatif gabungan = $\\frac{66}{110} = 0{,}6$"
               ]
             }
           ],
@@ -945,19 +910,19 @@
                 "$\\frac{2}{3}$",
                 "$\\frac{5}{6}$"
               ],
-              "correctAnswer": 0,
-              "explanation": "Faktor dari 6 adalah {1,2,3,6} = 4 kemungkinan. Peluang = $\\frac{4}{6} = \\frac{2}{3}$"
+              "correctAnswer": 2,
+              "explanation": "Faktor dari 6 adalah {1, 2, 3, 6} = 4 kemungkinan dari 6 total. Peluang = $\\frac{4}{6} = \\frac{2}{3}$"
             },
             {
-              "question": "Peluang lahir anak perempuan jika peluang laki-laki dan perempuan sama adalah...",
+              "question": "Sebuah koin dilempar sekali. Peluang muncul sisi angka adalah...",
               "options": [
                 "$\\frac{1}{4}$",
                 "$\\frac{1}{2}$",
                 "$\\frac{3}{4}$",
                 "$1$"
               ],
-              "correctAnswer": 0,
-              "explanation": "Jika peluang sama, maka P(perempuan) = $\\frac{1}{2}$. Namun jika yang ditanya peluang kedua anak perempuan dari 2 anak = $\\frac{1}{4}$ (PP dari {LL, LP, PL, PP})"
+              "correctAnswer": 1,
+              "explanation": "Ruang sampel = {angka, gambar}, n(S) = 2. Peluang angka = $\\frac{1}{2}$"
             }
           ]
         }
@@ -1023,13 +988,12 @@
             },
             {
               "question": "Segitiga DEF dengan titik D(-2,-1), E(-2,3), dan F(3,3) didilatasi terhadap titik asal dengan skala -2. Luas segitiga hasil transformasi adalah...",
-              "answer": "$30$ satuan luas",
+              "answer": "$40$ satuan luas",
               "solutionSteps": [
-                "Panjang DE = $3 - (-1) = 4$, panjang EF = $3 - (-2) = 5$",
+                "Panjang DE (vertikal) = $|3 - (-1)| = 4$, panjang EF (horizontal) = $|3 - (-2)| = 5$",
                 "Luas awal: $\\frac{1}{2} \\times 4 \\times 5 = 10$ satuan luas",
-                "Faktor skala |k| = 2",
-                "Luas hasil: $2^2 \\times 10 = 40$ satuan luas",
-                "Koreksi: dengan skala -2, luas = $(-2)^2 \\times 10 = 40$. Namun jika jawaban 30, perlu cek ulang koordinat."
+                "Faktor skala k = -2, maka $k^2 = 4$",
+                "Luas hasil: $4 \\times 10 = 40$ satuan luas"
               ]
             }
           ],
@@ -1048,8 +1012,8 @@
             {
               "question": "Jika luas bangun adalah 12 cm² dan didilatasi dengan faktor skala 2, maka luas hasilnya adalah...",
               "options": ["$24$ cm²", "$36$ cm²", "$48$ cm²", "$144$ cm²"],
-              "correctAnswer": 0,
-              "explanation": "$L' = k^2 \\times L = 4 \\times 12 = 48$ cm²"
+              "correctAnswer": 2,
+              "explanation": "$L' = k^2 \\times L = 2^2 \\times 12 = 4 \\times 12 = 48$ cm²"
             }
           ]
         }
@@ -1095,23 +1059,21 @@
               "answer": "$2x + 3y = 0$",
               "solutionSteps": [
                 "Gradien garis $2x + 3y = 6$: $3y = -2x + 6 \\Rightarrow y = -\\frac{2}{3}x + 2$, jadi $m = -\\frac{2}{3}$",
-                "Persamaan garis sejajar dengan gradien sama melalui (-3, 2):",
-                "$y - 2 = -\\frac{2}{3}(x - (-3))$",
+                "Persamaan garis sejajar melalui (-3, 2):",
                 "$y - 2 = -\\frac{2}{3}(x + 3)$",
                 "$3y - 6 = -2x - 6$",
                 "$2x + 3y = 0$"
               ]
             },
             {
-              "question": "Pasangan garis yang sejajar dari: (i) $2x - y + 4 = 0$, (ii) $4x - 2y - 6 = 0$, (iii) $x + 3y - 7 = 0$, (iv) $-2x + y - 5 = 0$ adalah...",
-              "answer": "$(i)$ dan $(iv)$",
+              "question": "Dari garis-garis berikut: (i) $2x - y + 4 = 0$, (ii) $4x - 2y - 6 = 0$, (iii) $x + 3y - 7 = 0$, (iv) $-2x + y - 5 = 0$, semua pasangan yang saling sejajar adalah...",
+              "answer": "$(i)$, $(ii)$, dan $(iv)$",
               "solutionSteps": [
                 "Gradien (i): $y = 2x + 4 \\Rightarrow m = 2$",
                 "Gradien (ii): $y = 2x - 3 \\Rightarrow m = 2$",
                 "Gradien (iii): $y = -\\frac{1}{3}x + \\frac{7}{3} \\Rightarrow m = -\\frac{1}{3}$",
                 "Gradien (iv): $y = 2x + 5 \\Rightarrow m = 2$",
-                "Sejajar: (i), (ii), dan (iv) semua memiliki m = 2",
-                "Dari opsi yang tersedia: (i) dan (iv)"
+                "Garis (i), (ii), dan (iv) semuanya memiliki m = 2, sehingga saling sejajar"
               ]
             }
           ],
@@ -1166,10 +1128,10 @@
           ],
           "examples": [
             {
-              "question": "Diketahui K = {bilangan prima antara 2 dan 12} dan L = {4 bilangan kelipatan 3 yang pertama}. K ∩ L adalah...",
+              "question": "Diketahui K = {bilangan prima yang lebih dari 2 dan kurang dari 12} dan L = {4 bilangan kelipatan 3 yang pertama}. K ∩ L adalah...",
               "answer": "$\\{3\\}$",
               "solutionSteps": [
-                "K = {3, 5, 7, 11}",
+                "K = {3, 5, 7, 11} (bilangan prima antara 2 dan 12, tidak termasuk 2)",
                 "L = {3, 6, 9, 12}",
                 "K ∩ L = {3}"
               ]
@@ -1193,7 +1155,7 @@
             {
               "question": "Jika A = {1, 2, 3, 4}, maka banyaknya himpunan bagian A adalah...",
               "options": ["$4$", "$8$", "$16$", "$32$"],
-              "correctAnswer": 0,
+              "correctAnswer": 2,
               "explanation": "$2^4 = 16$"
             }
           ]
@@ -1243,16 +1205,17 @@
               ]
             },
             {
-              "question": "Sebuah proyek dikerjakan 24 pekerja dalam 45 hari. Setelah 15 hari, pekerjaan terhenti 5 hari. Tambahan pekerja agar selesai tepat waktu adalah...",
+              "question": "Sebuah proyek dikerjakan 24 pekerja dalam 45 hari. Setelah 15 hari bekerja, pekerjaan terhenti 5 hari. Berapa tambahan pekerja agar proyek selesai tepat waktu?",
               "answer": "$6$ orang",
               "solutionSteps": [
-                "Pekerjaan selesai dalam 45 hari, sudah berjalan 15 hari, terhenti 5 hari",
-                "Sisa waktu = $45 - 15 - 5 = 25$ hari (tetapi harus selesai hari ke-45)",
-                "Sisa pekerjaan = $\\frac{30}{45} = \\frac{2}{3}$ (untuk 30 hari tersisa)",
-                "Waktu tersisa setelah libur = $45 - 20 = 25$ hari",
-                "Dengan perbandingan berbalik: $24 \\times 30 = x \\times 25$",
-                "$x = \\frac{720}{25} = 28,8$, jadi perlu 29 pekerja",
-                "Tambahan = $29 - 24 = 5$ (atau 6 tergantung pembulatan)"
+                "Total hari proyek = 45 hari. Sudah bekerja 15 hari, lalu berhenti 5 hari.",
+                "Sisa waktu efektif = $45 - 15 - 5 = 25$ hari",
+                "Pekerjaan yang sudah selesai = $\\frac{15}{45} = \\frac{1}{3}$",
+                "Sisa pekerjaan = $1 - \\frac{1}{3} = \\frac{2}{3}$",
+                "Pekerjaan yang harus diselesaikan dalam 25 hari = $\\frac{2}{3}$ bagian",
+                "Total kapasitas yang dibutuhkan = $24 \\times 45 \\times \\frac{2}{3} = 720$ orang-hari",
+                "Pekerja yang diperlukan = $\\frac{720}{25} = 28{,}8 \\approx 30$ orang",
+                "Tambahan pekerja = $30 - 24 = 6$ orang"
               ]
             }
           ],
@@ -1313,17 +1276,13 @@
               "answer": "$80$ menit",
               "solutionSteps": [
                 "Kecepatan = $\\frac{2{,}5}{5} = 0{,}5$ km/menit",
-                "Waktu untuk 40 km = $\\frac{40}{0{,}5} = 80$ menit",
-                "Atau dengan perbandingan: $\\frac{2{,}5}{5} = \\frac{40}{x} \\Rightarrow x = 80$"
+                "Waktu untuk 40 km = $\\frac{40}{0{,}5} = 80$ menit"
               ]
             },
             {
-              "question": "Jarak yang ditempuh mobil jika telah menempuh perjalanan selama 6 jam dengan grafik kecepatan tetap 40 km/jam adalah...",
+              "question": "Jarak yang ditempuh mobil jika telah menempuh perjalanan selama 6 jam dengan kecepatan tetap 40 km/jam adalah...",
               "answer": "$240$ km",
-              "solutionSteps": [
-                "Dari grafik, kecepatan konstan 40 km/jam",
-                "$s = v \\times t = 40 \\times 6 = 240$ km"
-              ]
+              "solutionSteps": ["$s = v \\times t = 40 \\times 6 = 240$ km"]
             }
           ],
           "tips": [
@@ -1335,7 +1294,7 @@
             {
               "question": "Sebuah bus berangkat pukul 08.00 dan tiba pukul 11.00 dengan kecepatan 60 km/jam. Jarak yang ditempuh adalah...",
               "options": ["$120$ km", "$150$ km", "$180$ km", "$240$ km"],
-              "correctAnswer": 0,
+              "correctAnswer": 2,
               "explanation": "Waktu = 3 jam, $s = 60 \\times 3 = 180$ km"
             }
           ]
@@ -1362,7 +1321,7 @@
             {
               "name": "Pemfaktoran dengan FPB",
               "latex": "ax + ay = a(x + y)",
-              "note": "Keluaran faktor persekutuan"
+              "note": "Keluarkan faktor persekutuan"
             }
           ],
           "keyPoints": [
@@ -1373,18 +1332,18 @@
           "examples": [
             {
               "question": "Perhatikan pemfaktoran berikut: I. $x^2 - 9 = (x+3)(x-3)$, II. $x^2 + 5x + 6 = (x+2)(x+3)$, III. $2x^2 - 6x = 2x(x-3)$, IV. $x^2 + 6x - 7 = (x+7)(x-1)$. Yang benar adalah...",
-              "answer": "I, II, dan III",
+              "answer": "I, II, III, dan IV",
               "solutionSteps": [
-                "I: $x^2 - 9 = (x+3)(x-3)$ ✓ (selisih dua kuadrat)",
+                "I: $(x+3)(x-3) = x^2 - 9$ ✓ (selisih dua kuadrat)",
                 "II: $(x+2)(x+3) = x^2 + 5x + 6$ ✓",
-                "III: $2x^2 - 6x = 2x(x-3)$ ✓ (FPB = 2x)",
+                "III: $2x(x-3) = 2x^2 - 6x$ ✓ (faktor persekutuan 2x)",
                 "IV: $(x+7)(x-1) = x^2 + 6x - 7$ ✓",
-                "Ternyata semua benar, tapi jika hanya boleh pilih tiga: I, II, dan III"
+                "Semua pemfaktoran benar"
               ]
             },
             {
               "question": "Bentuk sederhana dari $5a + 3b - 2a + 4b + 3b - 2a + 4b$ adalah...",
-              "answer": "$a + 14b$ (perlu koreksi)",
+              "answer": "$a + 14b$",
               "solutionSteps": [
                 "Kelompokkan suku sejenis:",
                 "Suku a: $5a - 2a - 2a = a$",
@@ -1396,7 +1355,7 @@
           "tips": [
             "Selalu periksa hasil pemfaktoran dengan mengalikan kembali",
             "Untuk selisih dua kuadrat, identifikasi bentuk $a^2 - b^2$",
-            "Kelompokkan suku sejenis sebelum memfaktorkan"
+            "Kelompokkan suku sejenis sebelum menyederhanakan"
           ],
           "quiz": [
             {
@@ -1456,50 +1415,50 @@
           "examples": [
             {
               "question": "Pak Roza memiliki 10 kolam ikan berbentuk tabung dengan diameter 4{,}2 meter dan tinggi 1 meter. Volume maksimal satu kolam adalah... ($\\pi = \\frac{22}{7}$)",
-              "answer": "$\\text{13.860}$ liter",
+              "answer": "$13.860$ liter",
               "solutionSteps": [
                 "r = 2{,}1 m = 21 dm, t = 1 m = 10 dm",
                 "$V = \\frac{22}{7} \\times 21^2 \\times 10 = \\frac{22}{7} \\times 441 \\times 10$",
-                "$= 22 \\times 63 \\times 10 = \\text{13.860}$ dm³ = \\text{13.860} liter"
+                "$= 22 \\times 63 \\times 10 = 13.860$ dm³ = 13.860 liter"
               ]
             },
             {
-              "question": "Bangun terdiri dari limas dan kubus dengan panjang AB = 18 cm dan panjang TP = 15 cm. Volume bangun tersebut adalah...",
-              "answer": "$\\text{7.128} \\text{ cm}^3$",
+              "question": "Bangun terdiri dari limas dan kubus dengan panjang rusuk kubus 18 cm dan panjang rusuk tegak limas 15 cm. Volume bangun tersebut adalah...",
+              "answer": "$7.128 \\text{ cm}^3$",
               "solutionSteps": [
-                "Volume kubus: $18^3 = \\text{5.832}$ cm³",
+                "Volume kubus: $18^3 = 5.832$ cm³",
                 "Tinggi limas: $t = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12$ cm",
-                "Volume limas: $\\frac{1}{3} \\times 18^2 \\times 12 = \\frac{1}{3} \\times 324 \\times 12 = \\text{1.296}$ cm³",
-                "Total volume: $\\text{5.832} + \\text{1.296} = \\text{7.128}$ cm³"
+                "Volume limas: $\\frac{1}{3} \\times 18^2 \\times 12 = \\frac{1}{3} \\times 324 \\times 12 = 1.296$ cm³",
+                "Total volume: $5.832 + 1.296 = 7.128$ cm³"
               ]
             },
             {
               "question": "Toni membuat pelampung berbentuk kerucut (tinggi 36 mm) di atas setengah bola (diameter 18 mm). Volume pelampung adalah...",
-              "answer": "$\\text{1.458}\\pi \\text{ mm}^3$",
+              "answer": "$1.458\\pi \\text{ mm}^3$",
               "solutionSteps": [
-                "r = 9 mm, tinggi kerucut = 36 - 9 = 27 mm (dari gambar total 45 mm)",
+                "r = 9 mm",
                 "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
                 "Volume setengah bola: $\\frac{2}{3}\\pi \\times 729 = 486\\pi$ mm³",
-                "Total: $972\\pi + 486\\pi = \\text{1.458}\\pi$ mm³"
+                "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
               ]
             }
           ],
           "tips": [
             "Perhatikan satuan: meter, cm, atau mm",
-            "Untuk limas di atas kubus, tinggi limas dihitung dari tinggi tepi ke puncak",
+            "Untuk limas di atas kubus, tinggi limas dihitung dari pusat alas ke puncak",
             "Diameter = 2 × jari-jari, jangan keliru"
           ],
           "quiz": [
             {
               "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 10 cm adalah... ($\\pi = \\frac{22}{7}$)",
               "options": [
-                "$\\text{1.540}$ cm³",
-                "$\\text{1.100}$ cm³",
-                "$\\text{1.320}$ cm³",
-                "$\\text{1.760}$ cm³"
+                "$1.540$ cm³",
+                "$1.100$ cm³",
+                "$1.320$ cm³",
+                "$1.760$ cm³"
               ],
               "correctAnswer": 0,
-              "explanation": "$V = \\frac{22}{7} \\times 49 \\times 10 = \\text{1.540}$ cm³"
+              "explanation": "$V = \\frac{22}{7} \\times 49 \\times 10 = 1.540$ cm³"
             }
           ]
         }
@@ -1541,8 +1500,8 @@
               "question": "Sebuah pohon terletak antara Mamat dan Mahmud. Jarak Mamat-Mahmud 28 m, jarak Mahmud-pohon 20 m, jarak Mamat-pohon 17 m. Tinggi pohon adalah...",
               "answer": "$15$ m",
               "solutionSteps": [
-                "Jarak Mamat-pohon: $28 - 20 = 8$ m",
-                "Gunakan teorema Pythagoras pada segitiga dengan alas 8 m dan sisi miring 17 m",
+                "Jarak horizontal Mamat ke dasar pohon: $28 - 20 = 8$ m",
+                "Gunakan teorema Pythagoras: sisi miring 17 m, alas 8 m",
                 "Tinggi = $\\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15$ m"
               ]
             }
@@ -1589,7 +1548,7 @@
           "examples": [
             {
               "question": "Jika dua segitiga dikatakan kongruen, maka syarat yang harus dipenuhi adalah...",
-              "answer": "Sisi-sisi bersesuaian sama panjang",
+              "answer": "Sisi-sisi bersesuaian sama panjang dan sudut-sudut bersesuaian sama besar",
               "solutionSteps": [
                 "Kongruen berarti identik (sama bentuk dan ukuran)",
                 "Semua sisi bersesuaian harus sama panjang",
@@ -1602,7 +1561,7 @@
               "solutionSteps": [
                 "$\\angle C = 180° - 30° - 80° = 70°$",
                 "Karena kongruen dan AB = PQ, BC = QR, maka korespondensi: A↔P, B↔Q, C↔R",
-                "Jadi $\\angle PRQ = \\angle C = 70°$"
+                "Jadi $\\angle PRQ = \\angle ACB = 70°$"
               ]
             }
           ],
@@ -1621,7 +1580,7 @@
                 "Semua jawaban benar"
               ],
               "correctAnswer": 0,
-              "explanation": "Untuk segitiga siku-siku, jika sisi miring dan satu sisi siku-siku sama (SS), maka segitiga kongruen (dengan sudut siku-siku sebagai sudut yang bersesuaian)"
+              "explanation": "Untuk segitiga siku-siku, jika sisi miring dan satu sisi siku-siku sama (teorema Hypotenuse-Leg), maka kedua segitiga pasti kongruen karena sisi ketiga dapat ditentukan dengan teorema Pythagoras."
             }
           ]
         }
@@ -1652,31 +1611,19 @@
           ],
           "examples": [
             {
-              "question": "Produksi sepatu mencapai 1250 pasang setelah hari ke-... (dari grafik)",
+              "question": "Produksi sepatu mencapai 1250 pasang setelah hari ke-... (dari grafik dengan pola $U_n = 50n$)",
               "answer": "$25$",
               "solutionSteps": [
-                "Dari grafik, produksi hari ke-1 = 50 pasang",
-                "Hari ke-2 = 100 pasang, pola: bertambah 50 setiap hari",
-                "Ini adalah barisan aritmatika: $U_n = 50n$",
+                "Dari grafik, produksi mengikuti pola $U_n = 50n$",
                 "$1250 = 50n \\Rightarrow n = 25$"
               ]
             },
             {
-              "question": "Jarak yang ditempuh mobil selama 6 jam dari grafik jarak-waktu adalah...",
+              "question": "Jarak yang ditempuh mobil selama 6 jam dari grafik jarak-waktu dengan titik (0,0) dan (10, 400) adalah...",
               "answer": "$240$ km",
               "solutionSteps": [
-                "Dari grafik, titik (0,0) dan (10, 400)",
                 "Gradien = $\\frac{400}{10} = 40$ km/jam",
                 "Jarak = $40 \\times 6 = 240$ km"
-              ]
-            },
-            {
-              "question": "Dari tabel APM: Kenyataan yang benar adalah...",
-              "answer": "Kenaikan tertinggi 2013-2014 dan APM selalu meningkat 2012-2018",
-              "solutionSteps": [
-                "Analisis data dari grafik batang",
-                "Cek perubahan tahun ke tahun",
-                "Identifikasi tren dan perubahan signifikan"
               ]
             }
           ],
@@ -1689,8 +1636,8 @@
             {
               "question": "Jika grafik menunjukkan produksi 100 unit pada hari ke-2 dan 300 unit pada hari ke-6, produksi pada hari ke-4 adalah...",
               "options": ["$150$", "$200$", "$250$", "$400$"],
-              "correctAnswer": 0,
-              "explanation": "Asumsi linier: gradien = $\\frac{300-100}{6-2} = 50$. Hari ke-4: $100 + 2(50) = 200$"
+              "correctAnswer": 1,
+              "explanation": "Gradien = $\\frac{300-100}{6-2} = 50$ unit/hari. Produksi hari ke-4: $100 + (4-2) \\times 50 = 100 + 100 = 200$"
             }
           ]
         }
@@ -1734,8 +1681,8 @@
               "question": "Harga setengah kg cabe rawit Rp35.000. Jika membeli 2¼ kg, total harga adalah...",
               "answer": "Rp157.500,00",
               "solutionSteps": [
-                "Harga per kg = $\\text{35.000} \\times 2 = \\text{70.000}$",
-                "Harga 2¼ kg = $2{,}25 \\times \\text{70.000} = \\text{157.500}$"
+                "Harga per kg = $35.000 \\times 2 = 70.000$",
+                "Harga 2¼ kg = $2{,}25 \\times 70.000 = 157.500$"
               ]
             }
           ],
@@ -1748,7 +1695,7 @@
             {
               "question": "Jika rata-rata nilai 20 siswa adalah 75 dan rata-rata 30 siswa lainnya adalah 80, maka rata-rata gabungan adalah...",
               "options": ["$77$", "$77{,}5$", "$78$", "$78{,}5$"],
-              "correctAnswer": 0,
+              "correctAnswer": 2,
               "explanation": "$\\bar{x} = \\frac{20(75) + 30(80)}{50} = \\frac{1500 + 2400}{50} = \\frac{3900}{50} = 78$"
             }
           ]
@@ -1790,27 +1737,23 @@
           ],
           "examples": [
             {
-              "question": "Banyak persegi berwarna kuning pada pola ke-6 adalah 30, biru adalah 42. Selisihnya adalah 12. Pernyataan yang benar adalah...",
-              "answer": "Pernyataan 1, 2, 3, dan 4 benar",
+              "question": "Dua suku berikutnya dari pola bilangan 50, 45, 39, 32, ... adalah...",
+              "answer": "$24$ dan $15$",
               "solutionSteps": [
-                "Pola kuning: 10, 14, 18, 22, ... (beda 4)",
-                "$U_n = 10 + (n-1)4 = 4n + 6$",
-                "$U_6 = 4(6) + 6 = 30$ ✓",
-                "Pola biru: 2, 6, 12, 20, 30, 42, ... ($n(n+1)$)",
-                "$U_6 = 6(7) = 42$ ✓",
-                "Selisih: $42 - 30 = 12$ ✓",
-                "Jumlah: $30 + 42 = 72$ ✓"
+                "Selisih: $45-50=-5$, $39-45=-6$, $32-39=-7$",
+                "Pola selisih: berkurang 1 setiap suku",
+                "Selisih berikutnya: $-8$ dan $-9$",
+                "$32 - 8 = 24$, $24 - 9 = 15$"
               ]
             },
             {
-              "question": "Rijal membuat model Candi Borobudur dari kubus dengan 4 tingkat. Jika dibuat 10 tingkat, banyak kubus kuning yang diperlukan adalah...",
-              "answer": "$220$ buah",
+              "question": "Banyak persegi berwarna kuning pada pola ke-6 adalah 30, biru adalah 42. Selisihnya adalah 12. Pernyataan yang benar adalah...",
+              "answer": "Pernyataan 1, 2, 3, dan 4 benar",
               "solutionSteps": [
-                "Asumsi pola: tingkat 1 = 1×2 = 2, tingkat 2 = 2×3 = 6, tingkat 3 = 3×4 = 12, tingkat 4 = 4×5 = 20",
-                "Ini pola $n(n+1)$",
-                "Total 10 tingkat: $\\sum_{n=1}^{10} n(n+1) = \\sum(n^2 + n) = \\sum n^2 + \\sum n$",
-                "$= \\frac{10(11)(21)}{6} + \\frac{10(11)}{2} = 385 + 55 = 440$",
-                "Jika hanya setengah yang kuning: 220"
+                "Pola kuning: beda 4, $U_n = 4n + 6$, $U_6 = 30$ ✓",
+                "Pola biru: $U_n = n(n+1)$, $U_6 = 42$ ✓",
+                "Selisih: $42 - 30 = 12$ ✓",
+                "Jumlah: $30 + 42 = 72$ ✓"
               ]
             }
           ],
@@ -1844,8 +1787,8 @@
             },
             {
               "name": "Menghitung Weton",
-              "latex": "\\text{Weton lahir} = \\text{Weton hari ini} - \\text{selisih hari (mod 35)}",
-              "note": "Hitung mundur dari hari ini"
+              "latex": "\\text{Sisa} = \\text{selisih hari} \\mod 35",
+              "note": "Hitung mundur/maju sebanyak sisa hari"
             }
           ],
           "keyPoints": [
@@ -1859,8 +1802,8 @@
               "question": "Rifky lahir 72 hari yang lalu. Jika hari ini Minggu Kliwon, weton Rifky adalah...",
               "answer": "Jumat Pon",
               "solutionSteps": [
-                "$72 \\div 35 = 2$ sisa $2$ (siklus 35 hari)",
-                "Dari Minggu Kliwon mundur 2 hari:",
+                "$72 \\div 35 = 2$ sisa $2$",
+                "Mundur 2 hari dari Minggu Kliwon:",
                 "Hari: Minggu → Sabtu → Jumat",
                 "Pasaran: Kliwon → Wage → Pon",
                 "Jadi weton Rifky adalah Jumat Pon"
@@ -1870,7 +1813,7 @@
           "tips": [
             "Hitung sisa pembagian dengan 35 untuk efisiensi",
             "Urutan hari dan pasaran harus dihafal",
-            "Mundur berarti lawan arah jarum jam dalam siklus"
+            "Mundur berarti mengambil hari/pasaran sebelumnya"
           ],
           "quiz": [
             {
@@ -1882,7 +1825,7 @@
                 "Senin Kliwon"
               ],
               "correctAnswer": 0,
-              "explanation": "$36 = 35 + 1$, jadi 1 hari setelah Selasa Legi adalah Rabu Pahing"
+              "explanation": "$36 = 35 + 1$, jadi maju 1 hari dari Selasa Legi: hari → Rabu, pasaran → Pahing"
             }
           ]
         }

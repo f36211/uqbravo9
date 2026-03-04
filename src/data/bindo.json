@@ -1,0 +1,248 @@
+{
+  "subject": "Bahasa Indonesia",
+  "icon": "📖",
+  "description": "Rangkuman materi Bahasa Indonesia untuk persiapan TO TKA",
+  "chapters": [
+    {
+      "title": "Pemahaman Bacaan",
+      "topics": [
+        {
+          "title": "Ide Pokok & Gagasan Utama",
+          "content": "Ide pokok adalah gagasan utama atau inti pembahasan dalam sebuah paragraf. Setiap paragraf yang baik memiliki satu ide pokok yang didukung oleh kalimat-kalimat penjelas.",
+          "keyPoints": [
+            "Ide pokok biasanya terletak di kalimat pertama (deduktif) atau kalimat terakhir (induktif)",
+            "Paragraf campuran: ide pokok di awal dan dipertegas di akhir",
+            "Kalimat utama bersifat UMUM, kalimat penjelas bersifat KHUSUS",
+            "Ide pokok menjawab pertanyaan: 'Apa yang dibahas paragraf ini?'",
+            "Ciri kalimat utama: tidak diawali konjungsi (namun, selain itu, oleh karena itu)"
+          ],
+          "examples": [
+            {
+              "text": "Membaca merupakan kegiatan yang sangat penting bagi pelajar. Dengan membaca, siswa dapat menambah pengetahuan dan wawasan. Selain itu, membaca juga dapat meningkatkan kemampuan berpikir kritis. Oleh karena itu, kebiasaan membaca perlu ditanamkan sejak dini.",
+              "explanation": "Ide pokok: 'Membaca merupakan kegiatan yang sangat penting bagi pelajar' — terletak di kalimat pertama (paragraf deduktif). Kalimat-kalimat berikutnya merupakan penjelas yang memberikan alasan mengapa membaca penting."
+            }
+          ],
+          "tips": [
+            "Baca sekilas seluruh paragraf dulu, baru identifikasi kalimat yang paling umum",
+            "Kalimat yang diawali kata hubung (selain itu, oleh karena itu) biasanya BUKAN kalimat utama",
+            "Jika ragu, tanyakan: kalimat mana yang bisa 'berdiri sendiri' mewakili paragraf?"
+          ],
+          "quiz": [
+            {
+              "question": "Ide pokok suatu paragraf biasanya terdapat pada...",
+              "options": ["Kalimat utama", "Kalimat penjelas", "Kalimat terakhir saja", "Semua kalimat"],
+              "correctAnswer": 0,
+              "explanation": "Ide pokok selalu terdapat pada kalimat utama, yang bisa berada di awal (deduktif), akhir (induktif), atau awal dan akhir (campuran)."
+            },
+            {
+              "question": "Ciri kalimat utama adalah...",
+              "options": ["Bersifat umum dan tidak diawali konjungsi", "Bersifat khusus dan detail", "Selalu di akhir paragraf", "Diawali kata 'selain itu'"],
+              "correctAnswer": 0,
+              "explanation": "Kalimat utama bersifat UMUM, dapat berdiri sendiri, dan tidak diawali konjungsi antarkalimat seperti 'selain itu', 'oleh karena itu'."
+            }
+          ]
+        },
+        {
+          "title": "Simpulan & Inferensi",
+          "content": "Simpulan adalah pernyataan yang ditarik berdasarkan informasi yang tersurat maupun tersirat dalam teks. Inferensi membutuhkan kemampuan membaca di antara baris (reading between the lines).",
+          "keyPoints": [
+            "Simpulan harus berdasarkan FAKTA dalam teks, bukan opini pembaca",
+            "Simpulan yang baik: tidak terlalu sempit dan tidak terlalu luas",
+            "Perhatikan kata kunci penghubung: oleh karena itu, jadi, dengan demikian, dapat disimpulkan",
+            "Inferensi = makna tersirat, bukan hanya yang tertulis",
+            "Bedakan fakta (dapat dibuktikan) dan opini (pendapat subjektif)"
+          ],
+          "examples": [
+            {
+              "text": "Penjualan buku digital meningkat 40% dalam dua tahun terakhir, sementara penjualan buku cetak menurun 15%. Generasi muda cenderung lebih memilih membaca melalui perangkat elektronik karena lebih praktis.",
+              "explanation": "Simpulan yang tepat: 'Terjadi pergeseran preferensi membaca dari buku cetak ke buku digital.' — Simpulan ini didukung oleh data peningkatan buku digital dan penurunan buku cetak."
+            }
+          ],
+          "tips": [
+            "Eliminasi jawaban yang terlalu ekstrem atau tidak didukung teks",
+            "Simpulan harus konsisten dengan SEMUA informasi dalam teks",
+            "Hati-hati dengan over-generalization — jangan menarik kesimpulan terlalu luas"
+          ],
+          "quiz": [
+            {
+              "question": "Simpulan yang baik harus...",
+              "options": ["Berdasarkan fakta dalam teks", "Merupakan opini pembaca", "Selalu berupa pendapat", "Menggunakan kata mungkin"],
+              "correctAnswer": 0,
+              "explanation": "Simpulan harus ditarik dari fakta yang tersurat maupun terisrat dalam teks, bukan opini pribadi pembaca."
+            },
+            {
+              "question": "Perbedaan utama antara fakta dan opini adalah...",
+              "options": ["Fakta dapat dibuktikan, opini bersifat subjektif", "Fakta selalu benar, opini selalu salah", "Fakta menggunakan angka, opini tidak", "Tidak ada perbedaan"],
+              "correctAnswer": 0,
+              "explanation": "Fakta adalah pernyataan yang dapat dibuktikan kebenarannya, sedangkan opini adalah pendapat subjektif yang tidak dapat dibuktikan secara objektif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tata Bahasa",
+      "topics": [
+        {
+          "title": "Kalimat Efektif",
+          "content": "Kalimat efektif adalah kalimat yang mampu menyampaikan gagasan dengan tepat sesuai dengan yang dimaksud penulis/pembicara sehingga tidak menimbulkan makna ganda atau kebingungan.",
+          "keyPoints": [
+            "Syarat kalimat efektif: kesepadanan (S-P lengkap), keparalelan, ketegasan, kehematan, kelogisan",
+            "Kesepadanan: harus memiliki minimal Subjek dan Predikat",
+            "Keparalelan: bentuk kata dalam daftar harus sejajar (semua kata kerja atau semua kata benda)",
+            "Kehematan: tidak menggunakan kata yang bermakna sama secara berulang (pleonasme)",
+            "Kelogisan: makna kalimat harus masuk akal dan tidak ambigu"
+          ],
+          "examples": [
+            {
+              "text": "❌ SALAH: 'Para siswa-siswa harus naik ke atas untuk mengambil buku.' \n✅ BENAR: 'Para siswa harus naik untuk mengambil buku.'",
+              "explanation": "Kesalahan pleonasme: 'para' sudah bermakna jamak, tidak perlu 'siswa-siswa'. 'Naik' sudah bermakna ke atas, tidak perlu 'ke atas'."
+            },
+            {
+              "text": "❌ SALAH: 'Bagi semua mahasiswa harus mengumpulkan tugas.' \n✅ BENAR: 'Semua mahasiswa harus mengumpulkan tugas.'",
+              "explanation": "Kesalahan kesepadanan: jika menggunakan 'bagi', kalimat tidak memiliki Subjek. Hilangkan 'bagi' agar 'semua mahasiswa' menjadi Subjek."
+            }
+          ],
+          "tips": [
+            "Periksa apakah kalimat punya S dan P — jika tidak, bukan kalimat efektif",
+            "Cari kata-kata yang bermakna ganda (pleonasme) dan hilangkan yang berlebihan",
+            "Perhatikan penggunaan 'di mana' — sering dipakai salah sebagai penghubung umum"
+          ],
+          "quiz": [
+            {
+              "question": "Contoh pleonasme adalah...",
+              "options": ["'naik ke atas'", "'pergi ke sekolah'", "'membaca buku'", "'menulis surat'"],
+              "correctAnswer": 0,
+              "explanation": "'Naik ke atas' adalah pleonasme karena 'naik' sudah bermakna bergerak ke atas. Cukup gunakan 'naik' saja."
+            },
+            {
+              "question": "Kalimat yang tidak efektif karena tidak memiliki Subjek adalah...",
+              "options": ["'Bagi siswa harus mengumpulkan tugas.'", "'Siswa harus mengumpulkan tugas.'", "'Para guru memberikan tugas.'", "'Kami mengerjakan soal.'"],
+              "correctAnswer": 0,
+              "explanation": "Kata 'bagi' menjadikan 'siswa' sebagai keterangan, bukan Subjek. Kalimat kehilangan Subjek sehingga tidak efektif."
+            }
+          ]
+        },
+        {
+          "title": "Ejaan & Tanda Baca (PUEBI)",
+          "content": "PUEBI (Pedoman Umum Ejaan Bahasa Indonesia) adalah acuan penulisan bahasa Indonesia yang baku. Memahami aturan ejaan penting untuk menjawab soal kebahasaan.",
+          "keyPoints": [
+            "Huruf kapital: awal kalimat, nama diri, gelar kehormatan, nama geografis, judul karangan",
+            "Huruf miring: judul buku/majalah, kata asing yang belum diserap, istilah ilmiah",
+            "Tanda koma: sebelum konjungsi (tetapi, namun, melainkan), setelah kata penghubung antarkalimat",
+            "Kata depan 'di' (di rumah, di sekolah) vs imbuhan 'di-' (dimakan, ditulis)",
+            "Penulisan partikel 'pun': dipisah (adapun, walaupun, meskipun → DIGABUNG; dia pun, apa pun → DIPISAH)"
+          ],
+          "examples": [
+            {
+              "text": "❌ 'Dimana kamu tinggal?' → ✅ 'Di mana kamu tinggal?'",
+              "explanation": "'Di mana' adalah kata tanya keterangan tempat → ditulis terpisah. 'Di-' hanya digabung jika merupakan imbuhan (contoh: dimakan = di + makan)."
+            },
+            {
+              "text": "❌ 'Ibu pergi kepasar.' → ✅ 'Ibu pergi ke pasar.'",
+              "explanation": "'Ke' sebagai kata depan yang menunjukkan arah/tempat SELALU ditulis terpisah. 'Ke-' hanya digabung jika merupakan awalan (contoh: ketua, ketiga)."
+            }
+          ],
+          "tips": [
+            "Hafal aturan 'di' dan 'ke': jika bisa diganti 'dari' → ditulis terpisah (kata depan)",
+            "Perhatikan penggunaan tanda baca dalam pilihan jawaban — sering jadi pembeda",
+            "Kata serapan dari bahasa asing ikuti aturan PUEBI, bukan ejaan bahasa aslinya"
+          ],
+          "quiz": [
+            {
+              "question": "Penulisan yang benar adalah...",
+              "options": ["'Di mana kamu tinggal?'", "'Dimana kamu tinggal?'", "'Kemana kamu pergi?'", "'Kenapa dia disini?'"],
+              "correctAnswer": 0,
+              "explanation": "'Di mana' ditulis terpisah karena merupakan kata depan + kata tanya. 'Di' sebagai kata depan selalu ditulis terpisah."
+            },
+            {
+              "question": "Kata 'pun' yang ditulis terpisah yang BENAR adalah...",
+              "options": ["'Dia pun pergi.'", "'Ada pun itu benar.'", "'Walau pun sulit.'", "'Meski pun begitu.'"],
+              "correctAnswer": 0,
+              "explanation": "'Dia pun' ditulis terpisah. Sedangkan 'adapun', 'walaupun', 'meskipun' ditulis serangkai."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kebahasaan",
+      "topics": [
+        {
+          "title": "Makna Kata & Istilah",
+          "content": "Pemahaman makna kata meliputi sinonim, antonim, homonim, homofon, homograf, serta makna denotatif dan konotatif. Kemampuan ini penting untuk memahami konteks bacaan.",
+          "keyPoints": [
+            "Denotatif = makna sebenarnya/harfiah (kamus)",
+            "Konotatif = makna kiasan/tambahan",
+            "Sinonim = kata bermakna sama/mirip (contoh: pandai = cerdas)",
+            "Antonim = kata bermakna berlawanan (contoh: besar ≠ kecil)",
+            "Homonim = kata yang sama bentuk dan bunyinya tapi beda makna (contoh: bisa = racun/dapat)",
+            "Konteks kalimat menentukan makna kata yang tepat"
+          ],
+          "examples": [
+            {
+              "text": "'Anak itu memiliki TANGAN PANJANG.' → Makna konotatif: suka mencuri.",
+              "explanation": "Makna denotatif 'tangan panjang' = tangan yang ukurannya panjang. Namun dalam konteks ini, 'tangan panjang' bermakna konotatif yaitu 'suka mencuri'. Konteks kalimat menentukan makna yang digunakan."
+            }
+          ],
+          "tips": [
+            "Baca konteks kalimat sebelum menentukan makna kata",
+            "Untuk soal sinonim/antonim, substitusikan kata ke dalam kalimat untuk uji kecocokan",
+            "Waspadai kata-kata yang memiliki lebih dari satu makna (polisemi)"
+          ],
+          "quiz": [
+            {
+              "question": "Makna konotatif dari 'tangan panjang' adalah...",
+              "options": ["Suka mencuri", "Tangan yang panjang secara fisik", "Orang yang tinggi", "Pandai memasak"],
+              "correctAnswer": 0,
+              "explanation": "'Tangan panjang' secara konotatif bermakna suka mencuri/mengambil yang bukan miliknya."
+            },
+            {
+              "question": "Kata yang merupakan homonim adalah...",
+              "options": ["'Bisa' (racun dan dapat)", "'Besar' dan 'kecil'", "'Pandai' dan 'cerdas'", "'Gelap' dan 'terang'"],
+              "correctAnswer": 0,
+              "explanation": "Homonim adalah kata yang sama bentuk dan bunyinya tapi berbeda makna. 'Bisa' = racun ular, dan 'bisa' = dapat/mampu."
+            }
+          ]
+        },
+        {
+          "title": "Konjungsi & Kata Hubung",
+          "content": "Konjungsi adalah kata yang menghubungkan kata, frasa, klausa, atau kalimat. Penggunaan konjungsi yang tepat menentukan keefektifan dan kejelasan kalimat.",
+          "keyPoints": [
+            "Konjungsi koordinatif: dan, atau, tetapi, melainkan, sedangkan (menghubungkan setara)",
+            "Konjungsi subordinatif: karena, jika, meskipun, ketika, agar, sehingga (menghubungkan tidak setara)",
+            "Konjungsi antarkalimat: oleh karena itu, dengan demikian, di samping itu, sementara itu",
+            "Konjungsi korelatif: baik...maupun..., tidak hanya...tetapi juga..., entah...entah...",
+            "'Sehingga' dan 'agar' TIDAK boleh di awal kalimat",
+            "Konjungsi antarkalimat diikuti tanda koma"
+          ],
+          "examples": [
+            {
+              "text": "❌ 'Sehingga dia berhasil lulus ujian.' → ✅ 'Dia belajar dengan giat sehingga berhasil lulus ujian.'",
+              "explanation": "'Sehingga' adalah konjungsi subordinatif yang menghubungkan anak kalimat dengan induk kalimat. Tidak boleh berdiri sendiri sebagai awal kalimat."
+            }
+          ],
+          "tips": [
+            "Perhatikan posisi konjungsi: koordinatif di tengah, antarkalimat di awal kalimat",
+            "Jika konjungsi dipakai di awal kalimat, HARUS diikuti tanda koma",
+            "Untuk soal melengkapi paragraf, perhatikan hubungan logis antarkalimat untuk memilih konjungsi yang tepat"
+          ],
+          "quiz": [
+            {
+              "question": "Konjungsi yang TIDAK boleh digunakan di awal kalimat adalah...",
+              "options": ["'Sehingga'", "'Oleh karena itu'", "'Dengan demikian'", "'Di samping itu'"],
+              "correctAnswer": 0,
+              "explanation": "'Sehingga' adalah konjungsi subordinatif yang menghubungkan anak kalimat dengan induk kalimat. Tidak boleh berdiri sendiri di awal kalimat."
+            },
+            {
+              "question": "Konjungsi korelatif yang benar adalah...",
+              "options": ["'Tidak hanya... tetapi juga...'", "'Tidak hanya... dan juga...'", "'Bukan hanya... atau juga...'", "'Tidak... dan bukan...'"],
+              "correctAnswer": 0,
+              "explanation": "'Tidak hanya... tetapi juga...' adalah pasangan konjungsi korelatif yang benar dalam bahasa Indonesia baku."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

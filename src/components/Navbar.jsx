@@ -42,9 +42,9 @@ export default function Navbars() {
               <Calendar className="w-4 h-4" />
               Schedule
             </NavbarButton>
-            <NavbarButton variant="primary" href="/study-hub">
+            <NavbarButton variant="primary" href="/to-tka">
               <BookText className="w-5 h-5" />
-              Study Hub
+              Belajar To Tka
             </NavbarButton>
           </div>
         </NavBody>
@@ -86,13 +86,13 @@ export default function Navbars() {
                 variant="primary"
                 className="w-full"
               >
-                Study Hub
+                Belajar To-Tka
               </NavbarButton>
             </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      <HomePage/>
+      <HomePage />
     </div>
   );
 }

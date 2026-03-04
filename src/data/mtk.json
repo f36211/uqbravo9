@@ -60,10 +60,10 @@
           ],
           "quiz": [
             {
-              "question": "Hasil dari $-15 + 9 \\div 0,3 - 10$ adalah...",
+              "question": "Hasil dari $-15 + 9 \\div 0{,}3 - 10$ adalah...",
               "options": ["$5$", "$0$", "$-3$", "$-5$"],
               "correctAnswer": 0,
-              "explanation": "$9 \\div 0,3 = 30$, maka $-15 + 30 - 10 = 5$"
+              "explanation": "$9 \\div 0{,}3 = 30$, maka $-15 + 30 - 10 = 5$"
             },
             {
               "question": "Hasil dari $25 + (-20) \\times 12 - 15$ adalah...",
@@ -73,9 +73,9 @@
             },
             {
               "question": "Hasil dari $10^{-2}$ adalah...",
-              "options": ["$0,01$", "$0,1$", "$-20$", "$-100$"],
+              "options": ["$0{,}01$", "$0{,}1$", "$-20$", "$-100$"],
               "correctAnswer": 0,
-              "explanation": "$10^{-2} = \\frac{1}{10^2} = \\frac{1}{100} = 0,01$"
+              "explanation": "$10^{-2} = \\frac{1}{10^2} = \\frac{1}{100} = 0{,}01$"
             }
           ]
         },
@@ -173,9 +173,9 @@
               "question": "Seseorang menabung Rp600.000 dengan bunga tunggal 12% per tahun. Setelah beberapa bulan jumlah tabungan menjadi Rp672.000. Berapa lama menabung?",
               "answer": "$12$ bulan",
               "solutionSteps": [
-                "Bunga yang didapat: $672.000 - 600.000 = 72.000$",
-                "Gunakan rumus: $72.000 = \\frac{600.000 \\times 12 \\times t}{100}$",
-                "$72.000 = 72.000 \\times t$",
+                "Bunga yang didapat: $\\text{672.000} - \\text{600.000} = \\text{72.000}$",
+                "Gunakan rumus: $\\text{72.000} = \\frac{\\text{600.000} \\times 12 \\times t}{100}$",
+                "$\\text{72.000} = \\text{72.000} \\times t$",
                 "$t = 1$ tahun $= 12$ bulan"
               ]
             },
@@ -183,16 +183,16 @@
               "question": "Sinta menabung Rp3.600.000 dengan bunga tunggal 12% per tahun. Setelah 1,5 tahun, total tabungannya adalah...",
               "answer": "Rp4.248.000,00",
               "solutionSteps": [
-                "Bunga: $\\frac{3.600.000 \\times 12 \\times 1,5}{100} = 648.000$",
-                "Total: $3.600.000 + 648.000 = 4.248.000$"
+                "Bunga: $\\frac{\\text{3.600.000} \\times 12 \\times 1{,}5}{100} = \\text{648.000}$",
+                "Total: $\\text{3.600.000} + \\text{648.000} = \\text{4.248.000}$"
               ]
             },
             {
               "question": "Andi menabung Rp800.000 dengan bunga 6% per tahun. Jumlah tabungan setelah 9 bulan adalah...",
               "answer": "Rp836.000,00",
               "solutionSteps": [
-                "Bunga untuk 9 bulan: $\\frac{800.000 \\times 6 \\times 9}{100 \\times 12} = 36.000$",
-                "Total: $800.000 + 36.000 = 836.000$"
+                "Bunga untuk 9 bulan: $\\frac{\\text{800.000} \\times 6 \\times 9}{100 \\times 12} = \\text{36.000}$",
+                "Total: $\\text{800.000} + \\text{36.000} = \\text{836.000}$"
               ]
             }
           ],
@@ -202,10 +202,15 @@
           ],
           "quiz": [
             {
-              "question": "Jika modal Rp1.000.000 dengan bunga 10% per tahun selama 2 tahun, bunga yang didapat adalah...",
-              "options": ["Rp200.000", "Rp100.000", "Rp220.000", "Rp120.000"],
+              "question": "Jika modal Rp\\text{1.000.000} dengan bunga 10% per tahun selama 2 tahun, bunga yang didapat adalah...",
+              "options": [
+                "Rp\\text{200.000}",
+                "Rp\\text{100.000}",
+                "Rp\\text{220.000}",
+                "Rp\\text{120.000}"
+              ],
               "correctAnswer": 0,
-              "explanation": "$B = \\frac{1.000.000 \\times 10 \\times 2}{100} = 200.000$"
+              "explanation": "$B = \\frac{\\text{1.000.000} \\times 10 \\times 2}{100} = \\text{200.000}$"
             }
           ]
         },
@@ -234,17 +239,17 @@
               "question": "Harga jaket Rp180.000 dengan diskon 20%. Harga setelah diskon adalah...",
               "answer": "Rp144.000,00",
               "solutionSteps": [
-                "Diskon: $180.000 \\times 20\\% = 36.000$",
-                "Harga akhir: $180.000 - 36.000 = 144.000$"
+                "Diskon: $\\text{180.000} \\times 20\\% = \\text{36.000}$",
+                "Harga akhir: $\\text{180.000} - \\text{36.000} = \\text{144.000}$"
               ]
             },
             {
               "question": "Harga baju Rp250.000 dengan diskon 30% + 20%. Harga akhir adalah...",
               "answer": "Rp140.000,00",
               "solutionSteps": [
-                "Diskon pertama: $250.000 \\times 30\\% = 75.000$, sisa $175.000$",
-                "Diskon kedua: $175.000 \\times 20\\% = 35.000$",
-                "Harga akhir: $175.000 - 35.000 = 140.000$"
+                "Diskon pertama: $\\text{250.000} \\times 30\\% = \\text{75.000}$, sisa $\\text{175.000}$",
+                "Diskon kedua: $\\text{175.000} \\times 20\\% = \\text{35.000}$",
+                "Harga akhir: $\\text{175.000} - \\text{35.000} = \\text{140.000}$"
               ]
             }
           ],
@@ -255,9 +260,14 @@
           "quiz": [
             {
               "question": "Harga Rp200.000 dengan diskon 25%. Harga akhir adalah...",
-              "options": ["Rp150.000", "Rp160.000", "Rp175.000", "Rp180.000"],
+              "options": [
+                "Rp\\text{150.000}",
+                "Rp\\text{160.000}",
+                "Rp\\text{175.000}",
+                "Rp\\text{180.000}"
+              ],
               "correctAnswer": 0,
-              "explanation": "$200.000 \\times 75\\% = 150.000$"
+              "explanation": "$\\text{200.000} \\times 75\\% = \\text{150.000}$"
             }
           ]
         }
@@ -723,18 +733,18 @@
               "answer": "Rp4.710.000,00",
               "solutionSteps": [
                 "r = 5 m",
-                "Luas setengah bola = $2\\pi r^2 = 2 \\times 3,14 \\times 25 = 157$ m²",
-                "Biaya: $157 \\times 30.000 = 4.710.000$"
+                "Luas setengah bola = $2\\pi r^2 = 2 \\times 3{,}14 \\times 25 = 157$ m²",
+                "Biaya: $157 \\times \\text{30.000} = \\text{4.710.000}$"
               ]
             },
             {
               "question": "Pelampung terdiri dari kerucut (tinggi 36 mm) dan setengah bola (diameter 18 mm). Volume total adalah...",
-              "answer": "$1.458\\pi \\text{ mm}^3$",
+              "answer": "$\\text{1.458}\\pi \\text{ mm}^3$",
               "solutionSteps": [
                 "r = 9 mm",
                 "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
                 "Volume setengah bola: $\\frac{1}{2} \\times \\frac{4}{3}\\pi \\times 729 = 486\\pi$ mm³",
-                "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
+                "Total: $972\\pi + 486\\pi = \\text{1.458}\\pi$ mm³"
               ]
             }
           ],
@@ -746,13 +756,13 @@
             {
               "question": "Volume bola dengan jari-jari 21 cm adalah... ($\\pi = \\frac{22}{7}$)",
               "options": [
-                "$38.808$ cm³",
-                "$19.404$ cm³",
-                "$77.616$ cm³",
-                "$11.088$ cm³"
+                "$\\text{38.808}$ cm³",
+                "$\\text{19.404}$ cm³",
+                "$\\text{77.616}$ cm³",
+                "$\\text{11.088}$ cm³"
               ],
               "correctAnswer": 0,
-              "explanation": "$V = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = 38.808$ cm³"
+              "explanation": "$V = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = \\text{38.808}$ cm³"
             }
           ]
         }
@@ -824,7 +834,7 @@
           "quiz": [
             {
               "question": "Nilai rata-rata dari data: 65, 67, 58, 65, 60, 65, 66, 68, 59, 60, 70, 85, 65, 62, 70, 65, 80, 77, 66, 65 adalah...",
-              "options": ["$66,9$", "$65$", "$67$", "$68$"],
+              "options": ["$66{,}9$", "$65$", "$67$", "$68$"],
               "correctAnswer": 0,
               "explanation": "Jumlah semua data = 1338, banyak data = 20, mean = 1338/20 = 66,9"
             },
@@ -913,11 +923,11 @@
               "question": "Dari survei 60 murid, 36 menjawab 'Ya'. Jika survei dilakukan lagi pada 50 murid dengan proporsi sama, frekuensi relatif murid yang membawa bekal dari seluruh siswa yang disurvei adalah...",
               "answer": "$0,60$",
               "solutionSteps": [
-                "Proporsi 'Ya' = $\\frac{36}{60} = 0,6$",
+                "Proporsi 'Ya' = $\\frac{36}{60} = 0{,}6$",
                 "Frekuensi relatif tetap 0,6 meski jumlah sampel berbeda",
-                "Perkiraan yang menjawab 'Ya' pada 50 murid = $50 \\times 0,6 = 30$",
+                "Perkiraan yang menjawab 'Ya' pada 50 murid = $50 \\times 0{,}6 = 30$",
                 "Total disurvei = $60 + 50 = 110$, total 'Ya' = $36 + 30 = 66$",
-                "Frekuensi relatif total = $\\frac{66}{110} = 0,6$"
+                "Frekuensi relatif total = $\\frac{66}{110} = 0{,}6$"
               ]
             }
           ],
@@ -1254,7 +1264,7 @@
           "quiz": [
             {
               "question": "Jika 5 orang pekerja dapat menyelesaikan pekerjaan dalam 12 hari, maka 6 orang pekerja dapat menyelesaikan dalam...",
-              "options": ["$10$ hari", "$8$ hari", "$15$ hari", "$7,2$ hari"],
+              "options": ["$10$ hari", "$8$ hari", "$15$ hari", "$7{,}2$ hari"],
               "correctAnswer": 0,
               "explanation": "$5 \\times 12 = 6 \\times x \\Rightarrow x = 10$ hari"
             }
@@ -1302,9 +1312,9 @@
               "question": "Seseorang bersepeda dengan kecepatan tetap menempuh jarak 2,5 km dalam waktu 5 menit. Waktu untuk menempuh 40 km adalah...",
               "answer": "$80$ menit",
               "solutionSteps": [
-                "Kecepatan = $\\frac{2,5}{5} = 0,5$ km/menit",
-                "Waktu untuk 40 km = $\\frac{40}{0,5} = 80$ menit",
-                "Atau dengan perbandingan: $\\frac{2,5}{5} = \\frac{40}{x} \\Rightarrow x = 80$"
+                "Kecepatan = $\\frac{2{,}5}{5} = 0{,}5$ km/menit",
+                "Waktu untuk 40 km = $\\frac{40}{0{,}5} = 80$ menit",
+                "Atau dengan perbandingan: $\\frac{2{,}5}{5} = \\frac{40}{x} \\Rightarrow x = 80$"
               ]
             },
             {
@@ -1445,32 +1455,32 @@
           ],
           "examples": [
             {
-              "question": "Pak Roza memiliki 10 kolam ikan berbentuk tabung dengan diameter 4,2 meter dan tinggi 1 meter. Volume maksimal satu kolam adalah... ($\\pi = \\frac{22}{7}$)",
-              "answer": "$13.860$ liter",
+              "question": "Pak Roza memiliki 10 kolam ikan berbentuk tabung dengan diameter 4{,}2 meter dan tinggi 1 meter. Volume maksimal satu kolam adalah... ($\\pi = \\frac{22}{7}$)",
+              "answer": "$\\text{13.860}$ liter",
               "solutionSteps": [
-                "r = 2,1 m = 21 dm, t = 1 m = 10 dm",
+                "r = 2{,}1 m = 21 dm, t = 1 m = 10 dm",
                 "$V = \\frac{22}{7} \\times 21^2 \\times 10 = \\frac{22}{7} \\times 441 \\times 10$",
-                "$= 22 \\times 63 \\times 10 = 13.860$ dm³ = 13.860 liter"
+                "$= 22 \\times 63 \\times 10 = \\text{13.860}$ dm³ = \\text{13.860} liter"
               ]
             },
             {
               "question": "Bangun terdiri dari limas dan kubus dengan panjang AB = 18 cm dan panjang TP = 15 cm. Volume bangun tersebut adalah...",
-              "answer": "$7.128 \\text{ cm}^3$",
+              "answer": "$\\text{7.128} \\text{ cm}^3$",
               "solutionSteps": [
-                "Volume kubus: $18^3 = 5.832$ cm³",
+                "Volume kubus: $18^3 = \\text{5.832}$ cm³",
                 "Tinggi limas: $t = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12$ cm",
-                "Volume limas: $\\frac{1}{3} \\times 18^2 \\times 12 = \\frac{1}{3} \\times 324 \\times 12 = 1.296$ cm³",
-                "Total volume: $5.832 + 1.296 = 7.128$ cm³"
+                "Volume limas: $\\frac{1}{3} \\times 18^2 \\times 12 = \\frac{1}{3} \\times 324 \\times 12 = \\text{1.296}$ cm³",
+                "Total volume: $\\text{5.832} + \\text{1.296} = \\text{7.128}$ cm³"
               ]
             },
             {
               "question": "Toni membuat pelampung berbentuk kerucut (tinggi 36 mm) di atas setengah bola (diameter 18 mm). Volume pelampung adalah...",
-              "answer": "$1.458\\pi \\text{ mm}^3$",
+              "answer": "$\\text{1.458}\\pi \\text{ mm}^3$",
               "solutionSteps": [
                 "r = 9 mm, tinggi kerucut = 36 - 9 = 27 mm (dari gambar total 45 mm)",
                 "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
                 "Volume setengah bola: $\\frac{2}{3}\\pi \\times 729 = 486\\pi$ mm³",
-                "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
+                "Total: $972\\pi + 486\\pi = \\text{1.458}\\pi$ mm³"
               ]
             }
           ],
@@ -1483,13 +1493,13 @@
             {
               "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 10 cm adalah... ($\\pi = \\frac{22}{7}$)",
               "options": [
-                "$1.540$ cm³",
-                "$1.100$ cm³",
-                "$1.320$ cm³",
-                "$1.760$ cm³"
+                "$\\text{1.540}$ cm³",
+                "$\\text{1.100}$ cm³",
+                "$\\text{1.320}$ cm³",
+                "$\\text{1.760}$ cm³"
               ],
               "correctAnswer": 0,
-              "explanation": "$V = \\frac{22}{7} \\times 49 \\times 10 = 1.540$ cm³"
+              "explanation": "$V = \\frac{22}{7} \\times 49 \\times 10 = \\text{1.540}$ cm³"
             }
           ]
         }
@@ -1724,8 +1734,8 @@
               "question": "Harga setengah kg cabe rawit Rp35.000. Jika membeli 2¼ kg, total harga adalah...",
               "answer": "Rp157.500,00",
               "solutionSteps": [
-                "Harga per kg = $35.000 \\times 2 = 70.000$",
-                "Harga 2¼ kg = $2,25 \\times 70.000 = 157.500$"
+                "Harga per kg = $\\text{35.000} \\times 2 = \\text{70.000}$",
+                "Harga 2¼ kg = $2{,}25 \\times \\text{70.000} = \\text{157.500}$"
               ]
             }
           ],
@@ -1737,7 +1747,7 @@
           "quiz": [
             {
               "question": "Jika rata-rata nilai 20 siswa adalah 75 dan rata-rata 30 siswa lainnya adalah 80, maka rata-rata gabungan adalah...",
-              "options": ["$77$", "$77,5$", "$78$", "$78,5$"],
+              "options": ["$77$", "$77{,}5$", "$78$", "$78{,}5$"],
               "correctAnswer": 0,
               "explanation": "$\\bar{x} = \\frac{20(75) + 30(80)}{50} = \\frac{1500 + 2400}{50} = \\frac{3900}{50} = 78$"
             }

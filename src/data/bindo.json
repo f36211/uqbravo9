@@ -30,13 +30,23 @@
           "quiz": [
             {
               "question": "Ide pokok suatu paragraf biasanya terdapat pada...",
-              "options": ["Kalimat utama", "Kalimat penjelas", "Kalimat terakhir saja", "Semua kalimat"],
+              "options": [
+                "Kalimat utama",
+                "Kalimat penjelas",
+                "Kalimat terakhir saja",
+                "Semua kalimat"
+              ],
               "correctAnswer": 0,
               "explanation": "Ide pokok selalu terdapat pada kalimat utama, yang bisa berada di awal (deduktif), akhir (induktif), atau awal dan akhir (campuran)."
             },
             {
               "question": "Ciri kalimat utama adalah...",
-              "options": ["Bersifat umum dan tidak diawali konjungsi", "Bersifat khusus dan detail", "Selalu di akhir paragraf", "Diawali kata 'selain itu'"],
+              "options": [
+                "Bersifat umum dan tidak diawali konjungsi",
+                "Bersifat khusus dan detail",
+                "Selalu di akhir paragraf",
+                "Diawali kata 'selain itu'"
+              ],
               "correctAnswer": 0,
               "explanation": "Kalimat utama bersifat UMUM, dapat berdiri sendiri, dan tidak diawali konjungsi antarkalimat seperti 'selain itu', 'oleh karena itu'."
             }
@@ -66,13 +76,23 @@
           "quiz": [
             {
               "question": "Simpulan yang baik harus...",
-              "options": ["Berdasarkan fakta dalam teks", "Merupakan opini pembaca", "Selalu berupa pendapat", "Menggunakan kata mungkin"],
+              "options": [
+                "Berdasarkan fakta dalam teks",
+                "Merupakan opini pembaca",
+                "Selalu berupa pendapat",
+                "Menggunakan kata mungkin"
+              ],
               "correctAnswer": 0,
-              "explanation": "Simpulan harus ditarik dari fakta yang tersurat maupun terisrat dalam teks, bukan opini pribadi pembaca."
+              "explanation": "Simpulan harus ditarik dari fakta yang tersurat maupun tersirat dalam teks, bukan opini pribadi pembaca."
             },
             {
               "question": "Perbedaan utama antara fakta dan opini adalah...",
-              "options": ["Fakta dapat dibuktikan, opini bersifat subjektif", "Fakta selalu benar, opini selalu salah", "Fakta menggunakan angka, opini tidak", "Tidak ada perbedaan"],
+              "options": [
+                "Fakta dapat dibuktikan, opini bersifat subjektif",
+                "Fakta selalu benar, opini selalu salah",
+                "Fakta menggunakan angka, opini tidak",
+                "Tidak ada perbedaan"
+              ],
               "correctAnswer": 0,
               "explanation": "Fakta adalah pernyataan yang dapat dibuktikan kebenarannya, sedangkan opini adalah pendapat subjektif yang tidak dapat dibuktikan secara objektif."
             }
@@ -111,13 +131,23 @@
           "quiz": [
             {
               "question": "Contoh pleonasme adalah...",
-              "options": ["'naik ke atas'", "'pergi ke sekolah'", "'membaca buku'", "'menulis surat'"],
+              "options": [
+                "'naik ke atas'",
+                "'pergi ke sekolah'",
+                "'membaca buku'",
+                "'menulis surat'"
+              ],
               "correctAnswer": 0,
               "explanation": "'Naik ke atas' adalah pleonasme karena 'naik' sudah bermakna bergerak ke atas. Cukup gunakan 'naik' saja."
             },
             {
               "question": "Kalimat yang tidak efektif karena tidak memiliki Subjek adalah...",
-              "options": ["'Bagi siswa harus mengumpulkan tugas.'", "'Siswa harus mengumpulkan tugas.'", "'Para guru memberikan tugas.'", "'Kami mengerjakan soal.'"],
+              "options": [
+                "'Bagi siswa harus mengumpulkan tugas.'",
+                "'Siswa harus mengumpulkan tugas.'",
+                "'Para guru memberikan tugas.'",
+                "'Kami mengerjakan soal.'"
+              ],
               "correctAnswer": 0,
               "explanation": "Kata 'bagi' menjadikan 'siswa' sebagai keterangan, bukan Subjek. Kalimat kehilangan Subjek sehingga tidak efektif."
             }
@@ -130,8 +160,8 @@
             "Huruf kapital: awal kalimat, nama diri, gelar kehormatan, nama geografis, judul karangan",
             "Huruf miring: judul buku/majalah, kata asing yang belum diserap, istilah ilmiah",
             "Tanda koma: sebelum konjungsi (tetapi, namun, melainkan), setelah kata penghubung antarkalimat",
-            "Kata depan 'di' (di rumah, di sekolah) vs imbuhan 'di-' (dimakan, ditulis)",
-            "Penulisan partikel 'pun': dipisah (adapun, walaupun, meskipun → DIGABUNG; dia pun, apa pun → DIPISAH)"
+            "Kata depan 'di' (di rumah, di sekolah) ditulis terpisah; imbuhan 'di-' (dimakan, ditulis) ditulis serangkai",
+            "Penulisan partikel 'pun': dipisah jika bukan bagian dari kata yang sudah baku (dia pun, apa pun); digabung jika sudah menyatu (adapun, walaupun, meskipun, sungguhpun)"
           ],
           "examples": [
             {
@@ -144,22 +174,32 @@
             }
           ],
           "tips": [
-            "Hafal aturan 'di' dan 'ke': jika bisa diganti 'dari' → ditulis terpisah (kata depan)",
+            "Hafal aturan 'di' dan 'ke': jika menunjukkan tempat/arah → ditulis terpisah (kata depan)",
             "Perhatikan penggunaan tanda baca dalam pilihan jawaban — sering jadi pembeda",
             "Kata serapan dari bahasa asing ikuti aturan PUEBI, bukan ejaan bahasa aslinya"
           ],
           "quiz": [
             {
               "question": "Penulisan yang benar adalah...",
-              "options": ["'Di mana kamu tinggal?'", "'Dimana kamu tinggal?'", "'Kemana kamu pergi?'", "'Kenapa dia disini?'"],
+              "options": [
+                "'Di mana kamu tinggal?'",
+                "'Dimana kamu tinggal?'",
+                "'Kemana kamu pergi?'",
+                "'Kenapa dia disini?'"
+              ],
               "correctAnswer": 0,
-              "explanation": "'Di mana' ditulis terpisah karena merupakan kata depan + kata tanya. 'Di' sebagai kata depan selalu ditulis terpisah."
+              "explanation": "'Di mana' ditulis terpisah karena 'di' merupakan kata depan dan 'mana' merupakan kata tanya. Kata depan 'di' selalu ditulis terpisah dari kata yang mengikutinya."
             },
             {
-              "question": "Kata 'pun' yang ditulis terpisah yang BENAR adalah...",
-              "options": ["'Dia pun pergi.'", "'Ada pun itu benar.'", "'Walau pun sulit.'", "'Meski pun begitu.'"],
+              "question": "Penulisan partikel 'pun' yang benar adalah...",
+              "options": [
+                "'Dia pun pergi.'",
+                "'Ada pun itu benar.'",
+                "'Walau pun sulit.'",
+                "'Meski pun begitu.'"
+              ],
               "correctAnswer": 0,
-              "explanation": "'Dia pun' ditulis terpisah. Sedangkan 'adapun', 'walaupun', 'meskipun' ditulis serangkai."
+              "explanation": "'Dia pun' ditulis terpisah karena 'pun' bukan bagian dari kata baku. Sebaliknya, 'adapun', 'walaupun', dan 'meskipun' sudah menjadi satu kata baku dan ditulis serangkai."
             }
           ]
         }
@@ -193,15 +233,25 @@
           "quiz": [
             {
               "question": "Makna konotatif dari 'tangan panjang' adalah...",
-              "options": ["Suka mencuri", "Tangan yang panjang secara fisik", "Orang yang tinggi", "Pandai memasak"],
+              "options": [
+                "Suka mencuri",
+                "Tangan yang panjang secara fisik",
+                "Orang yang tinggi",
+                "Pandai memasak"
+              ],
               "correctAnswer": 0,
               "explanation": "'Tangan panjang' secara konotatif bermakna suka mencuri/mengambil yang bukan miliknya."
             },
             {
               "question": "Kata yang merupakan homonim adalah...",
-              "options": ["'Bisa' (racun dan dapat)", "'Besar' dan 'kecil'", "'Pandai' dan 'cerdas'", "'Gelap' dan 'terang'"],
+              "options": [
+                "'Bisa' (racun dan dapat)",
+                "'Besar' dan 'kecil'",
+                "'Pandai' dan 'cerdas'",
+                "'Gelap' dan 'terang'"
+              ],
               "correctAnswer": 0,
-              "explanation": "Homonim adalah kata yang sama bentuk dan bunyinya tapi berbeda makna. 'Bisa' = racun ular, dan 'bisa' = dapat/mampu."
+              "explanation": "Homonim adalah kata yang sama bentuk dan bunyinya tapi berbeda makna. 'Bisa' = racun ular, dan 'bisa' = dapat/mampu. Pilihan lain: 'besar-kecil' adalah antonim, 'pandai-cerdas' adalah sinonim, 'gelap-terang' adalah antonim."
             }
           ]
         },
@@ -213,7 +263,7 @@
             "Konjungsi subordinatif: karena, jika, meskipun, ketika, agar, sehingga (menghubungkan tidak setara)",
             "Konjungsi antarkalimat: oleh karena itu, dengan demikian, di samping itu, sementara itu",
             "Konjungsi korelatif: baik...maupun..., tidak hanya...tetapi juga..., entah...entah...",
-            "'Sehingga' dan 'agar' TIDAK boleh di awal kalimat",
+            "Konjungsi subordinatif (sehingga, agar, karena, meskipun, ketika, dll.) TIDAK boleh memulai kalimat baru yang berdiri sendiri",
             "Konjungsi antarkalimat diikuti tanda koma"
           ],
           "examples": [
@@ -224,19 +274,29 @@
           ],
           "tips": [
             "Perhatikan posisi konjungsi: koordinatif di tengah, antarkalimat di awal kalimat",
-            "Jika konjungsi dipakai di awal kalimat, HARUS diikuti tanda koma",
+            "Jika konjungsi antarkalimat dipakai di awal kalimat, HARUS diikuti tanda koma",
             "Untuk soal melengkapi paragraf, perhatikan hubungan logis antarkalimat untuk memilih konjungsi yang tepat"
           ],
           "quiz": [
             {
-              "question": "Konjungsi yang TIDAK boleh digunakan di awal kalimat adalah...",
-              "options": ["'Sehingga'", "'Oleh karena itu'", "'Dengan demikian'", "'Di samping itu'"],
+              "question": "Konjungsi yang TIDAK boleh digunakan untuk memulai kalimat baru yang berdiri sendiri adalah...",
+              "options": [
+                "'Sehingga'",
+                "'Oleh karena itu'",
+                "'Dengan demikian'",
+                "'Di samping itu'"
+              ],
               "correctAnswer": 0,
-              "explanation": "'Sehingga' adalah konjungsi subordinatif yang menghubungkan anak kalimat dengan induk kalimat. Tidak boleh berdiri sendiri di awal kalimat."
+              "explanation": "'Sehingga' adalah konjungsi subordinatif yang harus melekat pada induk kalimat. Pilihan lainnya ('oleh karena itu', 'dengan demikian', 'di samping itu') adalah konjungsi antarkalimat yang memang digunakan di awal kalimat."
             },
             {
               "question": "Konjungsi korelatif yang benar adalah...",
-              "options": ["'Tidak hanya... tetapi juga...'", "'Tidak hanya... dan juga...'", "'Bukan hanya... atau juga...'", "'Tidak... dan bukan...'"],
+              "options": [
+                "'Tidak hanya... tetapi juga...'",
+                "'Tidak hanya... dan juga...'",
+                "'Bukan hanya... atau juga...'",
+                "'Tidak... dan bukan...'"
+              ],
               "correctAnswer": 0,
               "explanation": "'Tidak hanya... tetapi juga...' adalah pasangan konjungsi korelatif yang benar dalam bahasa Indonesia baku."
             }

@@ -189,12 +189,12 @@ function LandingView({ onSelect }) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-10 sm:py-16"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
       {/* Header */}
       <motion.div
-        className="text-center mb-14"
+        className="text-center mb-8 sm:mb-14"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.6 }}
@@ -203,7 +203,7 @@ function LandingView({ onSelect }) {
           <BookOpen size={14} />
           Persiapan Ujian
         </div>
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-3 sm:mb-4">
           Belajar TO TKA
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-md mx-auto font-light">
@@ -229,7 +229,7 @@ function LandingView({ onSelect }) {
             <motion.button
               variants={cardHover}
               onClick={() => onSelect(key)}
-              className={`w-full text-left rounded-2xl bg-gradient-to-br ${gradient} p-8 text-white cursor-pointer
+              className={`w-full text-left rounded-2xl bg-gradient-to-br ${gradient} p-5 sm:p-8 text-white cursor-pointer
                 shadow-lg hover:shadow-2xl transition-shadow duration-300 group relative overflow-hidden`}
             >
               {/* Decorative circle */}
@@ -269,7 +269,7 @@ function LandingView({ onSelect }) {
 
       {/* Footer hint */}
       <motion.p
-        className="mt-12 text-gray-300 text-sm"
+        className="mt-8 sm:mt-12 text-gray-300 text-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
@@ -434,7 +434,7 @@ function Sidebar({ data, chapterIdx, topicIdx, onNavigate, isOpen, onClose }) {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="fixed left-0 top-0 bottom-0 w-80 bg-white shadow-2xl z-50 md:hidden"
+              className="fixed left-0 top-0 bottom-0 w-[85vw] max-w-80 bg-white shadow-2xl z-50 md:hidden"
             >
               {sidebarContent}
             </motion.aside>
@@ -452,7 +452,7 @@ function FormulaCard({ formula, index }) {
   return (
     <motion.div
       variants={staggerItem}
-      className="bg-gray-50 border border-gray-100 rounded-xl p-5 group hover:border-gray-200 transition-colors"
+      className="bg-gray-50 border border-gray-100 rounded-xl p-3 sm:p-5 group hover:border-gray-200 transition-colors"
     >
       <div className="flex items-start justify-between mb-3">
         <span className="text-xs font-semibold text-gray-900 uppercase tracking-wider">
@@ -464,7 +464,7 @@ function FormulaCard({ formula, index }) {
       </div>
 
       {/* LaTeX Display */}
-      <div className="text-center py-4 text-lg overflow-x-auto">
+      <div className="text-center py-3 sm:py-4 text-base sm:text-lg overflow-x-auto">
         {`$$${formula.latex}$$`}
       </div>
 
@@ -489,7 +489,7 @@ function ExampleCard({ example, index, isMath }) {
       className="border border-gray-100 rounded-xl overflow-hidden hover:border-gray-200 transition-colors"
     >
       {/* Question */}
-      <div className="p-5">
+      <div className="p-3 sm:p-5">
         <div className="flex items-start gap-3">
           <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gray-900 text-white text-xs font-bold flex items-center justify-center">
             {index + 1}
@@ -511,7 +511,7 @@ function ExampleCard({ example, index, isMath }) {
       {/* Toggle */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-3 bg-gray-50 hover:bg-gray-100 transition-colors text-xs font-medium text-gray-500"
+        className="w-full flex items-center justify-between px-3 sm:px-5 py-3 bg-gray-50 hover:bg-gray-100 transition-colors text-xs font-medium text-gray-500"
       >
         <span>
           {open ? "Sembunyikan" : isMath ? "Lihat Jawaban" : "Lihat Penjelasan"}
@@ -534,7 +534,7 @@ function ExampleCard({ example, index, isMath }) {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="p-5 bg-gray-50 border-t border-gray-100">
+            <div className="p-3 sm:p-5 bg-gray-50 border-t border-gray-100">
               {isMath ? (
                 <>
                   {example.answer && (
@@ -635,7 +635,7 @@ function QuizSection({ quiz, isMath }) {
               className="border border-gray-100 rounded-xl overflow-hidden"
             >
               {/* Question */}
-              <div className="p-5">
+              <div className="p-3 sm:p-5">
                 <div className="flex items-start gap-3 mb-4">
                   <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gray-900 text-white text-xs font-bold flex items-center justify-center">
                     {qIdx + 1}
@@ -646,7 +646,7 @@ function QuizSection({ quiz, isMath }) {
                 </div>
 
                 {/* Options */}
-                <div className="space-y-2 ml-10">
+                <div className="space-y-2 ml-0 sm:ml-10">
                   {q.options.map((opt, oIdx) => {
                     const selected = answers[qIdx] === oIdx;
                     const isCorrectOpt = q.correctAnswer === oIdx;
@@ -699,7 +699,7 @@ function QuizSection({ quiz, isMath }) {
 
                 {/* Check button per question */}
                 {answers[qIdx] !== undefined && !isRevealed && (
-                  <div className="mt-3 ml-10">
+                  <div className="mt-3 ml-0 sm:ml-10">
                     <button
                       onClick={() => revealAnswer(qIdx)}
                       className="text-xs font-medium text-gray-500 hover:text-gray-900 px-3 py-1.5 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors"
@@ -720,7 +720,7 @@ function QuizSection({ quiz, isMath }) {
                       className="overflow-hidden"
                     >
                       <div
-                        className={`mt-3 ml-10 p-3 rounded-lg text-sm ${isCorrect ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"}`}
+                        className={`mt-3 ml-0 sm:ml-10 p-3 rounded-lg text-sm ${isCorrect ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"}`}
                       >
                         <span className="font-semibold">
                           {isCorrect ? "✅ Benar! " : "❌ Salah. "}
@@ -791,7 +791,7 @@ function ContentArea({
 
   return (
     <div ref={contentRef} className="flex-1 overflow-y-auto">
-      <div className="max-w-3xl mx-auto px-6 md:px-10 py-8 md:py-12">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 md:px-10 py-5 sm:py-8 md:py-12">
         <motion.div
           key={`${chapterIdx}-${topicIdx}`}
           variants={pageVariants}
@@ -801,7 +801,7 @@ function ContentArea({
         >
           {/* Topic Title */}
           <motion.h1
-            className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tight"
+            className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tight"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -870,7 +870,7 @@ function ContentArea({
                   <motion.div
                     key={i}
                     variants={staggerItem}
-                    className="flex items-start gap-3 p-3.5 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group"
+                    className="flex items-start gap-3 p-3 sm:p-3.5 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group"
                   >
                     <span className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-900 text-white flex items-center justify-center mt-0.5">
                       <Check size={10} />
@@ -916,7 +916,7 @@ function ContentArea({
                 <span className="w-8 h-px bg-gray-900" />
                 Tips & Trik
               </h2>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100/50 border border-gray-100 rounded-xl p-5 space-y-3">
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100/50 border border-gray-100 rounded-xl p-3 sm:p-5 space-y-3">
                 {topic.tips.map((tip, i) => (
                   <motion.div
                     key={i}
@@ -941,14 +941,14 @@ function ContentArea({
             {canGoPrev ? (
               <button
                 onClick={goPrev}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all group"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all group"
               >
                 <ArrowLeft size={14} />
                 <div className="text-left">
                   <div className="text-[10px] text-gray-400 uppercase tracking-wider">
                     Sebelumnya
                   </div>
-                  <div className="font-medium group-hover:text-gray-900">
+                  <div className="font-medium group-hover:text-gray-900 max-w-[120px] sm:max-w-none truncate">
                     {prevLabel}
                   </div>
                 </div>
@@ -959,13 +959,13 @@ function ContentArea({
             {canGoNext ? (
               <button
                 onClick={goNext}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all group text-right"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all group text-right"
               >
                 <div>
                   <div className="text-[10px] text-gray-400 uppercase tracking-wider">
                     Selanjutnya
                   </div>
-                  <div className="font-medium group-hover:text-gray-900">
+                  <div className="font-medium group-hover:text-gray-900 max-w-[120px] sm:max-w-none truncate">
                     {nextLabel}
                   </div>
                 </div>
@@ -1116,7 +1116,7 @@ function StudyView({
             <button
               onClick={goPrev}
               disabled={chapterIdx === 0 && topicIdx === 0}
-              className="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
+              className="p-2 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
             >
               <ArrowLeft size={14} />
             </button>
@@ -1126,7 +1126,7 @@ function StudyView({
                 chapterIdx === data.chapters.length - 1 &&
                 topicIdx === data.chapters[chapterIdx].topics.length - 1
               }
-              className="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors rotate-180"
+              className="p-2 rounded-md hover:bg-gray-100 text-gray-400 hover:text-gray-700 disabled:opacity-30 disabled:hover:bg-transparent transition-colors rotate-180"
             >
               <ArrowLeft size={14} />
             </button>
@@ -1164,11 +1164,11 @@ function StudyView({
       </div>
 
       {/* Bottom Navigation Bar (mobile) */}
-      <div className="md:hidden border-t border-gray-100 bg-white px-4 py-2 flex items-center justify-between">
+      <div className="md:hidden border-t border-gray-100 bg-white px-3 sm:px-4 py-2.5 flex items-center justify-between">
         <button
           onClick={goPrev}
           disabled={chapterIdx === 0 && topicIdx === 0}
-          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2"
+          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2.5 active:bg-gray-100 rounded-lg transition-colors"
         >
           <ArrowLeft size={12} />
           Sebelumnya
@@ -1182,7 +1182,7 @@ function StudyView({
             chapterIdx === data.chapters.length - 1 &&
             topicIdx === data.chapters[chapterIdx].topics.length - 1
           }
-          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2"
+          className="flex items-center gap-1.5 text-xs text-gray-500 disabled:opacity-30 px-3 py-2.5 active:bg-gray-100 rounded-lg transition-colors"
         >
           Selanjutnya
           <span className="rotate-180">

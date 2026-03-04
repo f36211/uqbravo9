@@ -458,6 +458,7 @@ function FormulaCard({ formula, index }) {
 // ═══════════════════════════════════════
 function ExampleCard({ example, index, isMath }) {
   const [open, setOpen] = useState(false);
+  useMathJax(open);
 
   return (
     <motion.div
@@ -556,6 +557,8 @@ function QuizSection({ quiz }) {
   const [answers, setAnswers] = useState({});
   const [revealed, setRevealed] = useState({});
   const [showResults, setShowResults] = useState(false);
+
+  useMathJax(`${Object.keys(revealed).length}-${showResults}`);
 
   const selectAnswer = (qIdx, optIdx) => {
     if (revealed[qIdx] !== undefined) return;

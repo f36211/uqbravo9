@@ -11,21 +11,20 @@
       rel="stylesheet"
     />
     <script>
-      MathJax = {
-        tex: {
-          inlineMath: [
-            ["$", "$"],
-            ["\\(", "\\)"],
-          ],
-          displayMath: [
-            ["$$", "$$"],
-            ["\\[", "\\]"],
-          ],
-        },
-        svg: { fontCache: "global" },
-        startup: { typeset: false },
-      };
-    </script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      packages: ['base', 'ams', 'noerrors', 'noundefined']
+    },
+    svg: {
+      fontCache: 'global'
+    },
+    startup: {
+      typeset: false
+    }
+  };
+</script>
     <script
       id="MathJax-script"
       async

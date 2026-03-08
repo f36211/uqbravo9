@@ -1,0 +1,70 @@
+{
+  "id": "t13_1",
+  "chapterId": "c13",
+  "subjectId": "mtk",
+  "title": "Pemfaktoran Bentuk Aljabar",
+  "content": "Pemfaktoran adalah menyatakan bentuk aljabar sebagai perkalian faktor-faktornya. Bentuk umum: $ax^2 + bx + c = (px + q)(rx + s)$.",
+  "formulas": [
+    {
+      "name": "Selisih Dua Kuadrat",
+      "latex": "a^2 - b^2 = (a+b)(a-b)",
+      "note": "Bentuk khusus pemfaktoran"
+    },
+    {
+      "name": "Pemfaktoran $x^2 + bx + c$",
+      "latex": "x^2 + bx + c = (x + p)(x + q)",
+      "note": "dengan $p + q = b$ dan $p \\times q = c$"
+    },
+    {
+      "name": "Pemfaktoran dengan FPB",
+      "latex": "ax + ay = a(x + y)",
+      "note": "Keluarkan faktor persekutuan"
+    }
+  ],
+  "keyPoints": [
+    "Selisih dua kuadrat selalu bisa difaktorkan",
+    "Untuk $x^2 + bx + c$, cari dua bilangan yang jumlahnya b dan hasil kalinya c",
+    "Periksa kembali dengan mengalikan faktor-faktor"
+  ],
+  "examples": [
+    {
+      "question": "Perhatikan pemfaktoran berikut: I. $x^2 - 9 = (x+3)(x-3)$, II. $x^2 + 5x + 6 = (x+2)(x+3)$, III. $2x^2 - 6x = 2x(x-3)$, IV. $x^2 + 6x - 7 = (x+7)(x-1)$. Yang benar adalah...",
+      "answer": "I, II, III, dan IV",
+      "solutionSteps": [
+        "I: $(x+3)(x-3) = x^2 - 9$ ✓ (selisih dua kuadrat)",
+        "II: $(x+2)(x+3) = x^2 + 5x + 6$ ✓",
+        "III: $2x(x-3) = 2x^2 - 6x$ ✓ (faktor persekutuan 2x)",
+        "IV: $(x+7)(x-1) = x^2 + 6x - 7$ ✓",
+        "Semua pemfaktoran benar"
+      ]
+    },
+    {
+      "question": "Bentuk sederhana dari $5a + 3b - 2a + 4b + 3b - 2a + 4b$ adalah...",
+      "answer": "$a + 14b$",
+      "solutionSteps": [
+        "Kelompokkan suku sejenis:",
+        "Suku a: $5a - 2a - 2a = a$",
+        "Suku b: $3b + 4b + 3b + 4b = 14b$",
+        "Hasil: $a + 14b$"
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu periksa hasil pemfaktoran dengan mengalikan kembali",
+    "Untuk selisih dua kuadrat, identifikasi bentuk $a^2 - b^2$",
+    "Kelompokkan suku sejenis sebelum menyederhanakan"
+  ],
+  "quiz": [
+    {
+      "question": "Pemfaktoran dari $x^2 - 5x + 6$ adalah...",
+      "options": [
+        "$(x-2)(x-3)$",
+        "$(x+2)(x+3)$",
+        "$(x-1)(x-6)$",
+        "$(x+1)(x+6)$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cari dua bilangan yang jumlahnya -5 dan hasil kalinya 6, yaitu -2 dan -3. Jadi $(x-2)(x-3)$"
+    }
+  ]
+}

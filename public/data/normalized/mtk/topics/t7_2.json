@@ -1,0 +1,103 @@
+{
+  "id": "t7_2",
+  "chapterId": "c7",
+  "subjectId": "mtk",
+  "title": "Peluang",
+  "content": "Peluang adalah ukuran kemungkinan terjadinya suatu kejadian. Nilai peluang berkisar antara 0 (tidak mungkin) sampai 1 (pasti).",
+  "illustration": {
+    "type": "lucide",
+    "name": "Dices"
+  },
+  "formulas": [
+    {
+      "name": "Peluang Kejadian",
+      "latex": "P(A) = \\frac{n(A)}{n(S)}",
+      "note": "n(A) = banyak kejadian A, n(S) = banyak ruang sampel"
+    },
+    {
+      "name": "Peluang Komplemen",
+      "latex": "P(A') = 1 - P(A)",
+      "note": "Kejadian tidak A"
+    },
+    {
+      "name": "Frekuensi Relatif",
+      "latex": "f_r = \\frac{\\text{frekuensi kejadian}}{\\text{total pengamatan}}",
+      "note": "Perkiraan peluang dari data"
+    }
+  ],
+  "keyPoints": [
+    "Ruang sampel (S) adalah semua kemungkinan hasil",
+    "Kejadian (A) adalah himpunan bagian dari ruang sampel",
+    "Peluang bersifat: $0 \\leq P(A) \\leq 1$",
+    "Jumlah peluang semua kejadian saling lepas = 1"
+  ],
+  "examples": [
+    {
+      "question": "Dari 50 siswa, 30 suka matematika, 25 suka IPA, dan 10 suka keduanya. Banyak siswa yang tidak suka matematika maupun IPA adalah...",
+      "answer": "$5$",
+      "solutionSteps": [
+        "Gunakan prinsip inklusi-eksklusi: $n(M \\cup I) = n(M) + n(I) - n(M \\cap I)$",
+        "$n(M \\cup I) = 30 + 25 - 10 = 45$",
+        "Yang tidak suka keduanya = $50 - 45 = 5$"
+      ]
+    },
+    {
+      "question": "Dari 143 siswa, 95 senang matematika, 87 senang fisika, dan 60 senang keduanya. Banyak siswa yang tidak senang matematika maupun fisika adalah...",
+      "answer": "$21$",
+      "solutionSteps": [
+        "$n(M \\cup F) = 95 + 87 - 60 = 122$",
+        "Yang tidak senang keduanya = $143 - 122 = 21$"
+      ]
+    },
+    {
+      "question": "Peluang mendapatkan doorprize jika nomor kelipatan 3 atau bilangan prima dari 1-30 adalah...",
+      "answer": "$\\frac{19}{30}$",
+      "solutionSteps": [
+        "Kelipatan 3: {3,6,9,12,15,18,21,24,27,30} = 10 bilangan",
+        "Bilangan prima: {2,3,5,7,11,13,17,19,23,29} = 10 bilangan",
+        "Irisan (masuk keduanya): {3} = 1 bilangan",
+        "Total: $10 + 10 - 1 = 19$",
+        "Peluang = $\\frac{19}{30}$"
+      ]
+    },
+    {
+      "question": "Dari survei 60 murid, 36 menjawab 'Ya'. Jika survei dilakukan lagi pada 50 murid dengan proporsi sama, frekuensi relatif murid yang membawa bekal dari seluruh siswa yang disurvei adalah...",
+      "answer": "$0{,}60$",
+      "solutionSteps": [
+        "Proporsi 'Ya' dari survei pertama = $\\frac{36}{60} = 0{,}6$",
+        "Perkiraan yang menjawab 'Ya' pada survei kedua = $50 \\times 0{,}6 = 30$",
+        "Total seluruh survei = $60 + 50 = 110$, total 'Ya' = $36 + 30 = 66$",
+        "Frekuensi relatif gabungan = $\\frac{66}{110} = 0{,}6$"
+      ]
+    }
+  ],
+  "tips": [
+    "Gunakan diagram Venn untuk masalah himpunan",
+    "Prinsip inklusi-eksklusi: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$",
+    "Peluang 'atau' untuk kejadian tidak saling lepas: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$"
+  ],
+  "quiz": [
+    {
+      "question": "Sebuah dadu dilambungkan sekali. Peluang muncul mata dadu faktor dari 6 adalah...",
+      "options": [
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{5}{6}$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Faktor dari 6 adalah {1, 2, 3, 6} = 4 kemungkinan dari 6 total. Peluang = $\\frac{4}{6} = \\frac{2}{3}$"
+    },
+    {
+      "question": "Sebuah koin dilempar sekali. Peluang muncul sisi angka adalah...",
+      "options": [
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{3}{4}$",
+        "$1$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ruang sampel = {angka, gambar}, n(S) = 2. Peluang angka = $\\frac{1}{2}$"
+    }
+  ]
+}

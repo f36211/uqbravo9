@@ -1,0 +1,43 @@
+{
+  "id": "t6_6",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Pengukuran (Skala & Keliling)",
+  "content": "Aplikasi skala pada peta dengan jarak sebenarnya, dikombinasi kecepatan/waktu dan bangun datar (luas persegi/segitiga pada peta).",
+  "illustration": {
+    "type": "lucide",
+    "name": "Map"
+  },
+  "formulas": [
+    {
+      "name": "Jarak Sebenarnya",
+      "latex": "\\text{JS} = \\frac{\\text{Jarak Peta}}{\\text{Skala}}",
+      "note": "Perhatikan konversi cm ke km"
+    },
+    {
+      "name": "Waktu Tempuh",
+      "latex": "W = \\frac{J}{K}",
+      "note": "Waktu = Jarak dibagi Kecepatan"
+    }
+  ],
+  "keyPoints": [
+    "Skala Luas: Luas Sebenarnya = Luas Peta / (Skala)².",
+    "Keliling Lingkaran (lilitan kabel): πd. Jumlah lilitan = total kabel / keliling.",
+    "Konversi satuan: 1 km = 100.000 cm."
+  ],
+  "examples": [
+    {
+      "question": "Jarak peta 12 cm, jarak sebenarnya = 2 × jarak lurus. Kecepatan 5 km/jam.",
+      "answer": "Sesuaikan satuan sebelum membagi.",
+      "solutionSteps": [
+        "Hitung jarak lurus di dunia nyata: 12 cm / Skala (jangan lupa ubah ke km).",
+        "Jarak lintasan tempuh = 2 × jarak lurus nyata.",
+        "Waktu tempuh = Jarak lintasan / 5 km/jam."
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu ubah Jarak Sebenarnya menjadi km jika diminta kecepatan dalam km/jam."
+  ],
+  "quiz": []
+}

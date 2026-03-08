@@ -1,0 +1,62 @@
+{
+  "id": "t6_5",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Geometri (Bangun Datar, Ruang, & Transformasi)",
+  "content": "Meliputi sudut segitiga, lingkaran, transformasi titik koordinat, hingga volume dan luas permukaan balok, prisma, atau bangun gabungan.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Shapes"
+  },
+  "formulas": [
+    {
+      "name": "Luas Permukaan Balok",
+      "latex": "L = 2(pl + pt + lt)",
+      "note": "Jumlah luas semua sisi balok"
+    },
+    {
+      "name": "Luas Segitiga",
+      "latex": "L = \\frac{1}{2} \\times a \\times t",
+      "note": "a = alas, t = tinggi"
+    }
+  ],
+  "keyPoints": [
+    "Segitiga sama kaki memiliki dua sudut yang besarnya sama.",
+    "1 lingkaran penuh = 360°. Jika dibagi n bagian, masing-masing 360/n derajat.",
+    "Transformasi rotasi 90° (x,y) -> (-y,x), Dilatasi faktor k (x,y) -> (kx,ky)."
+  ],
+  "examples": [
+    {
+      "question": "Balok p = 2x, l = 10, t = 5. Luas permukaannya dalam x?",
+      "answer": "L = 60x + 100",
+      "solutionSteps": [
+        "pl = (2x)(10) = 20x",
+        "pt = (2x)(5) = 10x",
+        "lt = (10)(5) = 50",
+        "Luas Permukaan = 2(20x + 10x + 50) = 60x + 100"
+      ]
+    },
+    {
+      "question": "Titik dirotasi 90° searah jarum jam pusat (0,0), lalu didilatasi 2 kali.",
+      "answer": "Ikuti aturan transformasi",
+      "solutionSteps": [
+        "Rotasi 90° searah jarum jam: (x,y) → (y, -x)",
+        "Dilatasi faktor 2: (y, -x) → (2y, -2x)"
+      ]
+    },
+    {
+      "question": "Hiasan jamur (tabung + setengah bola). Menghitung volume.",
+      "answer": "V = V_tabung + V_setengah_bola",
+      "solutionSteps": [
+        "V_tab = π r² t",
+        "V_setengah_bola = (1/2) × (4/3) π r³ = (2/3) π r³",
+        "Jumlahkan keduanya."
+      ]
+    }
+  ],
+  "tips": [
+    "Bongkar bangun gabungan menjadi komponen yang mudah dihitung.",
+    "Pada koordinat kartesius, luas segitiga bisa dihitung menggunakan selisih batas x dan y."
+  ],
+  "quiz": []
+}

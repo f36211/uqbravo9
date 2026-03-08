@@ -118,3 +118,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* KaTeX Dark Mode Fix */
+.dark .katex {
+  color: var(--foreground);
+}
+.dark .katex-display {
+  color: var(--foreground);
+}

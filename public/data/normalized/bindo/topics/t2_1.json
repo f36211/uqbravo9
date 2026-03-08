@@ -1,0 +1,54 @@
+{
+  "id": "t2_1",
+  "chapterId": "c2",
+  "subjectId": "bindo",
+  "title": "Kalimat Efektif",
+  "content": "Kalimat efektif adalah kalimat yang mampu menyampaikan gagasan dengan tepat sesuai dengan yang dimaksud penulis/pembicara sehingga tidak menimbulkan makna ganda atau kebingungan.",
+  "formulas": [],
+  "keyPoints": [
+    "Syarat kalimat efektif: kesepadanan (S-P lengkap), keparalelan, ketegasan, kehematan, kelogisan",
+    "Kesepadanan: harus memiliki minimal Subjek dan Predikat",
+    "Keparalelan: bentuk kata dalam daftar harus sejajar (semua kata kerja atau semua kata benda)",
+    "Kehematan: tidak menggunakan kata yang bermakna sama secara berulang (pleonasme)",
+    "Kelogisan: makna kalimat harus masuk akal dan tidak ambigu"
+  ],
+  "examples": [
+    {
+      "text": "❌ SALAH: 'Para siswa-siswa harus naik ke atas untuk mengambil buku.' \n✅ BENAR: 'Para siswa harus naik untuk mengambil buku.'",
+      "explanation": "Kesalahan pleonasme: 'para' sudah bermakna jamak, tidak perlu 'siswa-siswa'. 'Naik' sudah bermakna ke atas, tidak perlu 'ke atas'."
+    },
+    {
+      "text": "❌ SALAH: 'Bagi semua mahasiswa harus mengumpulkan tugas.' \n✅ BENAR: 'Semua mahasiswa harus mengumpulkan tugas.'",
+      "explanation": "Kesalahan kesepadanan: jika menggunakan 'bagi', kalimat tidak memiliki Subjek. Hilangkan 'bagi' agar 'semua mahasiswa' menjadi Subjek."
+    }
+  ],
+  "tips": [
+    "Periksa apakah kalimat punya S dan P — jika tidak, bukan kalimat efektif",
+    "Cari kata-kata yang bermakna ganda (pleonasme) dan hilangkan yang berlebihan",
+    "Perhatikan penggunaan 'di mana' — sering dipakai salah sebagai penghubung umum"
+  ],
+  "quiz": [
+    {
+      "question": "Contoh pleonasme adalah...",
+      "options": [
+        "'naik ke atas'",
+        "'pergi ke sekolah'",
+        "'membaca buku'",
+        "'menulis surat'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Naik ke atas' adalah pleonasme karena 'naik' sudah bermakna bergerak ke atas. Cukup gunakan 'naik' saja."
+    },
+    {
+      "question": "Kalimat yang tidak efektif karena tidak memiliki Subjek adalah...",
+      "options": [
+        "'Bagi siswa harus mengumpulkan tugas.'",
+        "'Siswa harus mengumpulkan tugas.'",
+        "'Para guru memberikan tugas.'",
+        "'Kami mengerjakan soal.'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kata 'bagi' menjadikan 'siswa' sebagai keterangan, bukan Subjek. Kalimat kehilangan Subjek sehingga tidak efektif."
+    }
+  ]
+}

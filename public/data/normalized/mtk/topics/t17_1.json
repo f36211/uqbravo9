@@ -1,0 +1,60 @@
+{
+  "id": "t17_1",
+  "chapterId": "c17",
+  "subjectId": "mtk",
+  "title": "Interpretasi Diagram Batang dan Grafik",
+  "content": "Diagram dan grafik digunakan untuk menyajikan data secara visual. Interpretasi melibatkan pembacaan nilai, tren, dan perbandingan dari visualisasi data.",
+  "formulas": [
+    {
+      "name": "Gradien Grafik",
+      "latex": "m = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2 - y_1}{x_2 - x_1}",
+      "note": "Kemiringan garis pada grafik"
+    },
+    {
+      "name": "Persamaan Garis dari Grafik",
+      "latex": "\\frac{y - y_1}{y_2 - y_1} = \\frac{x - x_1}{x_2 - x_1}",
+      "note": "Interpolasi linier"
+    }
+  ],
+  "keyPoints": [
+    "Perhatikan skala pada sumbu x dan y",
+    "Gradien positif: naik ke kanan, gradien negatif: turun ke kanan",
+    "Titik potong sumbu y adalah nilai konstanta"
+  ],
+  "examples": [
+    {
+      "question": "Produksi sepatu mencapai 1250 pasang setelah hari ke-... (dari grafik dengan pola $U_n = 50n$)",
+      "answer": "$25$",
+      "solutionSteps": [
+        "Dari grafik, produksi mengikuti pola $U_n = 50n$",
+        "$1250 = 50n \\Rightarrow n = 25$"
+      ]
+    },
+    {
+      "question": "Jarak yang ditempuh mobil selama 6 jam dari grafik jarak-waktu dengan titik (0,0) dan (10, 400) adalah...",
+      "answer": "$240$ km",
+      "solutionSteps": [
+        "Gradien = $\\frac{400}{10} = 40$ km/jam",
+        "Jarak = $40 \\times 6 = 240$ km"
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu perhatikan skala dan satuan pada kedua sumbu",
+    "Untuk grafik garis lurus, gunakan rumus gradien",
+    "Baca legenda dan keterangan dengan teliti"
+  ],
+  "quiz": [
+    {
+      "question": "Jika grafik menunjukkan produksi 100 unit pada hari ke-2 dan 300 unit pada hari ke-6, produksi pada hari ke-4 adalah...",
+      "options": [
+        "$150$",
+        "$200$",
+        "$250$",
+        "$400$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Gradien = $\\frac{300-100}{6-2} = 50$ unit/hari. Produksi hari ke-4: $100 + (4-2) \\times 50 = 100 + 100 = 200$"
+    }
+  ]
+}

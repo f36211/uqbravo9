@@ -1,0 +1,71 @@
+{
+  "id": "t6_4",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Kerucut dan Bola",
+  "content": "Kerucut memiliki alas lingkaran dan titik puncak. Bola adalah bangun ruang dengan semua titik permukaan berjarak sama dari pusat.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Tent"
+  },
+  "formulas": [
+    {
+      "name": "Volume Kerucut",
+      "latex": "V = \\frac{1}{3}\\pi r^2 t",
+      "note": "t = tinggi kerucut"
+    },
+    {
+      "name": "Volume Bola",
+      "latex": "V = \\frac{4}{3}\\pi r^3",
+      "note": "r = jari-jari bola"
+    },
+    {
+      "name": "Luas Permukaan Bola",
+      "latex": "L = 4\\pi r^2",
+      "note": "Luas seluruh permukaan bola"
+    }
+  ],
+  "keyPoints": [
+    "Volume kerucut = 1/3 volume tabung dengan alas dan tinggi sama",
+    "Luas permukaan setengah bola = $2\\pi r^2$ (tidak termasuk alas)",
+    "Luas permukaan bola penuh = $4\\pi r^2$"
+  ],
+  "examples": [
+    {
+      "question": "Atap gazebo setengah bola dengan diameter 10 m. Biaya pengecatan Rp30.000/m². Biaya total adalah...",
+      "answer": "Rp4.710.000,00",
+      "solutionSteps": [
+        "r = 5 m",
+        "Luas setengah bola = $2\\pi r^2 = 2 \\times 3{,}14 \\times 25 = 157$ m²",
+        "Biaya: $157 \\times 30.000 = 4.710.000$"
+      ]
+    },
+    {
+      "question": "Pelampung terdiri dari kerucut (tinggi 36 mm) dan setengah bola (diameter 18 mm). Volume total adalah...",
+      "answer": "$1.458\\pi \\text{ mm}^3$",
+      "solutionSteps": [
+        "r = 9 mm",
+        "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
+        "Volume setengah bola: $\\frac{1}{2} \\times \\frac{4}{3}\\pi \\times 729 = 486\\pi$ mm³",
+        "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk kerucut, tinggi tegak lurus alas (bukan garis pelukis)",
+    "Luas setengah bola untuk pengecatan = $2\\pi r^2$ (hanya bagian lengkung)"
+  ],
+  "quiz": [
+    {
+      "question": "Volume bola dengan jari-jari 21 cm adalah... ($\\pi = \\frac{22}{7}$)",
+      "options": [
+        "$38.808$ cm³",
+        "$19.404$ cm³",
+        "$77.616$ cm³",
+        "$11.088$ cm³"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$V = \\frac{4}{3} \\times \\frac{22}{7} \\times 21^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = 38.808$ cm³"
+    }
+  ]
+}

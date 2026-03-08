@@ -1,0 +1,64 @@
+{
+  "id": "t6_2",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Lingkaran",
+  "content": "Lingkaran adalah bangun dengan semua titik berjarak sama dari pusat. Keliling = $2\\pi r$ atau $\\pi d$, Luas = $\\pi r^2$.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Circle"
+  },
+  "formulas": [
+    {
+      "name": "Keliling Lingkaran",
+      "latex": "K = 2\\pi r = \\pi d",
+      "note": "r = jari-jari, d = diameter = 2r"
+    },
+    {
+      "name": "Luas Lingkaran",
+      "latex": "L = \\pi r^2 = \\frac{1}{4}\\pi d^2",
+      "note": "Gunakan $\\pi = \\frac{22}{7}$ atau $3{,}14$"
+    }
+  ],
+  "keyPoints": [
+    "Diameter = 2 × jari-jari",
+    "Untuk perhitungan, gunakan $\\pi = \\frac{22}{7}$ jika r atau d kelipatan 7",
+    "Luas berbanding kuadrat dengan jari-jari"
+  ],
+  "examples": [
+    {
+      "question": "Jika diameter lingkaran 14 cm, kelilingnya adalah... ($\\pi = \\frac{22}{7}$)",
+      "answer": "$44$ cm",
+      "solutionSteps": [
+        "$K = \\pi d = \\frac{22}{7} \\times 14$",
+        "$= 22 \\times 2 = 44$ cm"
+      ]
+    },
+    {
+      "question": "Jika diameter lingkaran ditambah 50%, maka luas bertambah sebesar...",
+      "answer": "$125\\%$",
+      "solutionSteps": [
+        "Diameter baru = $1{,}5d$, jari-jari baru = $1{,}5r$",
+        "Luas baru = $\\pi(1{,}5r)^2 = 2{,}25\\pi r^2$",
+        "Persentase pertambahan: $\\frac{2{,}25 - 1}{1} \\times 100\\% = 125\\%$"
+      ]
+    }
+  ],
+  "tips": [
+    "Perhatikan apakah yang diketahui jari-jari atau diameter",
+    "Luas lingkaran berbanding kuadrat dengan jari-jari"
+  ],
+  "quiz": [
+    {
+      "question": "Luas lingkaran dengan jari-jari 7 cm adalah... ($\\pi = \\frac{22}{7}$)",
+      "options": [
+        "$154$ cm²",
+        "$132$ cm²",
+        "$176$ cm²",
+        "$198$ cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$L = \\frac{22}{7} \\times 7 \\times 7 = 22 \\times 7 = 154$ cm²"
+    }
+  ]
+}

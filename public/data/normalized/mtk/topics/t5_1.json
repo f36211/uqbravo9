@@ -1,0 +1,73 @@
+{
+  "id": "t5_1",
+  "chapterId": "c5",
+  "subjectId": "mtk",
+  "title": "Konsep Fungsi dan Relasi",
+  "content": "Fungsi adalah relasi yang memasangkan setiap anggota domain dengan tepat satu anggota kodomain. Ditulis sebagai $f(x) = y$.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Activity"
+  },
+  "formulas": [
+    {
+      "name": "Notasi Fungsi",
+      "latex": "f: x \\rightarrow y \\text{ atau } f(x) = y",
+      "note": "x anggota domain, y anggota range"
+    },
+    {
+      "name": "Mencari Nilai Fungsi",
+      "latex": "f(a) = \\text{substitusi } x = a \\text{ ke rumus fungsi}",
+      "note": "Ganti x dengan nilai yang diberikan"
+    }
+  ],
+  "keyPoints": [
+    "Fungsi: setiap x memiliki tepat satu y",
+    "Bukan fungsi jika ada x yang memiliki lebih dari satu y",
+    "Domain: himpunan x, Range: himpunan y"
+  ],
+  "examples": [
+    {
+      "question": "Diketahui $f(x) = 2x - 3$. Nilai $f(-1)$ adalah...",
+      "answer": "$-5$",
+      "solutionSteps": [
+        "$f(-1) = 2(-1) - 3$",
+        "$= -2 - 3 = -5$"
+      ]
+    },
+    {
+      "question": "Diketahui $f(x) = 8 - 2x$. Jika $f(a) = -2$, maka $a = $...",
+      "answer": "$5$",
+      "solutionSteps": [
+        "$8 - 2a = -2$",
+        "$-2a = -10$",
+        "$a = 5$"
+      ]
+    },
+    {
+      "question": "Diketahui $g(x) = 3x - 5$. Jika $g(k) = 10$, maka $k = $...",
+      "answer": "$5$",
+      "solutionSteps": [
+        "$3k - 5 = 10$",
+        "$3k = 15$",
+        "$k = 5$"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk mencari nilai fungsi, langsung substitusi",
+    "Untuk mencari x jika f(x) diketahui, buat persamaan"
+  ],
+  "quiz": [
+    {
+      "question": "Manakah yang merupakan fungsi?",
+      "options": [
+        "{(1,a), (2,b), (3,c)}",
+        "{(1,a), (1,b), (2,c)}",
+        "{(a,1), (b,1), (c,2)}",
+        "{(1,a), (2,a), (3,b)}"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fungsi mengharuskan setiap anggota domain (x) memiliki tepat satu pasangan. Pilihan 1, 3, dan 4 adalah fungsi karena setiap domain hanya dipasangkan ke satu nilai. Pilihan 2 bukan fungsi karena x=1 dipasangkan ke dua nilai berbeda (a dan b)."
+    }
+  ]
+}

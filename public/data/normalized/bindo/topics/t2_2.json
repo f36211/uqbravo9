@@ -1,0 +1,54 @@
+{
+  "id": "t2_2",
+  "chapterId": "c2",
+  "subjectId": "bindo",
+  "title": "Ejaan & Tanda Baca (PUEBI)",
+  "content": "PUEBI (Pedoman Umum Ejaan Bahasa Indonesia) adalah acuan penulisan bahasa Indonesia yang baku. Memahami aturan ejaan penting untuk menjawab soal kebahasaan.",
+  "formulas": [],
+  "keyPoints": [
+    "Huruf kapital: awal kalimat, nama diri, gelar kehormatan, nama geografis, judul karangan",
+    "Huruf miring: judul buku/majalah, kata asing yang belum diserap, istilah ilmiah",
+    "Tanda koma: sebelum konjungsi (tetapi, namun, melainkan), setelah kata penghubung antarkalimat",
+    "Kata depan 'di' (di rumah, di sekolah) ditulis terpisah; imbuhan 'di-' (dimakan, ditulis) ditulis serangkai",
+    "Penulisan partikel 'pun': dipisah jika bukan bagian dari kata yang sudah baku (dia pun, apa pun); digabung jika sudah menyatu (adapun, walaupun, meskipun, sungguhpun)"
+  ],
+  "examples": [
+    {
+      "text": "❌ 'Dimana kamu tinggal?' → ✅ 'Di mana kamu tinggal?'",
+      "explanation": "'Di mana' adalah kata tanya keterangan tempat → ditulis terpisah. 'Di-' hanya digabung jika merupakan imbuhan (contoh: dimakan = di + makan)."
+    },
+    {
+      "text": "❌ 'Ibu pergi kepasar.' → ✅ 'Ibu pergi ke pasar.'",
+      "explanation": "'Ke' sebagai kata depan yang menunjukkan arah/tempat SELALU ditulis terpisah. 'Ke-' hanya digabung jika merupakan awalan (contoh: ketua, ketiga)."
+    }
+  ],
+  "tips": [
+    "Hafal aturan 'di' dan 'ke': jika menunjukkan tempat/arah → ditulis terpisah (kata depan)",
+    "Perhatikan penggunaan tanda baca dalam pilihan jawaban — sering jadi pembeda",
+    "Kata serapan dari bahasa asing ikuti aturan PUEBI, bukan ejaan bahasa aslinya"
+  ],
+  "quiz": [
+    {
+      "question": "Penulisan yang benar adalah...",
+      "options": [
+        "'Di mana kamu tinggal?'",
+        "'Dimana kamu tinggal?'",
+        "'Kemana kamu pergi?'",
+        "'Kenapa dia disini?'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Di mana' ditulis terpisah karena 'di' merupakan kata depan dan 'mana' merupakan kata tanya. Kata depan 'di' selalu ditulis terpisah dari kata yang mengikutinya."
+    },
+    {
+      "question": "Penulisan partikel 'pun' yang benar adalah...",
+      "options": [
+        "'Dia pun pergi.'",
+        "'Ada pun itu benar.'",
+        "'Walau pun sulit.'",
+        "'Meski pun begitu.'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Dia pun' ditulis terpisah karena 'pun' bukan bagian dari kata baku. Sebaliknya, 'adapun', 'walaupun', dan 'meskipun' sudah menjadi satu kata baku dan ditulis serangkai."
+    }
+  ]
+}

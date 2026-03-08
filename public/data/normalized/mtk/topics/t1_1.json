@@ -1,0 +1,91 @@
+{
+  "id": "t1_1",
+  "chapterId": "c1",
+  "subjectId": "mtk",
+  "title": "Operasi Campuran Bilangan Bulat",
+  "content": "Operasi bilangan bulat mengikuti aturan urutan operasi: perkalian dan pembagian dikerjakan terlebih dahulu, baru penjumlahan dan pengurangan. Perhatikan tanda negatif dan positif.",
+  "formulas": [
+    {
+      "name": "Urutan Operasi",
+      "latex": "a + b \\times c = a + (b \\times c)",
+      "note": "Perkalian/pembagian didahulukan"
+    },
+    {
+      "name": "Pembagian dengan Pecahan",
+      "latex": "a \\div \\frac{b}{c} = a \\times \\frac{c}{b}",
+      "note": "Pembagian sama dengan perkalian kebalikan"
+    }
+  ],
+  "keyPoints": [
+    "Perhatikan tanda: (-) × (-) = (+), (-) × (+) = (-)",
+    "Pembagian dengan pecahan = perkalian dengan kebalikan",
+    "Kerjakan operasi dalam kurung terlebih dahulu"
+  ],
+  "examples": [
+    {
+      "question": "Hasil dari $(-15) + 6 \\times 4 - 24 \\div (-4)$",
+      "answer": "$15$",
+      "solutionSteps": [
+        "Kerjakan perkalian dan pembagian terlebih dahulu: $6 \\times 4 = 24$ dan $24 \\div (-4) = -6$",
+        "Substitusi: $(-15) + 24 - (-6)$",
+        "Selesaikan: $-15 + 24 + 6 = 15$"
+      ]
+    },
+    {
+      "question": "Hasil dari $45 - 48 \\div (-6)$",
+      "answer": "$53$",
+      "solutionSteps": [
+        "Kerjakan pembagian: $48 \\div (-6) = -8$",
+        "Substitusi: $45 - (-8) = 45 + 8 = 53$"
+      ]
+    },
+    {
+      "question": "Hasil dari $-6 + (6 \\div (-2)) - ((-3) \\cdot 3)$",
+      "answer": "$0$",
+      "solutionSteps": [
+        "Kerjakan dalam kurung: $6 \\div (-2) = -3$ dan $(-3) \\cdot 3 = -9$",
+        "Substitusi: $-6 + (-3) - (-9)$",
+        "Selesaikan: $-6 - 3 + 9 = 0$"
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu perhatikan urutan operasi: Kali/Bagi → Tambah/Kurang",
+    "Hati-hati dengan tanda negatif ganda: $-(-a) = +a$"
+  ],
+  "quiz": [
+    {
+      "question": "Hasil dari $-15 + 9 \\div 0{,}3 - 10$ adalah...",
+      "options": [
+        "$5$",
+        "$0$",
+        "$-3$",
+        "$-5$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$9 \\div 0{,}3 = 30$, maka $-15 + 30 - 10 = 5$"
+    },
+    {
+      "question": "Hasil dari $25 + (-20) \\times 12 - 15$ adalah...",
+      "options": [
+        "$-230$",
+        "$0$",
+        "$-3$",
+        "$-5$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$(-20) \\times 12 = -240$, maka $25 - 240 - 15 = -230$"
+    },
+    {
+      "question": "Hasil dari $10^{-2}$ adalah...",
+      "options": [
+        "$0{,}01$",
+        "$0{,}1$",
+        "$-20$",
+        "$-100$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$10^{-2} = \\frac{1}{10^2} = \\frac{1}{100} = 0{,}01$"
+    }
+  ]
+}

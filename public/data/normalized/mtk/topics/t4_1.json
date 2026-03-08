@@ -1,0 +1,44 @@
+{
+  "id": "t4_1",
+  "chapterId": "c4",
+  "subjectId": "mtk",
+  "title": "Persamaan Linear Satu Variabel (PLSV)",
+  "content": "Persamaan linear satu variabel adalah persamaan dengan satu variabel berpangkat satu. Diselesaikan dengan menyamakan ruas kiri dan kanan.",
+  "formulas": [
+    {
+      "name": "Bentuk Umum",
+      "latex": "ax + b = cx + d",
+      "note": "a, b, c, d konstanta, x variabel"
+    }
+  ],
+  "keyPoints": [
+    "Pindahkan suku dengan variabel ke satu ruas, konstanta ke ruas lain",
+    "Jika dikali atau dibagi bilangan negatif, tanda pertidaksamaan berubah",
+    "Selalu periksa jawaban dengan substitusi"
+  ],
+  "examples": [
+    {
+      "question": "Jika $2x - 3 = 5x + 6$, maka nilai $x + 2$ adalah...",
+      "answer": "$-1$",
+      "solutionSteps": [
+        "$2x - 5x = 6 + 3$",
+        "$-3x = 9$",
+        "$x = -3$",
+        "Jadi $x + 2 = -3 + 2 = -1$"
+      ]
+    },
+    {
+      "question": "Himpunan penyelesaian dari $x - 4 \\leq 6$ adalah...",
+      "answer": "$x \\leq 10$",
+      "solutionSteps": [
+        "$x \\leq 6 + 4$",
+        "$x \\leq 10$"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk pertidaksamaan, perhatikan tanda saat membagikan dengan negatif",
+    "Selalu isolasi variabel di satu ruas"
+  ],
+  "quiz": []
+}

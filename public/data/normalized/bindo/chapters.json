@@ -1,0 +1,46 @@
+{
+  "chapters": [
+    {
+      "id": "c1",
+      "title": "Pemahaman Bacaan",
+      "topics": [
+        {
+          "id": "t1_1",
+          "title": "Ide Pokok & Gagasan Utama"
+        },
+        {
+          "id": "t1_2",
+          "title": "Simpulan & Inferensi"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Tata Bahasa",
+      "topics": [
+        {
+          "id": "t2_1",
+          "title": "Kalimat Efektif"
+        },
+        {
+          "id": "t2_2",
+          "title": "Ejaan & Tanda Baca (PUEBI)"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Kebahasaan",
+      "topics": [
+        {
+          "id": "t3_1",
+          "title": "Makna Kata & Istilah"
+        },
+        {
+          "id": "t3_2",
+          "title": "Konjungsi & Kata Hubung"
+        }
+      ]
+    }
+  ]
+}

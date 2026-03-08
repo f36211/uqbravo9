@@ -1,0 +1,46 @@
+{
+  "id": "t7_3",
+  "chapterId": "c7",
+  "subjectId": "mtk",
+  "title": "Peluang & Himpunan",
+  "content": "Peluang kejadian dari himpunan dasar (cacah, prima) dan probabilitas rute atau kombinasi titik.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Dices"
+  },
+  "formulas": [
+    {
+      "name": "Peluang Kejadian",
+      "latex": "P(A) = \\frac{n(A)}{n(S)}",
+      "note": "n(A) = titik sampel, n(S) = ruang sampel"
+    }
+  ],
+  "keyPoints": [
+    "Bilangan cacah = {0, 1, 2, 3, ...}",
+    "Bilangan prima = {2, 3, 5, 7, 11, ...}",
+    "Titik potong jalur dihitung sebagai kombinasi perkalian jalur masuk dan keluar."
+  ],
+  "examples": [
+    {
+      "question": "A = Bilangan cacah < 7. B = Bilangan prima < 7. Peluang terambilnya B dari semesta A?",
+      "answer": "3/7",
+      "solutionSteps": [
+        "A = {0, 1, 2, 3, 4, 5, 6} (ada 7 anggota)",
+        "B = {2, 3, 5} (ada 3 anggota)",
+        "Peluang = n(B) / n(A) = 3/7."
+      ]
+    },
+    {
+      "question": "Peluang rute dari kota A ke B ada 3 jalan, B ke C ada 4 jalan.",
+      "answer": "Ada 12 kombinasi",
+      "solutionSteps": [
+        "Gunakan aturan perkalian kombinasi jalur.",
+        "Total rute A ke C melewati B = 3 × 4 = 12 rute kombinasi."
+      ]
+    }
+  ],
+  "tips": [
+    "Teliti pada anggota pertama himpunan: cacah dimulai dari 0, asli dari 1, prima dari 2."
+  ],
+  "quiz": []
+}

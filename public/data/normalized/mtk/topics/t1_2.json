@@ -1,0 +1,114 @@
+{
+  "id": "t1_2",
+  "chapterId": "c1",
+  "subjectId": "mtk",
+  "title": "Operasi Pecahan",
+  "content": "Operasi pecahan meliputi penjumlahan, pengurangan, perkalian, dan pembagian. Untuk penjumlahan/pengurangan, samakan penyebut terlebih dahulu.",
+  "illustration": {
+    "type": "lucide",
+    "name": "PieChart"
+  },
+  "formulas": [
+    {
+      "name": "Perkalian Pecahan",
+      "latex": "\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}",
+      "note": "Langsung kalikan pembilang dan penyebut"
+    },
+    {
+      "name": "Penjumlahan Pecahan Campuran",
+      "latex": "a\\frac{b}{c} + d\\frac{e}{f} = \\frac{(a \\times c + b)}{c} + \\frac{(d \\times f + e)}{f}",
+      "note": "Ubah ke pecahan biasa terlebih dahulu"
+    },
+    {
+      "name": "Perbandingan Berbalik Nilai",
+      "latex": "O_1 \\times W_1 = O_2 \\times W_2",
+      "note": "Objek (misal: pompa) dikali Waktu hasilnya tetap"
+    }
+  ],
+  "keyPoints": [
+    "Untuk perkalian: langsung kalikan pembilang dan penyebut",
+    "Untuk penjumlahan: samakan penyebut dengan KPK",
+    "Pecahan campuran diubah ke pecahan biasa terlebih dahulu",
+    "1 lusin = 12 barang. Harga per buah = Harga lusin ÷ 12.",
+    "Diskon: Harga setelah diskon = Harga awal - (Persentase diskon × Harga awal).",
+    "Penjumlahan pecahan: Samakan penyebut dengan KPK.",
+    "Syarat bilangan asli pada pecahan 20/(p+2): (p+2) harus faktor dari 20."
+  ],
+  "examples": [
+    {
+      "question": "Hasil dari $\\frac{7}{2} \\times \\frac{3}{5}$",
+      "answer": "$\\frac{21}{10}$",
+      "solutionSteps": [
+        "Kalikan pembilang: $7 \\times 3 = 21$",
+        "Kalikan penyebut: $2 \\times 5 = 10$",
+        "Hasil: $\\frac{21}{10}$"
+      ]
+    },
+    {
+      "question": "Bentuk sederhana dari $2\\frac{3}{4} + 1\\frac{2}{3}$",
+      "answer": "$4\\frac{5}{12}$",
+      "solutionSteps": [
+        "Ubah ke pecahan biasa: $\\frac{11}{4} + \\frac{5}{3}$",
+        "Samakan penyebut (KPK 4 dan 3 = 12): $\\frac{33}{12} + \\frac{20}{12}$",
+        "Jumlahkan: $\\frac{53}{12} = 4\\frac{5}{12}$"
+      ]
+    },
+    {
+      "question": "Perbandingan laki-laki dan perempuan 3 : 5, jumlah siswa 40. Selisih laki-laki dan perempuan adalah?",
+      "answer": "10 orang",
+      "solutionSteps": [
+        "Total rasio = 3 + 5 = 8 bagian.",
+        "Nilai 1 bagian = 40 ÷ 8 = 5 orang.",
+        "Laki-laki = 3 × 5 = 15, Perempuan = 5 × 5 = 25.",
+        "Selisih = 25 - 15 = 10 orang."
+      ]
+    },
+    {
+      "question": "Sisa air minum dari 2 liter, setelah diminum 3/5 L, 1/2 L, 3/8 L, dan 1/4 L?",
+      "answer": "11/40 liter",
+      "solutionSteps": [
+        "Jumlahkan yang diminum: (3/5) + (1/2) + (3/8) + (1/4)",
+        "KPK dari 5, 2, 8, 4 adalah 40.",
+        "(24 + 20 + 15 + 10) / 40 = 69/40 liter.",
+        "Sisa = 2 - (69/40) = 80/40 - 69/40 = 11/40 liter."
+      ]
+    },
+    {
+      "question": "6 pompa mengisi kolam selama 2 jam (120 menit). Berapa pompa dibutuhkan agar selesai dalam 90 menit?",
+      "answer": "8 pompa",
+      "solutionSteps": [
+        "Perbandingan berbalik nilai: 6 × 120 = n × 90",
+        "720 = 90n  ⇒  n = 720 ÷ 90 = 8 pompa."
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu sederhanakan pecahan hasil jika memungkinkan",
+    "Untuk pecahan campuran, ubah ke pecahan biasa dulu untuk operasi",
+    "Identifikasi apakah perbandingan senilai (bertambah->bertambah) atau berbalik nilai (bertambah->berkurang)."
+  ],
+  "quiz": [
+    {
+      "question": "Hasil dari $\\frac{3}{5}$ dari $75$ adalah...",
+      "options": [
+        "$45$",
+        "$40$",
+        "$50$",
+        "$35$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$\\frac{3}{5} \\times 75 = 3 \\times 15 = 45$"
+    },
+    {
+      "question": "Bentuk sederhana dari $\\frac{(3x-2)}{4} + \\frac{(5x+6)}{4}$ adalah...",
+      "options": [
+        "$2x+1$",
+        "$\\frac{2x+1}{4}$",
+        "$\\frac{4x+3}{2}$",
+        "$\\frac{8x+1}{4}$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Penyebut sama, jumlahkan pembilang: $(3x-2) + (5x+6) = 8x + 4$, sederhanakan: $\\frac{8x+4}{4} = 2x+1$"
+    }
+  ]
+}

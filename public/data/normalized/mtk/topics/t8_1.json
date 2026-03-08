@@ -1,0 +1,99 @@
+{
+  "id": "t8_1",
+  "chapterId": "c8",
+  "subjectId": "mtk",
+  "title": "Translasi, Refleksi, dan Dilatasi",
+  "content": "Transformasi geometri adalah perpindahan posisi titik atau bangun pada bidang koordinat. Meliputi translasi (pergeseran), refleksi (pencerminan), rotasi (perputaran), dan dilatasi (perkalian).",
+  "formulas": [
+    {
+      "name": "Translasi",
+      "latex": "A(x, y) \\xrightarrow{T(a,b)} A'(x+a, y+b)",
+      "note": "Geser x sebesar a, y sebesar b"
+    },
+    {
+      "name": "Refleksi terhadap Sumbu-Y",
+      "latex": "A(x, y) \\rightarrow A'(-x, y)",
+      "note": "Koordinat x berubah tanda"
+    },
+    {
+      "name": "Refleksi terhadap Sumbu-X",
+      "latex": "A(x, y) \\rightarrow A'(x, -y)",
+      "note": "Koordinat y berubah tanda"
+    },
+    {
+      "name": "Dilatasi dengan Faktor k",
+      "latex": "A(x, y) \\xrightarrow{D(O,k)} A'(kx, ky)",
+      "note": "Kalikan kedua koordinat dengan k"
+    },
+    {
+      "name": "Luas Hasil Dilatasi",
+      "latex": "L' = k^2 \\times L",
+      "note": "Luas berbanding kuadrat faktor skala"
+    }
+  ],
+  "keyPoints": [
+    "Translasi: semua titik digeser dengan vektor yang sama",
+    "Refleksi: bayangan simetris terhadap garis cermin",
+    "Dilatasi: memperbesar/memperkecil dengan pusat tertentu",
+    "Jika k > 1: memperbesar, jika 0 < k < 1: memperkecil, jika k negatif: berlawanan arah"
+  ],
+  "examples": [
+    {
+      "question": "Bayangan titik P(-4, 2) setelah ditranslasi oleh T = (5, -3), lalu direfleksi terhadap sumbu-Y adalah...",
+      "answer": "$(-1, -1)$",
+      "solutionSteps": [
+        "Translasi: $(-4+5, 2+(-3)) = (1, -1)$",
+        "Refleksi terhadap sumbu-Y: $(-1, -1)$",
+        "Jadi bayangan akhir adalah $(-1, -1)$"
+      ]
+    },
+    {
+      "question": "Luas segitiga dengan titik A(0,0), B(4,0), dan C(4,3) didilatasi terhadap titik asal dengan faktor skala 3. Luas segitiga hasil dilatasi adalah...",
+      "answer": "$54$ satuan luas",
+      "solutionSteps": [
+        "Luas awal: $\\frac{1}{2} \\times 4 \\times 3 = 6$ satuan luas",
+        "Faktor skala k = 3",
+        "Luas hasil: $k^2 \\times L = 9 \\times 6 = 54$ satuan luas"
+      ]
+    },
+    {
+      "question": "Segitiga DEF dengan titik D(-2,-1), E(-2,3), dan F(3,3) didilatasi terhadap titik asal dengan skala -2. Luas segitiga hasil transformasi adalah...",
+      "answer": "$40$ satuan luas",
+      "solutionSteps": [
+        "Panjang DE (vertikal) = $|3 - (-1)| = 4$, panjang EF (horizontal) = $|3 - (-2)| = 5$",
+        "Luas awal: $\\frac{1}{2} \\times 4 \\times 5 = 10$ satuan luas",
+        "Faktor skala k = -2, maka $k^2 = 4$",
+        "Luas hasil: $4 \\times 10 = 40$ satuan luas"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk dilatasi, luas berbanding kuadrat faktor skala (selalu positif)",
+    "Refleksi dua kali terhadap garis yang sama mengembalikan ke posisi semula",
+    "Translasi kemudian refleksi: kerjakan berurutan dari kiri ke kanan"
+  ],
+  "quiz": [
+    {
+      "question": "Titik A(3, -5) ditranslasi oleh T(2, 4). Bayangannya adalah...",
+      "options": [
+        "$(5, -1)$",
+        "$(1, -9)$",
+        "$(6, -20)$",
+        "$(-1, 1)$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$(3+2, -5+4) = (5, -1)$"
+    },
+    {
+      "question": "Jika luas bangun adalah 12 cm² dan didilatasi dengan faktor skala 2, maka luas hasilnya adalah...",
+      "options": [
+        "$24$ cm²",
+        "$36$ cm²",
+        "$48$ cm²",
+        "$144$ cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "$L' = k^2 \\times L = 2^2 \\times 12 = 4 \\times 12 = 48$ cm²"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "t16_1",
+  "chapterId": "c16",
+  "subjectId": "mtk",
+  "title": "Kesebangunan dan Kongruensi Segitiga",
+  "content": "Dua bangun dikatakan kongruen (sama dan sebangun) jika memiliki bentuk dan ukuran yang sama. Kesebangunan hanya memerlukan bentuk sama dengan perbandingan sisi tetap.",
+  "formulas": [
+    {
+      "name": "Syarat Kongruensi Segitiga",
+      "latex": "\\text{Sisi-Sisi-Sisi (SSS), Sisi-Sudut-Sisi (SAS), Sudut-Sisi-Sudut (ASA)}",
+      "note": "Tiga elemen yang bersesuaian sama"
+    },
+    {
+      "name": "Syarat Kesebangunan",
+      "latex": "\\frac{\\text{sisi}_1}{\\text{sisi}'_1} = \\frac{\\text{sisi}_2}{\\text{sisi}'_2} = \\frac{\\text{sisi}_3}{\\text{sisi}'_3} = k",
+      "note": "k = faktor skala"
+    }
+  ],
+  "keyPoints": [
+    "Kongruen: sisi-sisi bersesuaian sama panjang, sudut-sudut bersesuaian sama besar",
+    "Kesebangunan: perbandingan sisi-sisi yang bersesuaian sama",
+    "Jika dua segitiga kongruen, maka pasti sebangun (dengan k = 1)"
+  ],
+  "examples": [
+    {
+      "question": "Jika dua segitiga dikatakan kongruen, maka syarat yang harus dipenuhi adalah...",
+      "answer": "Sisi-sisi bersesuaian sama panjang dan sudut-sudut bersesuaian sama besar",
+      "solutionSteps": [
+        "Kongruen berarti identik (sama bentuk dan ukuran)",
+        "Semua sisi bersesuaian harus sama panjang",
+        "Semua sudut bersesuaian harus sama besar"
+      ]
+    },
+    {
+      "question": "Diketahui $\\triangle ABC$ dan $\\triangle PQR$ kongruen. Jika $\\angle A = 30°$, $\\angle B = 80°$, panjang AB = 15 cm, BC = 12 cm, dan PQ = 15 cm, QR = 12 cm, maka $\\angle PRQ = $...",
+      "answer": "$70°$",
+      "solutionSteps": [
+        "$\\angle C = 180° - 30° - 80° = 70°$",
+        "Karena kongruen dan AB = PQ, BC = QR, maka korespondensi: A↔P, B↔Q, C↔R",
+        "Jadi $\\angle PRQ = \\angle ACB = 70°$"
+      ]
+    }
+  ],
+  "tips": [
+    "Identifikasi korespondensi titik dengan memperhatikan sisi yang diketahui",
+    "Jumlah sudut dalam segitiga selalu 180°",
+    "Kongruen lebih kuat dari sebangun (kongruen ⇒ sebangun, tapi tidak sebaliknya)"
+  ],
+  "quiz": [
+    {
+      "question": "Dua segitiga siku-siku kongruen jika...",
+      "options": [
+        "Sisi miring dan satu sisi siku-siku sama",
+        "Dua sudut sama",
+        "Dua sisi sama",
+        "Semua jawaban benar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Untuk segitiga siku-siku, jika sisi miring dan satu sisi siku-siku sama (teorema Hypotenuse-Leg), maka kedua segitiga pasti kongruen karena sisi ketiga dapat ditentukan dengan teorema Pythagoras."
+    }
+  ]
+}

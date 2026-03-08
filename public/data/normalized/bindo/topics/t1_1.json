@@ -1,0 +1,50 @@
+{
+  "id": "t1_1",
+  "chapterId": "c1",
+  "subjectId": "bindo",
+  "title": "Ide Pokok & Gagasan Utama",
+  "content": "Ide pokok adalah gagasan utama atau inti pembahasan dalam sebuah paragraf. Setiap paragraf yang baik memiliki satu ide pokok yang didukung oleh kalimat-kalimat penjelas.",
+  "formulas": [],
+  "keyPoints": [
+    "Ide pokok biasanya terletak di kalimat pertama (deduktif) atau kalimat terakhir (induktif)",
+    "Paragraf campuran: ide pokok di awal dan dipertegas di akhir",
+    "Kalimat utama bersifat UMUM, kalimat penjelas bersifat KHUSUS",
+    "Ide pokok menjawab pertanyaan: 'Apa yang dibahas paragraf ini?'",
+    "Ciri kalimat utama: tidak diawali konjungsi (namun, selain itu, oleh karena itu)"
+  ],
+  "examples": [
+    {
+      "text": "Membaca merupakan kegiatan yang sangat penting bagi pelajar. Dengan membaca, siswa dapat menambah pengetahuan dan wawasan. Selain itu, membaca juga dapat meningkatkan kemampuan berpikir kritis. Oleh karena itu, kebiasaan membaca perlu ditanamkan sejak dini.",
+      "explanation": "Ide pokok: 'Membaca merupakan kegiatan yang sangat penting bagi pelajar' — terletak di kalimat pertama (paragraf deduktif). Kalimat-kalimat berikutnya merupakan penjelas yang memberikan alasan mengapa membaca penting."
+    }
+  ],
+  "tips": [
+    "Baca sekilas seluruh paragraf dulu, baru identifikasi kalimat yang paling umum",
+    "Kalimat yang diawali kata hubung (selain itu, oleh karena itu) biasanya BUKAN kalimat utama",
+    "Jika ragu, tanyakan: kalimat mana yang bisa 'berdiri sendiri' mewakili paragraf?"
+  ],
+  "quiz": [
+    {
+      "question": "Ide pokok suatu paragraf biasanya terdapat pada...",
+      "options": [
+        "Kalimat utama",
+        "Kalimat penjelas",
+        "Kalimat terakhir saja",
+        "Semua kalimat"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Ide pokok selalu terdapat pada kalimat utama, yang bisa berada di awal (deduktif), akhir (induktif), atau awal dan akhir (campuran)."
+    },
+    {
+      "question": "Ciri kalimat utama adalah...",
+      "options": [
+        "Bersifat umum dan tidak diawali konjungsi",
+        "Bersifat khusus dan detail",
+        "Selalu di akhir paragraf",
+        "Diawali kata 'selain itu'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kalimat utama bersifat UMUM, dapat berdiri sendiri, dan tidak diawali konjungsi antarkalimat seperti 'selain itu', 'oleh karena itu'."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "t6_3",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Tabung",
+  "content": "Tabung adalah bangun ruang dengan alas berbentuk lingkaran. Volume = luas alas × tinggi = $\\pi r^2 t$.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Database"
+  },
+  "formulas": [
+    {
+      "name": "Volume Tabung",
+      "latex": "V = \\pi r^2 t",
+      "note": "r = jari-jari alas, t = tinggi"
+    },
+    {
+      "name": "Luas Permukaan Tabung",
+      "latex": "L = 2\\pi r(r + t)",
+      "note": "Luas selimut + 2 luas alas"
+    }
+  ],
+  "keyPoints": [
+    "Volume tabung = luas lingkaran × tinggi",
+    "Luas selimut = keliling alas × tinggi = $2\\pi r t$",
+    "Perhatikan satuan: jari-jari dan tinggi harus sama"
+  ],
+  "examples": [
+    {
+      "question": "Sebuah tabung memiliki jari-jari 7 cm dan tinggi 10 cm. Volumenya adalah... ($\\pi = \\frac{22}{7}$)",
+      "answer": "$1.540 \\text{ cm}^3$",
+      "solutionSteps": [
+        "$V = \\frac{22}{7} \\times 7^2 \\times 10$",
+        "$= \\frac{22}{7} \\times 49 \\times 10$",
+        "$= 22 \\times 7 \\times 10 = 1.540$ cm³"
+      ]
+    },
+    {
+      "question": "Ember berbentuk tabung diameter 30 cm, tinggi 50 cm. Setiap hari digunakan 3 sendok takar (tabung diameter 10 cm, tinggi 10 cm). Minyak habis dalam... hari.",
+      "answer": "$15$ hari",
+      "solutionSteps": [
+        "Volume ember: $\\pi \\times 15^2 \\times 50 = 11.250\\pi$ cm³",
+        "Volume sendok: $\\pi \\times 5^2 \\times 10 = 250\\pi$ cm³",
+        "Pemakaian per hari: $3 \\times 250\\pi = 750\\pi$ cm³",
+        "Lama habis: $\\frac{11.250\\pi}{750\\pi} = 15$ hari"
+      ]
+    }
+  ],
+  "tips": [
+    "Jika diameter diketahui, jari-jari = diameter ÷ 2",
+    "Pastikan satuan jari-jari dan tinggi sama"
+  ],
+  "quiz": [
+    {
+      "question": "Volume tabung dengan diameter 14 cm dan tinggi 15 cm adalah... ($\\pi = \\frac{22}{7}$)",
+      "options": [
+        "$2.310$ cm³",
+        "$3.080$ cm³",
+        "$4.620$ cm³",
+        "$6.160$ cm³"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$r = 7$, $V = \\frac{22}{7} \\times 49 \\times 15 = 2.310$ cm³"
+    }
+  ]
+}

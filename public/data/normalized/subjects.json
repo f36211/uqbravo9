@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mtk",
+    "subject": "Matematika",
+    "icon": "📐",
+    "description": "Rangkuman materi Matematika untuk persiapan TO TKA SMP/MTs berdasarkan soal-soal latihan",
+    "totalChapters": 18,
+    "totalTopics": 28
+  },
+  {
+    "id": "bindo",
+    "subject": "Bahasa Indonesia",
+    "icon": "📖",
+    "description": "Rangkuman materi Bahasa Indonesia untuk persiapan TO TKA",
+    "totalChapters": 3,
+    "totalTopics": 6
+  }
+]

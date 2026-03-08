@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navbars />} />
-        <Route path="/to-tka" element={<BelajarTo />} />
+        <Route path="/to-tka/*" element={<BelajarTo />} />
         <Route path="*" element={<Navbars />} />
       </Routes>
     </Router>

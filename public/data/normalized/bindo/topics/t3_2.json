@@ -1,0 +1,51 @@
+{
+  "id": "t3_2",
+  "chapterId": "c3",
+  "subjectId": "bindo",
+  "title": "Konjungsi & Kata Hubung",
+  "content": "Konjungsi adalah kata yang menghubungkan kata, frasa, klausa, atau kalimat. Penggunaan konjungsi yang tepat menentukan keefektifan dan kejelasan kalimat.",
+  "formulas": [],
+  "keyPoints": [
+    "Konjungsi koordinatif: dan, atau, tetapi, melainkan, sedangkan (menghubungkan setara)",
+    "Konjungsi subordinatif: karena, jika, meskipun, ketika, agar, sehingga (menghubungkan tidak setara)",
+    "Konjungsi antarkalimat: oleh karena itu, dengan demikian, di samping itu, sementara itu",
+    "Konjungsi korelatif: baik...maupun..., tidak hanya...tetapi juga..., entah...entah...",
+    "Konjungsi subordinatif (sehingga, agar, karena, meskipun, ketika, dll.) TIDAK boleh memulai kalimat baru yang berdiri sendiri",
+    "Konjungsi antarkalimat diikuti tanda koma"
+  ],
+  "examples": [
+    {
+      "text": "❌ 'Sehingga dia berhasil lulus ujian.' → ✅ 'Dia belajar dengan giat sehingga berhasil lulus ujian.'",
+      "explanation": "'Sehingga' adalah konjungsi subordinatif yang menghubungkan anak kalimat dengan induk kalimat. Tidak boleh berdiri sendiri sebagai awal kalimat."
+    }
+  ],
+  "tips": [
+    "Perhatikan posisi konjungsi: koordinatif di tengah, antarkalimat di awal kalimat",
+    "Jika konjungsi antarkalimat dipakai di awal kalimat, HARUS diikuti tanda koma",
+    "Untuk soal melengkapi paragraf, perhatikan hubungan logis antarkalimat untuk memilih konjungsi yang tepat"
+  ],
+  "quiz": [
+    {
+      "question": "Konjungsi yang TIDAK boleh digunakan untuk memulai kalimat baru yang berdiri sendiri adalah...",
+      "options": [
+        "'Sehingga'",
+        "'Oleh karena itu'",
+        "'Dengan demikian'",
+        "'Di samping itu'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Sehingga' adalah konjungsi subordinatif yang harus melekat pada induk kalimat. Pilihan lainnya ('oleh karena itu', 'dengan demikian', 'di samping itu') adalah konjungsi antarkalimat yang memang digunakan di awal kalimat."
+    },
+    {
+      "question": "Konjungsi korelatif yang benar adalah...",
+      "options": [
+        "'Tidak hanya... tetapi juga...'",
+        "'Tidak hanya... dan juga...'",
+        "'Bukan hanya... atau juga...'",
+        "'Tidak... dan bukan...'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Tidak hanya... tetapi juga...' adalah pasangan konjungsi korelatif yang benar dalam bahasa Indonesia baku."
+    }
+  ]
+}

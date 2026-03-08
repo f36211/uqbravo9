@@ -1,0 +1,72 @@
+{
+  "id": "t10_1",
+  "chapterId": "c10",
+  "subjectId": "mtk",
+  "title": "Operasi Himpunan",
+  "content": "Himpunan adalah kumpulan objek-objek yang didefinisikan dengan jelas. Operasi himpunan meliputi irisan, gabungan, dan selisih.",
+  "formulas": [
+    {
+      "name": "Irisan (Intersection)",
+      "latex": "A \\cap B = \\{x | x \\in A \\text{ dan } x \\in B\\}",
+      "note": "Anggota yang ada di A dan B"
+    },
+    {
+      "name": "Gabungan (Union)",
+      "latex": "A \\cup B = \\{x | x \\in A \\text{ atau } x \\in B\\}",
+      "note": "Semua anggota A dan B"
+    },
+    {
+      "name": "Banyak Himpunan Bagian",
+      "latex": "2^n",
+      "note": "n = banyak anggota himpunan"
+    },
+    {
+      "name": "Banyak Himpunan Bagian dengan k Anggota",
+      "latex": "C(n, k) = \\binom{n}{k} = \\frac{n!}{k!(n-k)!}",
+      "note": "Kombinasi n diambil k"
+    }
+  ],
+  "keyPoints": [
+    "Himpunan bagian: himpunan yang anggotanya terdiri dari anggota himpunan lain",
+    "Himpunan kosong adalah himpunan bagian dari setiap himpunan",
+    "Banyaknya himpunan bagian dari himpunan dengan n anggota adalah $2^n$"
+  ],
+  "examples": [
+    {
+      "question": "Diketahui K = {bilangan prima yang lebih dari 2 dan kurang dari 12} dan L = {4 bilangan kelipatan 3 yang pertama}. K ∩ L adalah...",
+      "answer": "$\\{3\\}$",
+      "solutionSteps": [
+        "K = {3, 5, 7, 11} (bilangan prima antara 2 dan 12, tidak termasuk 2)",
+        "L = {3, 6, 9, 12}",
+        "K ∩ L = {3}"
+      ]
+    },
+    {
+      "question": "Diketahui himpunan B = {a, b, c, d, e, f}. Banyaknya himpunan bagian dari B yang memiliki 3 anggota adalah...",
+      "answer": "$20$",
+      "solutionSteps": [
+        "n(B) = 6",
+        "Banyak himpunan bagian dengan 3 anggota = $C(6, 3) = \\frac{6!}{3!3!}$",
+        "$= \\frac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1} = 20$"
+      ]
+    }
+  ],
+  "tips": [
+    "Selalu tulis anggota himpunan secara eksplisit jika memungkinkan",
+    "Gunakan diagram Venn untuk visualisasi",
+    "Untuk kombinasi, gunakan rumus $C(n,k)$ atau segitiga Pascal"
+  ],
+  "quiz": [
+    {
+      "question": "Jika A = {1, 2, 3, 4}, maka banyaknya himpunan bagian A adalah...",
+      "options": [
+        "$4$",
+        "$8$",
+        "$16$",
+        "$32$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "$2^4 = 16$"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "t4_2",
+  "chapterId": "c4",
+  "subjectId": "mtk",
+  "title": "Sistem Persamaan Linear Dua Variabel (SPLDV)",
+  "content": "SPLDV adalah sistem dengan dua persamaan dan dua variabel. Dapat diselesaikan dengan metode substitusi, eliminasi, atau grafik.",
+  "formulas": [
+    {
+      "name": "Metode Eliminasi",
+      "latex": "\\text{Samakan koefisien salah satu variabel, lalu jumlahkan atau kurangkan}",
+      "note": "Eliminasi variabel yang paling mudah"
+    },
+    {
+      "name": "Metode Substitusi",
+      "latex": "\\text{Ubah satu persamaan menjadi } x = \\ldots \\text{ atau } y = \\ldots",
+      "note": "Substitusikan ke persamaan lain"
+    }
+  ],
+  "keyPoints": [
+    "Metode eliminasi: samakan koefisien lalu tambah/kurang",
+    "Metode substitusi: ungkapkan satu variabel, masukkan ke persamaan lain",
+    "Cek jawaban dengan substitusi ke kedua persamaan"
+  ],
+  "examples": [
+    {
+      "question": "Penyelesaian sistem $x + y = 7$ dan $x - y = 3$ adalah...",
+      "answer": "$(5, 2)$",
+      "solutionSteps": [
+        "Jumlahkan kedua persamaan: $2x = 10 \\Rightarrow x = 5$",
+        "Substitusi: $5 + y = 7 \\Rightarrow y = 2$",
+        "Jadi $(x, y) = (5, 2)$"
+      ]
+    },
+    {
+      "question": "Diketahui sistem $\\begin{cases} 3a + 2b = 16 \\\\ 2a + b = 9 \\end{cases}$. Nilai $2a - b$ adalah...",
+      "answer": "$-1$",
+      "solutionSteps": [
+        "Dari persamaan 2: $b = 9 - 2a$",
+        "Substitusi ke persamaan 1: $3a + 2(9-2a) = 16$",
+        "$3a + 18 - 4a = 16 \\Rightarrow -a = -2 \\Rightarrow a = 2$",
+        "$b = 9 - 4 = 5$",
+        "$2a - b = 4 - 5 = -1$"
+      ]
+    }
+  ],
+  "tips": [
+    "Pilih metode yang paling efisien berdasarkan koefisien",
+    "Selalu cek jawaban dengan substitusi"
+  ],
+  "quiz": [
+    {
+      "question": "Jika $2x + ay = 4$ dan $bx - 2y = -1$ memiliki solusi $(5, -2)$, maka $a + b = $...",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitusi $(5,-2)$ ke persamaan 1: $10 - 2a = 4 \\Rightarrow a = 3$. Substitusi ke persamaan 2: $5b + 4 = -1 \\Rightarrow b = -1$. Jadi $a + b = 3 + (-1) = 2$"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "t15_1",
+  "chapterId": "c15",
+  "subjectId": "mtk",
+  "title": "Teorema Pythagoras dan Triple Pythagoras",
+  "content": "Teorema Pythagoras berlaku untuk segitiga siku-siku: kuadrat sisi miring (hipotenusa) sama dengan jumlah kuadrat sisi-sisi lainnya.",
+  "formulas": [
+    {
+      "name": "Teorema Pythagoras",
+      "latex": "c^2 = a^2 + b^2",
+      "note": "c = sisi miring (hipotenusa)"
+    },
+    {
+      "name": "Triple Pythagoras",
+      "latex": "(3k, 4k, 5k), (5k, 12k, 13k), (7k, 24k, 25k), (8k, 15k, 17k)",
+      "note": "k = faktor pengali"
+    }
+  ],
+  "keyPoints": [
+    "Hanya berlaku untuk segitiga siku-siku",
+    "Sisi miring adalah sisi terpanjang, berlawanan sudut siku-siku",
+    "Triple Pythagoras memudahkan identifikasi segitiga siku-siku"
+  ],
+  "examples": [
+    {
+      "question": "Bilangan berikut yang merupakan triple Pythagoras adalah...",
+      "answer": "$7$ cm, $24$ cm, $25$ cm",
+      "solutionSteps": [
+        "Cek: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$ ✓",
+        "Ini adalah triple (7, 24, 25)"
+      ]
+    },
+    {
+      "question": "Sebuah pohon terletak antara Mamat dan Mahmud. Jarak Mamat-Mahmud 28 m, jarak Mahmud-pohon 20 m, jarak Mamat-pohon 17 m. Tinggi pohon adalah...",
+      "answer": "$15$ m",
+      "solutionSteps": [
+        "Jarak horizontal Mamat ke dasar pohon: $28 - 20 = 8$ m",
+        "Gunakan teorema Pythagoras: sisi miring 17 m, alas 8 m",
+        "Tinggi = $\\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15$ m"
+      ]
+    }
+  ],
+  "tips": [
+    "Hafal triple Pythagoras umum: (3,4,5), (5,12,13), (7,24,25), (8,15,17)",
+    "Identifikasi sisi miring (terpanjang) terlebih dahulu",
+    "Jika $a^2 + b^2 = c^2$, maka segitiga tersebut siku-siku"
+  ],
+  "quiz": [
+    {
+      "question": "Panjang sisi miring segitiga siku-siku dengan sisi 9 cm dan 12 cm adalah...",
+      "options": [
+        "$15$ cm",
+        "$21$ cm",
+        "$225$ cm",
+        "$\\sqrt{63}$ cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$c = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15$ cm (triple 3,4,5 dikali 3)"
+    }
+  ]
+}

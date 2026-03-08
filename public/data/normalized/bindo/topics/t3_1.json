@@ -1,0 +1,51 @@
+{
+  "id": "t3_1",
+  "chapterId": "c3",
+  "subjectId": "bindo",
+  "title": "Makna Kata & Istilah",
+  "content": "Pemahaman makna kata meliputi sinonim, antonim, homonim, homofon, homograf, serta makna denotatif dan konotatif. Kemampuan ini penting untuk memahami konteks bacaan.",
+  "formulas": [],
+  "keyPoints": [
+    "Denotatif = makna sebenarnya/harfiah (kamus)",
+    "Konotatif = makna kiasan/tambahan",
+    "Sinonim = kata bermakna sama/mirip (contoh: pandai = cerdas)",
+    "Antonim = kata bermakna berlawanan (contoh: besar ≠ kecil)",
+    "Homonim = kata yang sama bentuk dan bunyinya tapi beda makna (contoh: bisa = racun/dapat)",
+    "Konteks kalimat menentukan makna kata yang tepat"
+  ],
+  "examples": [
+    {
+      "text": "'Anak itu memiliki TANGAN PANJANG.' → Makna konotatif: suka mencuri.",
+      "explanation": "Makna denotatif 'tangan panjang' = tangan yang ukurannya panjang. Namun dalam konteks ini, 'tangan panjang' bermakna konotatif yaitu 'suka mencuri'. Konteks kalimat menentukan makna yang digunakan."
+    }
+  ],
+  "tips": [
+    "Baca konteks kalimat sebelum menentukan makna kata",
+    "Untuk soal sinonim/antonim, substitusikan kata ke dalam kalimat untuk uji kecocokan",
+    "Waspadai kata-kata yang memiliki lebih dari satu makna (polisemi)"
+  ],
+  "quiz": [
+    {
+      "question": "Makna konotatif dari 'tangan panjang' adalah...",
+      "options": [
+        "Suka mencuri",
+        "Tangan yang panjang secara fisik",
+        "Orang yang tinggi",
+        "Pandai memasak"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Tangan panjang' secara konotatif bermakna suka mencuri/mengambil yang bukan miliknya."
+    },
+    {
+      "question": "Kata yang merupakan homonim adalah...",
+      "options": [
+        "'Bisa' (racun dan dapat)",
+        "'Besar' dan 'kecil'",
+        "'Pandai' dan 'cerdas'",
+        "'Gelap' dan 'terang'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Homonim adalah kata yang sama bentuk dan bunyinya tapi berbeda makna. 'Bisa' = racun ular, dan 'bisa' = dapat/mampu. Pilihan lain: 'besar-kecil' adalah antonim, 'pandai-cerdas' adalah sinonim, 'gelap-terang' adalah antonim."
+    }
+  ]
+}

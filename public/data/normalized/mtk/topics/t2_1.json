@@ -1,0 +1,60 @@
+{
+  "id": "t2_1",
+  "chapterId": "c2",
+  "subjectId": "mtk",
+  "title": "Diskon dan Harga Jual",
+  "content": "Diskon adalah potongan harga yang diberikan. Harga akhir = harga awal - (harga awal × persen diskon).",
+  "formulas": [
+    {
+      "name": "Harga Setelah Diskon",
+      "latex": "H_{akhir} = H_{awal} - (H_{awal} \\times \\frac{d}{100})",
+      "note": "d = persen diskon"
+    },
+    {
+      "name": "Diskon Bertingkat",
+      "latex": "H_{akhir} = H_{awal} \\times (1 - d_1) \\times (1 - d_2)",
+      "note": "Untuk diskon bertingkat 30% + 20%"
+    }
+  ],
+  "keyPoints": [
+    "Diskon 20% artinya membayar 80% dari harga",
+    "Diskon bertingkat: diskon kedua dihitung dari harga setelah diskon pertama",
+    "Hemat = Harga normal - Harga diskon"
+  ],
+  "examples": [
+    {
+      "question": "Harga jaket Rp180.000 dengan diskon 20%. Harga setelah diskon adalah...",
+      "answer": "Rp144.000,00",
+      "solutionSteps": [
+        "Diskon: $180.000 \\times 20\\% = 36.000$",
+        "Harga akhir: $180.000 - 36.000 = 144.000$"
+      ]
+    },
+    {
+      "question": "Harga baju Rp250.000 dengan diskon 30% + 20%. Harga akhir adalah...",
+      "answer": "Rp140.000,00",
+      "solutionSteps": [
+        "Diskon pertama: $250.000 \\times 30\\% = 75.000$, sisa $175.000$",
+        "Diskon kedua: $175.000 \\times 20\\% = 35.000$",
+        "Harga akhir: $175.000 - 35.000 = 140.000$"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk diskon bertingkat, jangan jumlahkan persentasenya",
+    "Diskon 30% + 20% ≠ diskon 50%"
+  ],
+  "quiz": [
+    {
+      "question": "Harga Rp200.000 dengan diskon 25%. Harga akhir adalah...",
+      "options": [
+        "Rp150.000",
+        "Rp160.000",
+        "Rp175.000",
+        "Rp180.000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$200.000 \\times 75\\% = 150.000$"
+    }
+  ]
+}

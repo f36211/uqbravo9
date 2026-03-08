@@ -1,0 +1,71 @@
+{
+  "id": "t12_1",
+  "chapterId": "c12",
+  "subjectId": "mtk",
+  "title": "Rumus GLB (Gerak Lurus Beraturan)",
+  "content": "Gerak Lurus Beraturan adalah gerak dengan kecepatan tetap. Hubungan antara jarak (s), kecepatan (v), dan waktu (t).",
+  "formulas": [
+    {
+      "name": "Rumus Dasar",
+      "latex": "s = v \\times t",
+      "note": "s = jarak, v = kecepatan, t = waktu"
+    },
+    {
+      "name": "Kecepatan",
+      "latex": "v = \\frac{s}{t}",
+      "note": "Jarak dibagi waktu"
+    },
+    {
+      "name": "Waktu",
+      "latex": "t = \\frac{s}{v}",
+      "note": "Jarak dibagi kecepatan"
+    }
+  ],
+  "keyPoints": [
+    "Satuan harus konsisten: km dengan jam, atau meter dengan detik",
+    "Konversi: 1 jam = 60 menit = 3600 detik, 1 km = 1000 m",
+    "Kecepatan rata-rata = total jarak : total waktu"
+  ],
+  "examples": [
+    {
+      "question": "Sebuah mobil menempuh 120 km dalam 2 jam. Kecepatannya adalah...",
+      "answer": "$60$ km/jam",
+      "solutionSteps": [
+        "$v = \\frac{s}{t} = \\frac{120}{2} = 60$ km/jam"
+      ]
+    },
+    {
+      "question": "Seseorang bersepeda dengan kecepatan tetap menempuh jarak 2,5 km dalam waktu 5 menit. Waktu untuk menempuh 40 km adalah...",
+      "answer": "$80$ menit",
+      "solutionSteps": [
+        "Kecepatan = $\\frac{2{,}5}{5} = 0{,}5$ km/menit",
+        "Waktu untuk 40 km = $\\frac{40}{0{,}5} = 80$ menit"
+      ]
+    },
+    {
+      "question": "Jarak yang ditempuh mobil jika telah menempuh perjalanan selama 6 jam dengan kecepatan tetap 40 km/jam adalah...",
+      "answer": "$240$ km",
+      "solutionSteps": [
+        "$s = v \\times t = 40 \\times 6 = 240$ km"
+      ]
+    }
+  ],
+  "tips": [
+    "Perhatikan satuan: jika jam dan menit, samakan dulu",
+    "Untuk grafik jarak-waktu, gradien = kecepatan",
+    "Kecepatan rata-rata tidak sama dengan rata-rata kecepatan"
+  ],
+  "quiz": [
+    {
+      "question": "Sebuah bus berangkat pukul 08.00 dan tiba pukul 11.00 dengan kecepatan 60 km/jam. Jarak yang ditempuh adalah...",
+      "options": [
+        "$120$ km",
+        "$150$ km",
+        "$180$ km",
+        "$240$ km"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Waktu = 3 jam, $s = 60 \\times 3 = 180$ km"
+    }
+  ]
+}

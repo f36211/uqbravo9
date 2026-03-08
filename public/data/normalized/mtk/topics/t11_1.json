@@ -1,0 +1,76 @@
+{
+  "id": "t11_1",
+  "chapterId": "c11",
+  "subjectId": "mtk",
+  "title": "Perbandingan Senilai dan Berbalik Nilai",
+  "content": "Perbandingan senilai: jika satu besaran bertambah, besaran lain juga bertambah (berbanding lurus). Perbandingan berbalik nilai: jika satu besaran bertambah, besaran lain berkurang (berbanding terbalik).",
+  "formulas": [
+    {
+      "name": "Perbandingan Senilai",
+      "latex": "\\frac{a_1}{b_1} = \\frac{a_2}{b_2}",
+      "note": "Nilai tetap sama"
+    },
+    {
+      "name": "Perbandingan Berbalik Nilai",
+      "latex": "a_1 \\times b_1 = a_2 \\times b_2",
+      "note": "Hasil kali tetap"
+    }
+  ],
+  "keyPoints": [
+    "Senilai: harga dan jumlah barang, jarak dan waktu (kecepatan tetap)",
+    "Berbalik nilai: kecepatan dan waktu (jarak tetap), pekerja dan waktu",
+    "Skala = jarak pada gambar : jarak sebenarnya"
+  ],
+  "examples": [
+    {
+      "question": "Perbandingan umur Ani dan Budi adalah 3 : 5. Jika jumlah umur mereka 32 tahun, maka umur Budi adalah...",
+      "answer": "$20$ tahun",
+      "solutionSteps": [
+        "Jumlah bagian = 3 + 5 = 8",
+        "Umur Budi = $\\frac{5}{8} \\times 32 = 20$ tahun"
+      ]
+    },
+    {
+      "question": "Dua buah persegi luasnya berbanding 9 : 25. Jika persegi kecil panjang sisinya 6 cm, maka keliling persegi besar adalah...",
+      "answer": "$40$ cm",
+      "solutionSteps": [
+        "Perbandingan luas = $s_1^2 : s_2^2 = 9 : 25$",
+        "Perbandingan sisi = $\\sqrt{9} : \\sqrt{25} = 3 : 5$",
+        "Sisi besar = $\\frac{5}{3} \\times 6 = 10$ cm",
+        "Keliling = $4 \\times 10 = 40$ cm"
+      ]
+    },
+    {
+      "question": "Sebuah proyek dikerjakan 24 pekerja dalam 45 hari. Setelah 15 hari bekerja, pekerjaan terhenti 5 hari. Berapa tambahan pekerja agar proyek selesai tepat waktu?",
+      "answer": "$6$ orang",
+      "solutionSteps": [
+        "Total hari proyek = 45 hari. Sudah bekerja 15 hari, lalu berhenti 5 hari.",
+        "Sisa waktu efektif = $45 - 15 - 5 = 25$ hari",
+        "Pekerjaan yang sudah selesai = $\\frac{15}{45} = \\frac{1}{3}$",
+        "Sisa pekerjaan = $1 - \\frac{1}{3} = \\frac{2}{3}$",
+        "Pekerjaan yang harus diselesaikan dalam 25 hari = $\\frac{2}{3}$ bagian",
+        "Total kapasitas yang dibutuhkan = $24 \\times 45 \\times \\frac{2}{3} = 720$ orang-hari",
+        "Pekerja yang diperlukan = $\\frac{720}{25} = 28{,}8 \\approx 30$ orang",
+        "Tambahan pekerja = $30 - 24 = 6$ orang"
+      ]
+    }
+  ],
+  "tips": [
+    "Identifikasi dulu apakah senilai atau berbalik nilai",
+    "Untuk masalah pekerja: lebih banyak pekerja = lebih cepat selesai (berbalik nilai)",
+    "Perhatikan satuan yang konsisten"
+  ],
+  "quiz": [
+    {
+      "question": "Jika 5 orang pekerja dapat menyelesaikan pekerjaan dalam 12 hari, maka 6 orang pekerja dapat menyelesaikan dalam...",
+      "options": [
+        "$10$ hari",
+        "$8$ hari",
+        "$15$ hari",
+        "$7{,}2$ hari"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$5 \\times 12 = 6 \\times x \\Rightarrow x = 10$ hari"
+    }
+  ]
+}

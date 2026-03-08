@@ -1,0 +1,83 @@
+{
+  "id": "t3_1",
+  "chapterId": "c3",
+  "subjectId": "mtk",
+  "title": "Barisan Aritmatika",
+  "content": "Barisan aritmatika adalah barisan dengan selisih (beda) yang tetap antara dua suku berurutan. Rumus suku ke-n: $U_n = a + (n-1)b$",
+  "illustration": {
+    "type": "lucide",
+    "name": "TrendingUp"
+  },
+  "formulas": [
+    {
+      "name": "Suku ke-n",
+      "latex": "U_n = a + (n-1)b",
+      "note": "a = suku pertama, b = beda, n = nomor suku"
+    },
+    {
+      "name": "Jumlah n Suku Pertama",
+      "latex": "S_n = \\frac{n}{2}(2a + (n-1)b) = \\frac{n}{2}(a + U_n)",
+      "note": "Gunakan yang lebih mudah tergantung data"
+    },
+    {
+      "name": "Suku ke-n",
+      "latex": "U_n = a + (n-1)b",
+      "note": "a = nilai bulan/baris ke-1, b = selisih"
+    }
+  ],
+  "keyPoints": [
+    "Beda (b) = $U_2 - U_1 = U_3 - U_2$",
+    "Jumlah deret aritmatika bisa dihitung dengan rumus jumlah suku",
+    "Untuk mencari suku ke-n, pastikan nilai a dan b diketahui",
+    "Jumlah kursi gedung bertambah konstan = barisan aritmatika.",
+    "Tabungan dengan selisih tetap tiap bulan = barisan aritmatika."
+  ],
+  "examples": [
+    {
+      "question": "Suku ke-50 dari barisan 5, 9, 13, 17, ... adalah...",
+      "answer": "$201$",
+      "solutionSteps": [
+        "a = 5, b = 9 - 5 = 4",
+        "$U_{50} = 5 + (50-1) \\times 4$",
+        "$U_{50} = 5 + 49 \\times 4 = 5 + 196 = 201$"
+      ]
+    },
+    {
+      "question": "Jumlah semua kelipatan 8 antara 100 dan 200 adalah...",
+      "answer": "$1.776$",
+      "solutionSteps": [
+        "Kelipatan 8 pertama > 100 adalah 104, terakhir < 200 adalah 192",
+        "a = 104, b = 8, $U_n = 192$",
+        "Cari n: $192 = 104 + (n-1) \\times 8 \\Rightarrow 88 = (n-1) \\times 8 \\Rightarrow n = 12$",
+        "$S_{12} = \\frac{12}{2}(104 + 192) = 6 \\times 296 = 1.776$"
+      ]
+    },
+    {
+      "question": "Tabungan Bulan 1 = Rp20.000, Bulan 2 = Rp25.000. Berapa tabungan di bulan ke-10?",
+      "answer": "Rp65.000",
+      "solutionSteps": [
+        "Suku pertama a = 20.000",
+        "Beda b = 25.000 - 20.000 = 5.000",
+        "U_10 = 20.000 + (10 - 1) × 5.000 = 20.000 + 45.000 = 65.000"
+      ]
+    }
+  ],
+  "tips": [
+    "Identifikasi a dan b terlebih dahulu",
+    "Untuk jumlah, tentukan berapa banyak suku (n)",
+    "Tentukan a dan b dulu sebelum mencari nilai suku berapapun."
+  ],
+  "quiz": [
+    {
+      "question": "Jika suku ke-3 suatu barisan aritmatika adalah 11 dan suku ke-7 adalah 23, maka suku ke-10 adalah...",
+      "options": [
+        "$32$",
+        "$30$",
+        "$28$",
+        "$26$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dari $U_3$ dan $U_7$, beda $b = \\frac{23-11}{4} = 3$, $a = 5$, $U_{10} = 5 + 9(3) = 32$"
+    }
+  ]
+}

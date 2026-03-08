@@ -1,0 +1,224 @@
+{
+  "chapters": [
+    {
+      "id": "c1",
+      "title": "Operasi Bilangan Bulat dan Pecahan",
+      "topics": [
+        {
+          "id": "t1_1",
+          "title": "Operasi Campuran Bilangan Bulat"
+        },
+        {
+          "id": "t1_2",
+          "title": "Operasi Pecahan"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Aritmatika Sosial dan Diskon",
+      "topics": [
+        {
+          "id": "t2_1",
+          "title": "Diskon dan Harga Jual"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Barisan dan Deret",
+      "topics": [
+        {
+          "id": "t3_1",
+          "title": "Barisan Aritmatika"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Persamaan Linear (PLSV & SPLDV)",
+      "topics": [
+        {
+          "id": "t4_1",
+          "title": "Persamaan Linear Satu Variabel (PLSV)"
+        },
+        {
+          "id": "t4_2",
+          "title": "Sistem Persamaan Linear Dua Variabel (SPLDV)"
+        },
+        {
+          "id": "t4_3",
+          "title": "Aljabar (PLSV, SPLDV, & Fungsi)"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "Fungsi",
+      "topics": [
+        {
+          "id": "t5_1",
+          "title": "Konsep Fungsi dan Relasi"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "Geometri dan Pengukuran",
+      "topics": [
+        {
+          "id": "t6_1",
+          "title": "Persegi dan Persegi Panjang"
+        },
+        {
+          "id": "t6_2",
+          "title": "Lingkaran"
+        },
+        {
+          "id": "t6_3",
+          "title": "Tabung"
+        },
+        {
+          "id": "t6_4",
+          "title": "Kerucut dan Bola"
+        },
+        {
+          "id": "t6_5",
+          "title": "Geometri (Bangun Datar, Ruang, & Transformasi)"
+        },
+        {
+          "id": "t6_6",
+          "title": "Pengukuran (Skala & Keliling)"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "title": "Statistika dan Peluang",
+      "topics": [
+        {
+          "id": "t7_1",
+          "title": "Ukuran Pemusatan Data"
+        },
+        {
+          "id": "t7_2",
+          "title": "Peluang"
+        },
+        {
+          "id": "t7_3",
+          "title": "Peluang & Himpunan"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "title": "Transformasi Geometri",
+      "topics": [
+        {
+          "id": "t8_1",
+          "title": "Translasi, Refleksi, dan Dilatasi"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "title": "Persamaan Garis Lurus",
+      "topics": [
+        {
+          "id": "t9_1",
+          "title": "Gradien dan Persamaan Garis"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "Himpunan",
+      "topics": [
+        {
+          "id": "t10_1",
+          "title": "Operasi Himpunan"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "title": "Perbandingan dan Skala",
+      "topics": [
+        {
+          "id": "t11_1",
+          "title": "Perbandingan Senilai dan Berbalik Nilai"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "title": "Kecepatan, Jarak, dan Waktu",
+      "topics": [
+        {
+          "id": "t12_1",
+          "title": "Rumus GLB (Gerak Lurus Beraturan)"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "title": "Pemfaktoran dan Aljabar",
+      "topics": [
+        {
+          "id": "t13_1",
+          "title": "Pemfaktoran Bentuk Aljabar"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "title": "Bangun Ruang Sisi Lengkung",
+      "topics": [
+        {
+          "id": "t14_1",
+          "title": "Tabung, Kerucut, dan Bola"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "title": "Segitiga dan Teorema Pythagoras",
+      "topics": [
+        {
+          "id": "t15_1",
+          "title": "Teorema Pythagoras dan Triple Pythagoras"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "title": "Kesebangunan dan Kongruensi",
+      "topics": [
+        {
+          "id": "t16_1",
+          "title": "Kesebangunan dan Kongruensi Segitiga"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "title": "Diagram dan Grafik",
+      "topics": [
+        {
+          "id": "t17_1",
+          "title": "Interpretasi Diagram Batang dan Grafik"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "title": "Aritmatika Sosial Lanjutan",
+      "topics": [
+        {
+          "id": "t18_1",
+          "title": "Masalah Campuran dan Rata-rata Tertimbang"
+        }
+      ]
+    }
+  ]
+}

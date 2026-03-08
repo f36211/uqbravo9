@@ -1,0 +1,93 @@
+{
+  "id": "t14_1",
+  "chapterId": "c14",
+  "subjectId": "mtk",
+  "title": "Tabung, Kerucut, dan Bola",
+  "content": "Bangun ruang sisi lengkung memiliki alas atau selimut yang berbentuk lengkungan. Volume dan luas permukaan dihitung dengan rumus khusus.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Database"
+  },
+  "formulas": [
+    {
+      "name": "Volume Tabung",
+      "latex": "V = \\pi r^2 t",
+      "note": "Luas alas × tinggi"
+    },
+    {
+      "name": "Volume Kerucut",
+      "latex": "V = \\frac{1}{3} \\pi r^2 t",
+      "note": "Sepertiga volume tabung"
+    },
+    {
+      "name": "Volume Bola",
+      "latex": "V = \\frac{4}{3} \\pi r^3",
+      "note": "r = jari-jari bola"
+    },
+    {
+      "name": "Luas Permukaan Bola",
+      "latex": "L = 4\\pi r^2",
+      "note": "Luas seluruh permukaan"
+    },
+    {
+      "name": "Luas Setengah Bola (tanpa alas)",
+      "latex": "L = 2\\pi r^2",
+      "note": "Hanya bagian lengkung"
+    }
+  ],
+  "keyPoints": [
+    "Tabung: 2 alas lingkaran + selimut persegi panjang",
+    "Kerucut: 1 alas lingkaran + selimut juring lingkaran",
+    "Bola: seluruh permukaan lengkung",
+    "Untuk pengecatan atap setengah bola, gunakan luas lengkung saja ($2\\pi r^2$)"
+  ],
+  "examples": [
+    {
+      "question": "Pak Roza memiliki 10 kolam ikan berbentuk tabung dengan diameter 4{,}2 meter dan tinggi 1 meter. Volume maksimal satu kolam adalah... ($\\pi = \\frac{22}{7}$)",
+      "answer": "$13.860$ liter",
+      "solutionSteps": [
+        "r = 2{,}1 m = 21 dm, t = 1 m = 10 dm",
+        "$V = \\frac{22}{7} \\times 21^2 \\times 10 = \\frac{22}{7} \\times 441 \\times 10$",
+        "$= 22 \\times 63 \\times 10 = 13.860$ dm³ = 13.860 liter"
+      ]
+    },
+    {
+      "question": "Bangun terdiri dari limas dan kubus dengan panjang rusuk kubus 18 cm dan panjang rusuk tegak limas 15 cm. Volume bangun tersebut adalah...",
+      "answer": "$7.128 \\text{ cm}^3$",
+      "solutionSteps": [
+        "Volume kubus: $18^3 = 5.832$ cm³",
+        "Tinggi limas: $t = \\sqrt{15^2 - 9^2} = \\sqrt{225 - 81} = \\sqrt{144} = 12$ cm",
+        "Volume limas: $\\frac{1}{3} \\times 18^2 \\times 12 = \\frac{1}{3} \\times 324 \\times 12 = 1.296$ cm³",
+        "Total volume: $5.832 + 1.296 = 7.128$ cm³"
+      ]
+    },
+    {
+      "question": "Toni membuat pelampung berbentuk kerucut (tinggi 36 mm) di atas setengah bola (diameter 18 mm). Volume pelampung adalah...",
+      "answer": "$1.458\\pi \\text{ mm}^3$",
+      "solutionSteps": [
+        "r = 9 mm",
+        "Volume kerucut: $\\frac{1}{3}\\pi \\times 81 \\times 36 = 972\\pi$ mm³",
+        "Volume setengah bola: $\\frac{2}{3}\\pi \\times 729 = 486\\pi$ mm³",
+        "Total: $972\\pi + 486\\pi = 1.458\\pi$ mm³"
+      ]
+    }
+  ],
+  "tips": [
+    "Perhatikan satuan: meter, cm, atau mm",
+    "Untuk limas di atas kubus, tinggi limas dihitung dari pusat alas ke puncak",
+    "Diameter = 2 × jari-jari, jangan keliru"
+  ],
+  "quiz": [
+    {
+      "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 10 cm adalah... ($\\pi = \\frac{22}{7}$)",
+      "options": [
+        "$1.540$ cm³",
+        "$1.100$ cm³",
+        "$1.320$ cm³",
+        "$1.760$ cm³"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$V = \\frac{22}{7} \\times 49 \\times 10 = 1.540$ cm³"
+    }
+  ]
+}

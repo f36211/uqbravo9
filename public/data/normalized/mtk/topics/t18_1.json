@@ -1,0 +1,62 @@
+{
+  "id": "t18_1",
+  "chapterId": "c18",
+  "subjectId": "mtk",
+  "title": "Masalah Campuran dan Rata-rata Tertimbang",
+  "content": "Masalah aritmatika sosial melibatkan perhitungan rata-rata tertimbang, campuran, dan aplikasi kehidupan nyata seperti pengemasan dan distribusi.",
+  "formulas": [
+    {
+      "name": "Rata-rata Tertimbang",
+      "latex": "\\bar{x} = \\frac{\\sum (w_i \\times x_i)}{\\sum w_i}",
+      "note": "w = bobot, x = nilai"
+    },
+    {
+      "name": "Campuran",
+      "latex": "\\frac{m_1}{m_2} = \\frac{h_2 - h}{h - h_1}",
+      "note": "h = harga campuran, h₁, h₂ = harga komponen"
+    }
+  ],
+  "keyPoints": [
+    "Rata-rata tertimbang memperhitungkan frekuensi atau bobot masing-masing nilai",
+    "Untuk masalah campuran, gunakan konsep alligasi atau persamaan",
+    "Selalu perhatikan batasan dan syarat dalam soal"
+  ],
+  "examples": [
+    {
+      "question": "Rata-rata berat telur: kecil 45g, sedang 55g, besar 65g. Dalam kemasan 10 butir sudah ada 1 besar, 5 sedang, 2 kecil. Dua telur tambahan agar rata-rata 55g adalah...",
+      "answer": "1 besar dan 1 sedang",
+      "solutionSteps": [
+        "Total berat saat ini: $1(65) + 5(55) + 2(45) = 65 + 275 + 90 = 430$ g",
+        "Target total 10 butir: $10 \\times 55 = 550$ g",
+        "Kekurangan: $550 - 430 = 120$ g",
+        "Cek pilihan: 1 besar (65g) + 1 sedang (55g) = 120g ✓"
+      ]
+    },
+    {
+      "question": "Harga setengah kg cabe rawit Rp35.000. Jika membeli 2¼ kg, total harga adalah...",
+      "answer": "Rp157.500,00",
+      "solutionSteps": [
+        "Harga per kg = $35.000 \\times 2 = 70.000$",
+        "Harga 2¼ kg = $2{,}25 \\times 70.000 = 157.500$"
+      ]
+    }
+  ],
+  "tips": [
+    "Untuk rata-rata tertimbang, jumlahkan (nilai × frekuensi) lalu bagi total frekuensi",
+    "Perhatikan satuan: kg, gram, atau unit lain",
+    "Gunakan logika untuk memeriksa keabsahan jawaban"
+  ],
+  "quiz": [
+    {
+      "question": "Jika rata-rata nilai 20 siswa adalah 75 dan rata-rata 30 siswa lainnya adalah 80, maka rata-rata gabungan adalah...",
+      "options": [
+        "$77$",
+        "$77{,}5$",
+        "$78$",
+        "$78{,}5$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "$\\bar{x} = \\frac{20(75) + 30(80)}{50} = \\frac{1500 + 2400}{50} = \\frac{3900}{50} = 78$"
+    }
+  ]
+}

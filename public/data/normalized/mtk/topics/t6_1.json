@@ -1,0 +1,84 @@
+{
+  "id": "t6_1",
+  "chapterId": "c6",
+  "subjectId": "mtk",
+  "title": "Persegi dan Persegi Panjang",
+  "content": "Persegi memiliki sisi sama panjang. Persegi panjang memiliki panjang dan lebar berbeda. Keliling = jumlah semua sisi, Luas = panjang × lebar.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Square"
+  },
+  "formulas": [
+    {
+      "name": "Keliling Persegi",
+      "latex": "K = 4s",
+      "note": "s = panjang sisi"
+    },
+    {
+      "name": "Luas Persegi",
+      "latex": "L = s^2",
+      "note": "s = panjang sisi"
+    },
+    {
+      "name": "Keliling Persegi Panjang",
+      "latex": "K = 2(p + l)",
+      "note": "p = panjang, l = lebar"
+    },
+    {
+      "name": "Luas Persegi Panjang",
+      "latex": "L = p \\times l",
+      "note": "p = panjang, l = lebar"
+    }
+  ],
+  "keyPoints": [
+    "Persegi: semua sisi sama, semua sudut 90°",
+    "Persegi panjang: sisi berhadapan sama, semua sudut 90°",
+    "Keliling adalah jumlah semua sisi"
+  ],
+  "examples": [
+    {
+      "question": "Sebuah persegi memiliki keliling 64 cm. Luasnya adalah...",
+      "answer": "$256 \\text{ cm}^2$",
+      "solutionSteps": [
+        "Sisi: $s = 64 \\div 4 = 16$ cm",
+        "Luas: $16 \\times 16 = 256$ cm²"
+      ]
+    },
+    {
+      "question": "Sebuah persegi panjang panjang 12 cm dan lebar 8 cm. Luasnya adalah...",
+      "answer": "$96 \\text{ cm}^2$",
+      "solutionSteps": [
+        "$L = 12 \\times 8 = 96$ cm²"
+      ]
+    },
+    {
+      "question": "Persegi panjang memiliki panjang $(3x+2)$ cm dan lebar $(x+1)$ cm. Jika keliling 58 cm, tentukan panjang dan lebar.",
+      "answer": "Panjang $23$ cm dan lebar $6$ cm",
+      "solutionSteps": [
+        "$2(3x+2 + x+1) = 58$",
+        "$2(4x + 3) = 58$",
+        "$4x + 3 = 29$",
+        "$4x = 26 \\Rightarrow x = 6{,}5$",
+        "Panjang: $3(6{,}5)+2 = 21{,}5$ cm, Lebar: $6{,}5+1 = 7{,}5$ cm",
+        "Cek: $2(21{,}5 + 7{,}5) = 2 \\times 29 = 58$ ✓"
+      ]
+    }
+  ],
+  "tips": [
+    "Jika keliling diketahui, cari sisi terlebih dahulu",
+    "Untuk persegi panjang, identifikasi mana panjang dan lebar"
+  ],
+  "quiz": [
+    {
+      "question": "Keliling persegi dengan luas 225 cm² adalah...",
+      "options": [
+        "$60$ cm",
+        "$50$ cm",
+        "$55$ cm",
+        "$45$ cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$s = \\sqrt{225} = 15$, $K = 4 \\times 15 = 60$ cm"
+    }
+  ]
+}

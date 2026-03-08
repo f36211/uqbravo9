@@ -1,0 +1,45 @@
+{
+  "id": "t4_3",
+  "chapterId": "c4",
+  "subjectId": "mtk",
+  "title": "Aljabar (PLSV, SPLDV, & Fungsi)",
+  "content": "Meliputi pemodelan soal cerita ke dalam Persamaan Linear Satu Variabel, penyelesaian Sistem Persamaan Linear Dua Variabel untuk membandingkan harga/promo, dan substitusi nilai fungsi.",
+  "illustration": {
+    "type": "lucide",
+    "name": "Component"
+  },
+  "formulas": [
+    {
+      "name": "Bentuk Fungsi Linear",
+      "latex": "f(x) = ax + b",
+      "note": "Substitusikan nilai x yang diketahui"
+    }
+  ],
+  "keyPoints": [
+    "Terjemahkan soal cerita ke model matematika secara berurutan.",
+    "Gunakan eliminasi atau substitusi pada SPLDV (misal: soto mie x, es selendang mayang y)."
+  ],
+  "examples": [
+    {
+      "question": "Biaya produksi B = 3x + 2000. Harga jual J = 4x + 4000. Ditanya keuntungan saat x transaksi?",
+      "answer": "Keuntungan = x + 2000",
+      "solutionSteps": [
+        "Keuntungan = Harga Jual - Biaya Produksi",
+        "Keuntungan = (4x + 4000) - (3x + 2000)",
+        "Keuntungan = x + 2000"
+      ]
+    },
+    {
+      "question": "Persamaan fungsi f(2x) + 3f(1/x) = x. (Bentuk soal fungsional).",
+      "answer": "Menentukan f(x) memerlukan substitusi spesifik.",
+      "solutionSteps": [
+        "Substitusi nilai x yang akan ditanyakan ke dalam fungsi.",
+        "Misal ditanya f(2), substitusi x=1 dan x=1/2 untuk mendapat SPLDV dalam f(...)."
+      ]
+    }
+  ],
+  "tips": [
+    "Dalam SPLDV soal harga, jadikan item A sebagai variabel x, dan item B sebagai variabel y."
+  ],
+  "quiz": []
+}

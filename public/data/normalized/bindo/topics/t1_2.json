@@ -1,0 +1,50 @@
+{
+  "id": "t1_2",
+  "chapterId": "c1",
+  "subjectId": "bindo",
+  "title": "Simpulan & Inferensi",
+  "content": "Simpulan adalah pernyataan yang ditarik berdasarkan informasi yang tersurat maupun tersirat dalam teks. Inferensi membutuhkan kemampuan membaca di antara baris (reading between the lines).",
+  "formulas": [],
+  "keyPoints": [
+    "Simpulan harus berdasarkan FAKTA dalam teks, bukan opini pembaca",
+    "Simpulan yang baik: tidak terlalu sempit dan tidak terlalu luas",
+    "Perhatikan kata kunci penghubung: oleh karena itu, jadi, dengan demikian, dapat disimpulkan",
+    "Inferensi = makna tersirat, bukan hanya yang tertulis",
+    "Bedakan fakta (dapat dibuktikan) dan opini (pendapat subjektif)"
+  ],
+  "examples": [
+    {
+      "text": "Penjualan buku digital meningkat 40% dalam dua tahun terakhir, sementara penjualan buku cetak menurun 15%. Generasi muda cenderung lebih memilih membaca melalui perangkat elektronik karena lebih praktis.",
+      "explanation": "Simpulan yang tepat: 'Terjadi pergeseran preferensi membaca dari buku cetak ke buku digital.' — Simpulan ini didukung oleh data peningkatan buku digital dan penurunan buku cetak."
+    }
+  ],
+  "tips": [
+    "Eliminasi jawaban yang terlalu ekstrem atau tidak didukung teks",
+    "Simpulan harus konsisten dengan SEMUA informasi dalam teks",
+    "Hati-hati dengan over-generalization — jangan menarik kesimpulan terlalu luas"
+  ],
+  "quiz": [
+    {
+      "question": "Simpulan yang baik harus...",
+      "options": [
+        "Berdasarkan fakta dalam teks",
+        "Merupakan opini pembaca",
+        "Selalu berupa pendapat",
+        "Menggunakan kata mungkin"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Simpulan harus ditarik dari fakta yang tersurat maupun tersirat dalam teks, bukan opini pribadi pembaca."
+    },
+    {
+      "question": "Perbedaan utama antara fakta dan opini adalah...",
+      "options": [
+        "Fakta dapat dibuktikan, opini bersifat subjektif",
+        "Fakta selalu benar, opini selalu salah",
+        "Fakta menggunakan angka, opini tidak",
+        "Tidak ada perbedaan"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fakta adalah pernyataan yang dapat dibuktikan kebenarannya, sedangkan opini adalah pendapat subjektif yang tidak dapat dibuktikan secara objektif."
+    }
+  ]
+}
